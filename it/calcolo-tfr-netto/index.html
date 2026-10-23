@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcolo TFR netto online: simula la liquidazione | Calcotia</title>
+<meta name="description" content="Calcolo TFR netto online gratuito: simula anno per anno quote, rivalutazione ISTAT e tassazione separata e scopri quanto vale la tua liquidazione netta.">
+<link rel="canonical" href="https://calcotia.online/it/calcolo-tfr-netto/">
+<link rel="alternate" hreflang="it-IT" href="https://calcotia.online/it/calcolo-tfr-netto/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calcolo TFR netto online: simula la liquidazione | Calcotia">
+<meta property="og:description" content="Calcolo TFR netto online gratuito: simula anno per anno quote, rivalutazione ISTAT e tassazione separata e scopri quanto vale la tua liquidazione netta.">
+<meta property="og:url" content="https://calcotia.online/it/calcolo-tfr-netto/">
+<meta property="og:image" content="https://calcotia.online/assets/img/logo.jpg">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&family=Heebo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calcolo TFR netto","url":"https://calcotia.online/it/calcolo-tfr-netto/","applicationCategory":"FinanceApplication","operatingSystem":"Any","inLanguage":"it-IT","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Come calcolare il TFR netto se ho lavorato in più aziende?","acceptedAnswer":{"@type":"Answer","text":"Ogni rapporto di lavoro produce un TFR separato: quando cambi azienda, il vecchio datore ti liquida quanto maturato fino a quel momento, con la sua tassazione separata. Per stimare il totale, ripeti il calcolo per ciascun periodo con gli anni e la retribuzione di quel rapporto e somma i netti. Ricorda che gli anni non si cumulano tra datori diversi ai fini della tassazione."}},
+{"@type":"Question","name":"Posso usare questo calcolo netto TFR online anche per il TFR versato a un fondo pensione?","acceptedAnswer":{"@type":"Answer","text":"No: il simulatore segue le regole del TFR lasciato in azienda. Le somme destinate a un fondo pensione non si rivalutano con il tasso legale e, al momento della prestazione, sono tassate con un'aliquota tra il 15% e il 9% in base agli anni di partecipazione, senza tassazione separata. I due percorsi danno quindi risultati anche molto diversi."}},
+{"@type":"Question","name":"Che cos'è l'imposta sostitutiva del 17% sulla rivalutazione?","acceptedAnswer":{"@type":"Answer","text":"È un'imposta che il datore di lavoro trattiene ogni anno solo sulla rivalutazione del fondo accumulato, non sulle quote di retribuzione. Grazie a questa trattenuta annuale, quando ricevi la liquidazione la rivalutazione è già tassata e non rientra nella base della tassazione separata, che colpisce solo le quote accantonate."}},
+{"@type":"Question","name":"Quando viene pagato il TFR dopo la fine del rapporto?","acceptedAnswer":{"@type":"Answer","text":"La legge non fissa un giorno unico: di regola il TFR viene liquidato con l'ultima busta paga o nei tempi previsti dal contratto collettivo, spesso entro 30-45 giorni dalla cessazione. Per i dipendenti pubblici che ricevono TFR o TFS dall'INPS i termini sono più lunghi e dipendono dal motivo della cessazione."}},
+{"@type":"Question","name":"Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?","acceptedAnswer":{"@type":"Answer","text":"Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota di TFR di un anno è 19.500 / 13,5, cioè 1.444,44 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota diventa 1.555,56 euro."}},
+{"@type":"Question","name":"Il TFR calcolo netto cambia se ho già ricevuto un'anticipazione?","acceptedAnswer":{"@type":"Answer","text":"Sì: l'anticipazione riduce il fondo accumulato e quindi anche il netto finale, perché le somme già erogate sono state tassate al momento dell'anticipo. Per una stima corretta, sottrai dal risultato le anticipazioni lorde già ricevute oppure riduci gli anni inseriti nel simulatore in modo proporzionale."}}
+]}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.jpg" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Free calculators for every country</small></span></a>
+<nav class="main-nav">
+<a href="/no/">Norway</a><a href="/de/">Germany</a><a href="/fr/">France</a><a href="/it/">Italy</a><a href="/jp/">Japan</a><a href="/gr/">Greece</a><a href="/il/">Israel</a><a href="/vn/">Vietnam</a><a href="/sk/">Slovakia</a><a href="/rs/">Serbia</a>
+</nav>
+</div></header>
+
+<div class="page-head"><div class="wrap">
+<div class="crumb"><a href="/">Home</a> / <a href="/it/">Italia</a> / Calcolo TFR netto</div>
+<h1>Calcolo TFR netto: quanto vale davvero la tua liquidazione</h1>
+<p>Il nostro calcolo TFR netto online ricostruisce la tua liquidazione anno per anno, proprio come fa il datore di lavoro: quote accantonate, rivalutazione legale, imposta sostitutiva e tassazione separata. Alla fine vedi un solo numero, quello che entrerà sul tuo conto, e puoi controllare ogni passaggio.</p>
+</div></div>
+
+<main><div class="wrap">
+
+<div class="calc">
+<h2>TFR netto calcolo online: il simulatore gratuito</h2>
+<p>Calcola TFR netto in pochi istanti: inserisci la retribuzione annua lorda, gli anni di servizio e un'inflazione media attesa. La simulazione considera uno stipendio costante nel tempo e il TFR lasciato in azienda.</p>
+<div class="grid2">
+<div class="field"><label for="itRal">Retribuzione annua lorda (RAL) in euro <span class="hint">— stipendio mensile lordo × numero di mensilità</span></label><input type="number" id="itRal" min="0" step="100" value="30000"></div>
+<div class="field"><label for="itAnni">Anni di servizio <span class="hint">— ammesse anche frazioni, es. 7,5</span></label><input type="number" id="itAnni" min="0" step="0.1" value="10"></div>
+</div>
+<div class="field"><label for="itInfl">Inflazione ISTAT media annua (%) <span class="hint">— serve per la rivalutazione; negli ultimi anni ha oscillato molto, 2% è un'ipotesi prudente</span></label><input type="number" id="itInfl" min="0" step="0.1" value="2"></div>
+<button class="calc-btn" id="itBtn" type="button">Calcola TFR netto</button>
+<div class="result" id="itResult">
+<div class="big" id="itNetto">–</div>
+<table>
+<tr><td>TFR lordo maturato</td><td id="itLordo">–</td></tr>
+<tr><td>Quote accantonate (capitale)</td><td id="itQuote">–</td></tr>
+<tr><td>Rivalutazione netta accreditata</td><td id="itRivNetta">–</td></tr>
+<tr><td>Imposta sostitutiva 17% già trattenuta</td><td id="itImpSost">–</td></tr>
+<tr><td>Reddito di riferimento per la tassazione</td><td id="itRif">–</td></tr>
+<tr><td>Aliquota media applicata</td><td id="itAliquota">–</td></tr>
+<tr><td>Imposta da tassazione separata (al netto della detrazione)</td><td id="itImposta">–</td></tr>
+</table>
+</div>
+</div>
+
+<section class="block">
+<h2>Come si calcola il TFR: la formula, passo dopo passo</h2>
+<p>Il trattamento di fine rapporto è disciplinato dall'articolo 2120 del codice civile e si costruisce con due ingredienti che si sommano nel tempo. Il primo è la <strong>quota annua</strong>: per ogni anno di servizio il datore accantona un importo pari alla retribuzione annua lorda divisa per 13,5, cioè circa il 7,41% dello stipendio. Nella retribuzione utile rientrano quasi tutte le voci fisse e continuative della busta paga, come stipendio base, scatti di anzianità, superminimi e tredicesima; restano fuori i rimborsi spese e le voci occasionali.</p>
+<p>Il secondo ingrediente è la <strong>rivalutazione</strong>: il fondo già accantonato al 31 dicembre dell'anno precedente cresce ogni anno di un tasso pari all'1,5% fisso più il 75% dell'aumento dell'indice ISTAT dei prezzi al consumo per le famiglie di operai e impiegati. Se l'inflazione è al 2%, il tasso di rivalutazione è il 3%. La quota maturata nell'anno in corso non viene rivalutata: inizierà a crescere dall'anno successivo.</p>
+<p>Sulla sola rivalutazione, e non sulle quote, il datore trattiene ogni anno l'<strong>imposta sostitutiva del 17%</strong> e la versa allo Stato. È un dettaglio decisivo: significa che quando il rapporto finisce, la parte di liquidazione formata dalla rivalutazione è già tassata e non viene colpita una seconda volta.</p>
+</section>
+
+<section class="block">
+<h2>Come calcolare il TFR netto: tassazione separata e aliquota media</h2>
+<p>Alla cessazione del rapporto, le quote accantonate (il capitale, senza la rivalutazione già tassata) sono soggette alla <strong>tassazione separata</strong> prevista dall'articolo 19 del TUIR. Il meccanismo evita che una somma maturata in molti anni venga tassata come se fosse reddito di un solo anno. Si calcola un <strong>reddito di riferimento</strong>: la base imponibile divisa per gli anni di servizio e moltiplicata per 12. Su questo reddito fittizio si applicano gli scaglioni IRPEF e si ricava un'<strong>aliquota media</strong>, che poi si applica all'intera base imponibile.</p>
+<table class="data">
+<tr><th>Scaglione di reddito (dal 2024)</th><th>Aliquota IRPEF</th></tr>
+<tr><td>Fino a 28.000 euro</td><td>23%</td></tr>
+<tr><td>Da 28.000 a 50.000 euro</td><td>35%</td></tr>
+<tr><td>Oltre 50.000 euro</td><td>43%</td></tr>
+</table>
+<p>Dall'imposta così calcolata si sottrae una <strong>detrazione</strong>: 70 euro se il reddito di riferimento non supera 30.000 euro, con importo che si riduce gradualmente fino ad azzerarsi a 50.000 euro. Il datore di lavoro applica questa tassazione in via provvisoria al momento del pagamento; in seguito l'Agenzia delle Entrate ricalcola l'imposta usando l'aliquota media dei redditi degli ultimi cinque anni e comunica l'eventuale conguaglio, a debito o a credito. Per questo il netto definitivo può scostarsi di poco dalla stima del simulatore.</p>
+</section>
+
+<section class="block">
+<h2>Esempio pratico di TFR calcolo netto</h2>
+<p>Prendiamo un dipendente con retribuzione annua lorda di 30.000 euro, 10 anni di servizio e un'inflazione media del 2% (quindi rivalutazione del 3% annuo). Ogni anno la quota accantonata è 30.000 / 13,5 = 2.222,22 euro e il fondo cresce anche grazie alla rivalutazione netta del 17% di imposta sostitutiva. Ecco il quadro completo, identico a quello prodotto dal simulatore qui sopra con gli stessi dati:</p>
+<table class="data">
+<tr><th>Voce</th><th>Importo</th></tr>
+<tr><td>Quote accantonate in 10 anni</td><td>22.222,22 €</td></tr>
+<tr><td>Rivalutazione lorda complessiva</td><td>3.208,14 €</td></tr>
+<tr><td>Imposta sostitutiva 17% trattenuta negli anni</td><td>− 545,38 €</td></tr>
+<tr><td><strong>TFR lordo maturato</strong></td><td><strong>24.884,98 €</strong></td></tr>
+<tr><td>Reddito di riferimento (22.222,22 / 10 × 12)</td><td>26.666,67 €</td></tr>
+<tr><td>Aliquota media (reddito interamente nel primo scaglione)</td><td>23%</td></tr>
+<tr><td>Imposta separata 5.111,11 € meno detrazione di 70 €</td><td>− 5.041,11 €</td></tr>
+<tr><td><strong>TFR netto</strong></td><td><strong>19.843,87 €</strong></td></tr>
+</table>
+<p>Nota come quasi un quinto del lordo se ne vada in imposta separata: è l'effetto combinato di un capitale consistente e di un'aliquota media ferma al 23%. Con un reddito di riferimento più alto, entrando negli scaglioni del 35% e del 43%, la trattenuta crescerebbe in misura sensibile.</p>
+</section>
+
+<section class="block">
+<h2>Casi particolari da conoscere</h2>
+<h3>TFR in azienda o nel fondo pensione</h3>
+<p>Dal 2007 chi non sceglie esplicitamente, nelle aziende con almeno 50 dipendenti lascia il TFR in un fondo di tesoreria gestito dall'INPS, mentre gli altri lo mantengono in azienda: in entrambi i casi valgono accantonamento e rivalutazione legale. Se invece destini il TFR a un fondo pensione, il denaro viene investito sui mercati e alla fine la prestazione è tassata con un'aliquota dal 15% al 9% in base agli anni di iscrizione, senza rivalutazione legale né tassazione separata.</p>
+<h3>Le anticipazioni durante il rapporto</h3>
+<p>Dopo almeno 8 anni di servizio puoi chiedere un anticipo fino al 70% del TFR maturato per spese sanitarie straordinarie o per l'acquisto e la ristrutturazione della prima casa; alcuni contratti collettivi ammettono anticipi anche per altri motivi. L'anticipo viene tassato subito con la tassazione separata e riduce il fondo che troverai alla fine del rapporto.</p>
+<h3>Calcolare TFR per i dipendenti pubblici: TFS e altre differenze</h3>
+<p>Nel pubblico impiego convivono due istituti: il TFR, con regole simili al settore privato, per gli assunti dal 2001, e il TFS (trattamento di fine servizio) per chi era già in servizio al 31 dicembre 2000, calcolato sull'ultima retribuzione con logiche diverse e pagato dall'INPS in più rate annuali. Il simulatore di questa pagina segue il modello dell'articolo 2120, quindi per il TFS il risultato va preso solo come ordine di grandezza.</p>
+</section>
+
+<section class="block faq">
+<h2>Domande frequenti</h2>
+<details><summary>Come calcolare il TFR netto se ho lavorato in più aziende?</summary><p>Ogni rapporto di lavoro produce un TFR separato: quando cambi azienda, il vecchio datore ti liquida quanto maturato fino a quel momento, con la sua tassazione separata. Per stimare il totale, ripeti il calcolo per ciascun periodo con gli anni e la retribuzione di quel rapporto e somma i netti. Ricorda che gli anni non si cumulano tra datori diversi ai fini della tassazione.</p></details>
+<details><summary>Posso usare questo calcolo netto TFR online anche per il TFR versato a un fondo pensione?</summary><p>No: il simulatore segue le regole del TFR lasciato in azienda. Le somme destinate a un fondo pensione non si rivalutano con il tasso legale e, al momento della prestazione, sono tassate con un'aliquota tra il 15% e il 9% in base agli anni di partecipazione, senza tassazione separata. I due percorsi danno quindi risultati anche molto diversi.</p></details>
+<details><summary>Che cos'è l'imposta sostitutiva del 17% sulla rivalutazione?</summary><p>È un'imposta che il datore di lavoro trattiene ogni anno solo sulla rivalutazione del fondo accumulato, non sulle quote di retribuzione. Grazie a questa trattenuta annuale, quando ricevi la liquidazione la rivalutazione è già tassata e non rientra nella base della tassazione separata, che colpisce solo le quote accantonate.</p></details>
+<details><summary>Quando viene pagato il TFR dopo la fine del rapporto?</summary><p>La legge non fissa un giorno unico: di regola il TFR viene liquidato con l'ultima busta paga o nei tempi previsti dal contratto collettivo, spesso entro 30-45 giorni dalla cessazione. Per i dipendenti pubblici che ricevono TFR o TFS dall'INPS i termini sono più lunghi e dipendono dal motivo della cessazione.</p></details>
+<details><summary>Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?</summary><p>Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota di TFR di un anno è 19.500 / 13,5, cioè 1.444,44 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota diventa 1.555,56 euro.</p></details>
+<details><summary>Il TFR calcolo netto cambia se ho già ricevuto un'anticipazione?</summary><p>Sì: l'anticipazione riduce il fondo accumulato e quindi anche il netto finale, perché le somme già erogate sono state tassate al momento dell'anticipo. Per una stima corretta, sottrai dal risultato le anticipazioni lorde già ricevute oppure riduci gli anni inseriti nel simulatore in modo proporzionale.</p></details>
+</section>
+
+<section class="block">
+<div class="note">I risultati sono una stima indicativa basata su retribuzione costante e sulle regole generali dell'articolo 2120 del codice civile e dell'articolo 19 del TUIR. Non costituiscono consulenza fiscale o legale: per il conteggio definitivo fanno fede la busta paga finale e il ricalcolo dell'Agenzia delle Entrate.</div>
+</section>
+
+<section class="block">
+<div class="src">
+<h3>Fonti ufficiali</h3>
+<ul>
+<li><a href="https://www.inps.it" rel="noopener">INPS</a> — Fondo di tesoreria TFR e prestazioni di fine rapporto</li>
+<li><a href="https://www.agenziaentrate.gov.it" rel="noopener">Agenzia delle Entrate</a> — tassazione separata e conguaglio del TFR</li>
+<li><a href="https://www.istat.it" rel="noopener">ISTAT</a> — indice dei prezzi al consumo per le famiglie di operai e impiegati (FOI)</li>
+<li><a href="https://www.normattiva.it" rel="noopener">Normattiva</a> — articolo 2120 del codice civile e articolo 19 del TUIR</li>
+</ul>
+<p>Scopri anche gli altri strumenti della sezione <a href="/it/">Italia</a> oppure l'equivalente greco per chi lavora in Grecia: <a href="/gr/ypologismos-apozimiosis-apolysis/">calcolo dell'indennità di licenziamento</a>.</p>
+</div>
+</section>
+
+</div></main>
+
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.jpg" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Free calculators for every country</small></span></a>
+<p>Calcotia offre calcolatori online gratuiti per stipendi, indennità e prestazioni sociali in diversi Paesi, sempre nella lingua locale e con le regole ufficiali.</p></div>
+<div><h4>Paesi</h4><ul>
+<li><a href="/no/">Norvegia</a></li>
+<li><a href="/de/">Germania</a></li>
+<li><a href="/fr/">Francia</a></li>
+<li><a href="/it/">Italia</a></li>
+<li><a href="/jp/">Giappone</a></li>
+<li><a href="/gr/">Grecia</a></li>
+<li><a href="/il/">Israele</a></li>
+<li><a href="/vn/">Vietnam</a></li>
+<li><a href="/sk/">Slovacchia</a></li>
+<li><a href="/rs/">Serbia</a></li>
+</ul></div>
+<div><h4>Calcolatori popolari</h4><ul>
+<li><a href="/no/sykepenger-kalkulator/">Sykepenger kalkulator</a></li>
+<li><a href="/no/feriepenger-kalkulator/">Feriepenger kalkulator</a></li>
+<li><a href="/de/buergergeld-rechner/">Bürgergeld Rechner</a></li>
+<li><a href="/it/calcolo-tfr-netto/">Calcolo TFR netto</a></li>
+<li><a href="/sk/kalkulacka-na-vypocet-dochodku/">Kalkulačka na výpočet dôchodku</a></li>
+<li><a href="/fr/simulateur-conge-parental/">Simulateur congé parental</a></li>
+<li><a href="/vn/tinh-bao-hiem-xa-hoi-1-lan/">Tính bảo hiểm xã hội 1 lần</a></li>
+<li><a href="/rs/kalkulator-decijeg-dodatka/">Kalkulator dečijeg dodatka</a></li>
+</ul></div>
+<div><h4>Calcotia</h4><ul>
+<li><a href="/about.html">Chi siamo</a></li>
+<li><a href="/privacy.html">Informativa privacy</a></li>
+<li><a href="/contact.html">Contatti</a></li>
+</ul></div>
+</div>
+<div class="foot-base"><span>© 2026 Calcotia. Tutti i diritti riservati.</span><span>calcotia.online</span></div>
+</div></footer>
+<script src="/assets/js/calcolo-tfr-netto.js" defer></script>
+</body>
+</html>
