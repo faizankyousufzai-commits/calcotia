@@ -40,6 +40,15 @@
 {"@type":"ListItem","position":11,"name":"Kalkulator dečijeg dodatka","url":"https://calcotia.online/rs/kalkulator-decijeg-dodatka/"}
 ]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Calcotia really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every calculator on this site is free to use, with no account, no sign up and no paywall. The site is supported by advertising, never by charging the people who come here for an answer."}},
+{"@type":"Question","name":"Are these the official government calculators?","acceptedAnswer":{"@type":"Answer","text":"Usually the official bodies do not publish a simple calculator at all, only the law and long guidance pages. Ours are independent calculators that implement the official formulas and current rates, and each page links its official sources so you can verify the rule yourself."}},
+{"@type":"Question","name":"Why is every country section in a different language?","acceptedAnswer":{"@type":"Answer","text":"Because these entitlements are national. A holiday pay rule in Norway only exists in Norwegian law, and the people it affects search for it in Norwegian. Writing each section in the local language keeps the legal terms exact and the page findable for the people who need it."}},
+{"@type":"Question","name":"How accurate is the result?","acceptedAnswer":{"@type":"Answer","text":"The calculators follow the standard rules and the rates for the year shown on the page, and they are tested against worked examples before they go live. Individual cases can still differ, for example under a collective agreement or a special scheme, and where a calculator simplifies a rule, the page says so."}},
+{"@type":"Question","name":"Do you store the numbers I type in?","acceptedAnswer":{"@type":"Answer","text":"No. Every calculation runs entirely in your own browser. Your salary, dates and other figures never leave your device and are not saved anywhere."}}
+]}
+</script>
 </head>
 <body>
 <header class="site-header"><div class="wrap">
@@ -52,7 +61,7 @@
 <div class="hero"><div class="wrap">
 <img class="hero-logo" src="/assets/img/logo.jpg" alt="Calcotia: free calculators for every country">
 <h1>Free Online Calculators</h1>
-<p>Salary, holiday pay, severance, pension and benefit calculators for countries around the world, each written in the local language and built on the official rules.</p>
+<p>Sick pay in Norway, severance in Italy, a pension estimate in Slovakia: the answers are set by law, but the law is hard to read. Calcotia turns the official rules of 10 countries into free calculators in the local language, with every step of the working shown.</p>
 <form class="search-box" id="toolSearch" autocomplete="off">
 <input type="text" id="searchInput" placeholder="Search a calculator, e.g. feriepenger or pension" aria-label="Search calculators">
 <button type="submit">Search</button>
@@ -66,17 +75,23 @@
 <section class="block">
 <h2>Choose your country</h2>
 <div class="grid">
-<a class="tool-card" href="/no/"><span class="flag">🇳🇴</span><h3>Norway</h3><p>2 calculators: sick pay and holiday pay</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/de/"><span class="flag">🇩🇪</span><h3>Germany</h3><p>1 calculator: Bürgergeld (citizen's income)</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/fr/"><span class="flag">🇫🇷</span><h3>France</h3><p>1 calculator: parental, maternity &amp; paternity leave</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/it/"><span class="flag">🇮🇹</span><h3>Italy</h3><p>1 calculator: TFR severance pay, net</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/jp/"><span class="flag">🇯🇵</span><h3>Japan</h3><p>1 calculator: retirement money tax</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/gr/"><span class="flag">🇬🇷</span><h3>Greece</h3><p>1 calculator: dismissal compensation</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/il/"><span class="flag">🇮🇱</span><h3>Israel</h3><p>1 calculator: recuperation pay (dmei havraa)</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/vn/"><span class="flag">🇻🇳</span><h3>Vietnam</h3><p>1 calculator: one-time social insurance</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/sk/"><span class="flag">🇸🇰</span><h3>Slovakia</h3><p>1 calculator: state pension</p><span class="go">Open →</span></a>
-<a class="tool-card" href="/rs/"><span class="flag">🇷🇸</span><h3>Serbia</h3><p>1 calculator: child allowance</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/no/"><span class="flag">🇳🇴</span><h3>Norway</h3><p>2 calculators: sick pay (sykepenger) and holiday pay (feriepenger), the NAV way</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/de/"><span class="flag">🇩🇪</span><h3>Germany</h3><p>1 calculator: citizen's income (Bürgergeld) with rent and earnings rules</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/fr/"><span class="flag">🇫🇷</span><h3>France</h3><p>1 calculator: parental, maternity and paternity leave, plus childminder holiday pay</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/it/"><span class="flag">🇮🇹</span><h3>Italy</h3><p>1 calculator: net severance pay (TFR) with revaluation and separate taxation</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/jp/"><span class="flag">🇯🇵</span><h3>Japan</h3><p>1 calculator: retirement money tax and take-home, for employees, civil servants and executives</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/gr/"><span class="flag">🇬🇷</span><h3>Greece</h3><p>1 calculator: dismissal compensation, with and without notice</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/il/"><span class="flag">🇮🇱</span><h3>Israel</h3><p>1 calculator: recuperation pay by seniority, sector and job scope</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/vn/"><span class="flag">🇻🇳</span><h3>Vietnam</h3><p>1 calculator: one-time social insurance payout (BHXH 1 lần)</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/sk/"><span class="flag">🇸🇰</span><h3>Slovakia</h3><p>1 calculator: state pension estimate, retirement age and early pension</p><span class="go">Open →</span></a>
+<a class="tool-card" href="/rs/"><span class="flag">🇷🇸</span><h3>Serbia</h3><p>1 calculator: child allowance eligibility (the cenzus test) and monthly amount</p><span class="go">Open →</span></a>
 </div>
+</section>
+
+<section class="block">
+<h2>Why these calculators exist</h2>
+<p>Almost every question about pay at work ends in a rulebook. How much you receive when you are sick, what your holiday pay is worth this year, what a pension comes to after forty years of work: almost none of it is decided by your employer alone. It is set by labour law, social insurance rules and tax law, and the official pages that explain it are written for payroll specialists, not for the person waiting for the money.</p>
+<p>Calcotia starts from those same official rules and turns them into a number you can check. Every calculator shows the full breakdown behind its result, names the rates it used and the year they belong to, and links the official source at the bottom of the page, so the answer is never just a number you have to take on trust.</p>
 </section>
 
 <section class="block">
@@ -97,11 +112,36 @@
 </section>
 
 <section class="block">
+<h2>How Calcotia works</h2>
+<div class="trust">
+<div class="t"><b>1. Pick your country</b><p>Every country has its own section, written in its own language, because that is the language people search in when the question is about their own pay.</p></div>
+<div class="t"><b>2. Enter your numbers</b><p>Salary, years of service, a few dates: only what the official formula actually needs. Everything runs in your browser, and nothing you type is sent anywhere.</p></div>
+<div class="t"><b>3. See the full working</b><p>The result comes with the calculation broken into steps, so you can follow it, question it, and compare it with your payslip or your employer's offer.</p></div>
+</div>
+</section>
+
+<section class="block">
+<h2>Built on each country's official rules</h2>
+<p>The formulas come from the bodies that actually run these systems: NAV in Norway, the Federal Employment Agency's rulebook in Germany, the CAF and Urssaf in France, INPS in Italy, Japan's National Tax Agency, the KEPEA and GSEE guidance used in Greece, Vietnam's social insurance law, Sociálna poisťovňa in Slovakia, and Serbia's family benefits law. Where a rule has a range, a cap or a local variation, the page says so openly instead of hiding it behind a single tidy number.</p>
+</section>
+
+<section class="block">
 <h2>Why people trust Calcotia</h2>
 <div class="trust">
 <div class="t"><b>Official formulas</b><p>Every calculator follows the law and the rates published by the official body in that country, and each page links its sources.</p></div>
 <div class="t"><b>Updated for 2026</b><p>Rates, caps and thresholds are checked against the current year before a page goes live, and the year is shown on the page.</p></div>
 <div class="t"><b>Free, with no sign up</b><p>No account, no email wall, no paywall. Type your numbers and see the full breakdown instantly.</p></div>
+</div>
+</section>
+
+<section class="block">
+<h2>Questions people ask about Calcotia</h2>
+<div class="faq">
+<details><summary>Is Calcotia really free?</summary><p>Yes. Every calculator on this site is free to use, with no account, no sign up and no paywall. The site is supported by advertising, never by charging the people who come here for an answer.</p></details>
+<details><summary>Are these the official government calculators?</summary><p>Usually the official bodies do not publish a simple calculator at all, only the law and long guidance pages. Ours are independent calculators that implement the official formulas and current rates, and each page links its official sources so you can verify the rule yourself.</p></details>
+<details><summary>Why is every country section in a different language?</summary><p>Because these entitlements are national. A holiday pay rule in Norway only exists in Norwegian law, and the people it affects search for it in Norwegian. Writing each section in the local language keeps the legal terms exact and the page findable for the people who need it.</p></details>
+<details><summary>How accurate is the result?</summary><p>The calculators follow the standard rules and the rates for the year shown on the page, and they are tested against worked examples before they go live. Individual cases can still differ, for example under a collective agreement or a special scheme, and where a calculator simplifies a rule, the page says so.</p></details>
+<details><summary>Do you store the numbers I type in?</summary><p>No. Every calculation runs entirely in your own browser. Your salary, dates and other figures never leave your device and are not saved anywhere.</p></details>
 </div>
 </section>
 
