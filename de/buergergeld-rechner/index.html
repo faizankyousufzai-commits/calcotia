@@ -27,7 +27,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Wie viel Bürgergeld bekommt eine alleinstehende Person 2026?","acceptedAnswer":{"@type":"Answer","text":"Eine alleinstehende Person erhält 2026 einen Regelbedarf von 563 Euro im Monat. Hinzu kommen die angemessenen Kosten für Unterkunft und Heizung sowie mögliche Mehrbedarfe. Eigenes Einkommen wird nach Abzug der Freibeträge angerechnet, sodass der Auszahlungsbetrag im Einzelfall niedriger ausfallen kann."}},
-{"@type":"Question","name":"Wird mein Einkommen komplett auf das Bürgergeld angerechnet?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die ersten 100 Euro Ihres Erwerbseinkommens bleiben immer frei. Darüber gelten gestaffelte Freibeträge von 20, 30 und 10 Prozent, erst der Rest wird angerechnet. Bei einem Minijob mit 520 Euro bleiben zum Beispiel 184 Euro anrechnungsfrei."}},
+{"@type":"Question","name":"Wird mein Einkommen komplett auf das Bürgergeld angerechnet?","acceptedAnswer":{"@type":"Answer","text":"Nein. Der Freibetrag wird aus Ihrem Brutto-Erwerbseinkommen berechnet und anschließend von Ihrem Netto-Erwerbseinkommen abgezogen. Die ersten 100 Euro brutto bilden den Grundfreibetrag; darüber gelten gestaffelte Freibeträge von 20, 30 und 10 Prozent. Bei einem Minijob mit 520 Euro brutto und 520 Euro netto bleiben zum Beispiel 184 Euro anrechnungsfrei, angerechnet werden 336 Euro."}},
 {"@type":"Question","name":"Übernimmt das Jobcenter meine volle Miete?","acceptedAnswer":{"@type":"Answer","text":"Das Jobcenter übernimmt die Kosten für Unterkunft und Heizung nur in angemessener Höhe. Was angemessen ist, legt Ihre Kommune anhand von Haushaltsgröße und örtlichem Mietniveau fest. Liegt Ihre Miete darüber, wird in der Regel nur der angemessene Teil anerkannt."}},
 {"@type":"Question","name":"Muss ich wegen des Grundsicherungsgelds 2026 einen neuen Antrag stellen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Wer bereits Bürgergeld bezieht, wird automatisch umgestellt und muss wegen der neuen Bezeichnung keinen neuen Antrag stellen. Laufende Bescheide bleiben gültig, und die Jobcenter dürfen den Begriff Bürgergeld noch bis Ende 2026 weiterverwenden."}},
 {"@type":"Question","name":"Kann ich Bürgergeld mit einem Minijob kombinieren?","acceptedAnswer":{"@type":"Answer","text":"Ja. Sie dürfen hinzuverdienen und bleiben trotzdem leistungsberechtigt, solange Ihr anrechenbares Einkommen unter Ihrem Bedarf liegt. Wichtig ist, dass Sie die Arbeitsaufnahme und jeden Verdienst dem Jobcenter unverzüglich melden."}},
@@ -86,23 +86,29 @@
 <input type="number" id="kinder1417" min="0" max="10" step="1" value="0">
 </div>
 <div class="field">
-<label for="einkommen">Netto-Erwerbseinkommen pro Monat in Euro <span class="hint">(0 eintragen, wenn Sie nicht arbeiten)</span></label>
-<input type="number" id="einkommen" min="0" step="10" value="800">
+<label for="bruttoeinkommen">Brutto-Erwerbseinkommen pro Monat in Euro <span class="hint">(für den Freibetrag)</span></label>
+<input type="number" id="bruttoeinkommen" min="0" step="10" value="1000">
 </div>
 </div>
 <div class="grid2">
 <div class="field">
+<label for="nettoeinkommen">Netto-Erwerbseinkommen pro Monat in Euro <span class="hint">(0 eintragen, wenn Sie nicht arbeiten)</span></label>
+<input type="number" id="nettoeinkommen" min="0" step="10" value="800">
+</div>
+<div class="field">
 <label for="kaltmiete">Kaltmiete in Euro</label>
 <input type="number" id="kaltmiete" min="0" step="10" value="520">
 </div>
+</div>
+<div class="grid2">
 <div class="field">
 <label for="nebenkosten">Nebenkosten in Euro <span class="hint">(ohne Heizung)</span></label>
 <input type="number" id="nebenkosten" min="0" step="10" value="90">
 </div>
-</div>
 <div class="field">
 <label for="heizkosten">Heizkosten in Euro</label>
 <input type="number" id="heizkosten" min="0" step="10" value="80">
+</div>
 </div>
 <p id="ae-hinweis" class="hint"></p>
 <button type="button" class="calc-btn" id="btn-berechnen">Bürgergeld berechnen</button>
@@ -115,20 +121,23 @@
 <tr><td>Mehrbedarf Alleinerziehende</td><td id="r-mehrbedarf">0 €</td></tr>
 <tr><td>Kosten für Unterkunft und Heizung</td><td id="r-kdu">0 €</td></tr>
 <tr><td><strong>Ihr Gesamtbedarf</strong></td><td id="r-bedarf">0 €</td></tr>
-<tr><td>Freibetrag auf Ihr Einkommen</td><td id="r-freibetrag">0 €</td></tr>
-<tr><td>Anrechenbares Einkommen</td><td id="r-anrechenbar">0 €</td></tr>
+<tr><td>Brutto-Erwerbseinkommen</td><td id="r-brutto">0 €</td></tr>
+<tr><td>Netto-Erwerbseinkommen</td><td id="r-netto">0 €</td></tr>
+<tr><td>Freibetrag aus dem Bruttoeinkommen</td><td id="r-freibetrag">0 €</td></tr>
+<tr><td>Anrechenbares Einkommen (Netto abzüglich Freibetrag)</td><td id="r-anrechenbar">0 €</td></tr>
 </table>
 <p id="null-hinweis"></p>
 </div>
-<p class="hint">Die Felder sind mit einem Beispiel vorausgefüllt: eine alleinerziehende Mutter mit zwei Kindern, 690 Euro Wohnkosten und 800 Euro Nettoverdienst. Passen Sie die Werte einfach an Ihre Situation an.</p>
+<p class="hint">Die Felder sind mit einem Beispiel vorausgefüllt: eine alleinerziehende Mutter mit zwei Kindern, 690 Euro Wohnkosten, 1.000 Euro Bruttoverdienst und 800 Euro Nettoverdienst. Passen Sie die Werte einfach an Ihre Situation an.</p>
 </div>
 
 <section class="block">
 <h2>So wird das Bürgergeld berechnet</h2>
 <p>Die Höhe Ihrer Leistung folgt immer demselben Muster. Zuerst stellt das Jobcenter fest, wie hoch der monatliche Bedarf Ihrer Bedarfsgemeinschaft ist. Dafür werden die Regelbedarfe aller Haushaltsmitglieder addiert, die anerkannten Kosten für Unterkunft und Heizung kommen hinzu, und wer besondere Lebensumstände hat, erhält zusätzlich einen Mehrbedarf – Alleinerziehende zum Beispiel zwölf Prozent ihres eigenen Regelbedarfs für jedes Kind, insgesamt höchstens 60 Prozent.</p>
-<p>Im zweiten Schritt wird geschaut, was Sie selbst beitragen können. Arbeitseinkommen bleibt dabei nicht vollständig auf der Strecke: Bevor etwas angerechnet wird, werden die Freibeträge nach § 11b SGB II abgezogen. Was danach vom Einkommen übrig ist, mindert die Leistung Euro für Euro. Die Formel lautet also:</p>
-<p><strong>Bürgergeld = Gesamtbedarf − anrechenbares Einkommen</strong></p>
-<p>Fällt das Ergebnis negativ aus, besteht rechnerisch kein Anspruch – prüfen Sie dann Kinderzuschlag und Wohngeld, die genau für solche Fälle gedacht sind. Eine Vereinfachung sollten Sie kennen: Das Jobcenter ermittelt den Freibetrag aus Ihrem Bruttolohn und zieht ihn vom Nettoeinkommen ab. Unser Rechner wendet die Stufen der Einfachheit halber direkt auf Ihren Nettobetrag an – für eine erste Schätzung reicht das, im Bescheid kann die Zahl leicht abweichen.</p>
+<p>Im zweiten Schritt wird geschaut, was Sie selbst beitragen können. Arbeitseinkommen bleibt dabei nicht vollständig auf der Strecke: Der Freibetrag nach § 11b SGB II wird aus Ihrem Brutto-Erwerbseinkommen berechnet und anschließend von Ihrem Netto-Erwerbseinkommen abgezogen. Erst der verbleibende Betrag mindert die Leistung Euro für Euro. Die Formeln lauten also:</p>
+<p><strong>Anrechenbares Einkommen = Nettoeinkommen − Freibetrag aus dem Bruttoeinkommen</strong><br>
+<strong>Bürgergeld = Gesamtbedarf − anrechenbares Einkommen</strong></p>
+<p>Fällt das Ergebnis negativ aus, besteht rechnerisch kein Anspruch – prüfen Sie dann Kinderzuschlag und Wohngeld, die genau für solche Fälle gedacht sind. Der Rechner bildet die Reihenfolge aus Brutto- und Nettobetrag so ab, wie sie auch das Jobcenter anwendet. Im Bescheid können die Zahlen trotzdem abweichen, wenn weitere gesetzliche Absetzbeträge, anderes Einkommen oder besondere Mehrbedarfe berücksichtigt werden.</p>
 </section>
 
 <section class="block">
@@ -174,20 +183,20 @@
 
 <section class="block">
 <h2>Bürgergeld Aufstockung Rechner: Arbeiten und trotzdem Anspruch haben</h2>
-<p>Sie arbeiten, aber der Lohn reicht nicht für die Familie? Dann gehören Sie zu den sogenannten Aufstockern – und genau für Sie ist dieser Abschnitt gedacht. Ein bürgergeld aufstockung rechner muss vor allem eines sauber abbilden: die Freibeträge, die dafür sorgen, dass sich Arbeit gegenüber dem reinen Leistungsbezug immer lohnt. Von Ihrem Verdienst bleiben die ersten 100 Euro komplett unangetastet. Darüber staffelt sich der Freibetrag wie folgt:</p>
+<p>Sie arbeiten, aber der Lohn reicht nicht für die Familie? Dann gehören Sie zu den sogenannten Aufstockern – und genau für Sie ist dieser Abschnitt gedacht. Ein bürgergeld aufstockung rechner muss vor allem eines sauber abbilden: die Freibeträge, die dafür sorgen, dass sich Arbeit gegenüber dem reinen Leistungsbezug immer lohnt. Maßgeblich ist Ihr Brutto-Erwerbseinkommen: Die ersten 100 Euro bilden den Grundfreibetrag. Darüber staffelt sich der Freibetrag wie folgt:</p>
 <table class="data">
-<tr><th>Einkommensbereich</th><th>Freibetrag</th><th>Maximal</th></tr>
+<tr><th>Brutto-Einkommensbereich</th><th>Freibetrag</th><th>Maximal</th></tr>
 <tr><td>Bis 100 €</td><td>100 % bleiben frei (Grundfreibetrag)</td><td>100 €</td></tr>
 <tr><td>100 € bis 520 €</td><td>20 % des Betrags in diesem Bereich</td><td>84 €</td></tr>
 <tr><td>520 € bis 1.000 €</td><td>30 % des Betrags in diesem Bereich</td><td>144 €</td></tr>
-<tr><td>1.000 € bis 1.200 € (mit Kind 1.500 €)</td><td>10 % des Betrags in diesem Bereich</td><td>20 € bzw. 50 €</td></tr>
+<tr><td>1.000 € bis 1.200 € (mit minderjährigem Kind 1.500 €)</td><td>10 % des Betrags in diesem Bereich</td><td>20 € bzw. 50 €</td></tr>
 </table>
-<p>Ein Minijob mit 520 Euro bringt Ihnen so 184 Euro Freibetrag: 100 Euro Grundfreibetrag plus 84 Euro aus der zweiten Stufe. Angerechnet werden nur 336 Euro. Bei 1.000 Euro Verdienst und einem Kind im Haushalt wächst der Freibetrag bereits auf 328 Euro. Wichtig für alle Aufstocker: Melden Sie Arbeitsaufnahme und jeden Verdienstwechsel unverzüglich Ihrem Jobcenter, sonst drohen Rückforderungen.</p>
+<p>Ein Minijob mit 520 Euro Bruttoeinkommen bringt Ihnen so 184 Euro Freibetrag: 100 Euro Grundfreibetrag plus 84 Euro aus der zweiten Stufe. Weil bei einem Minijob Brutto und Netto häufig gleich hoch sind, werden dann nur 336 Euro angerechnet. Bei 1.000 Euro Bruttoeinkommen und einem minderjährigen Kind im Haushalt wächst der Freibetrag auf 328 Euro; angerechnet wird Ihr jeweiliges Nettoeinkommen abzüglich dieser 328 Euro. Wichtig für alle Aufstocker: Melden Sie Arbeitsaufnahme und jeden Verdienstwechsel unverzüglich Ihrem Jobcenter, sonst drohen Rückforderungen.</p>
 </section>
 
 <section class="block">
-<h2>Beispielrechnung: So entstehen 1.603,12 Euro Bürgergeld</h2>
-<p>Ein konkretes Beispiel macht die Formel greifbar. Nehmen wir eine alleinerziehende Mutter mit einer achtjährigen Tochter und einem vierjährigen Sohn. Sie zahlt 520 Euro Kaltmiete, 90 Euro Nebenkosten und 80 Euro Heizung, also 690 Euro Wohnkosten. Aus einer Teilzeitstelle nimmt sie 800 Euro netto mit nach Hause. Genau diese Werte sind im Rechner oben voreingestellt:</p>
+<h2>Beispielrechnung: So entstehen 1.663,12 Euro Bürgergeld</h2>
+<p>Ein konkretes Beispiel macht die Formel greifbar. Nehmen wir eine alleinerziehende Mutter mit einer achtjährigen Tochter und einem vierjährigen Sohn. Sie zahlt 520 Euro Kaltmiete, 90 Euro Nebenkosten und 80 Euro Heizung, also 690 Euro Wohnkosten. Aus einer Teilzeitstelle erhält sie 1.000 Euro brutto; nach den Abzügen bleiben ihr 800 Euro netto. Genau diese Werte sind im Rechner oben voreingestellt:</p>
 <table class="data">
 <tr><th>Posten</th><th>Betrag</th></tr>
 <tr><td>Regelbedarf Mutter (Stufe 1)</td><td>563,00 €</td></tr>
@@ -195,11 +204,13 @@
 <tr><td>Mehrbedarf Alleinerziehende (24 % von 563 €)</td><td>135,12 €</td></tr>
 <tr><td>Unterkunft und Heizung (520 € + 90 € + 80 €)</td><td>690,00 €</td></tr>
 <tr><td><strong>Gesamtbedarf</strong></td><td><strong>2.135,12 €</strong></td></tr>
-<tr><td>Freibetrag auf 800 € Einkommen (100 € + 84 € + 84 €)</td><td>268,00 €</td></tr>
-<tr><td>Anrechenbares Einkommen (800 € − 268 €)</td><td>532,00 €</td></tr>
-<tr><td><strong>Bürgergeld pro Monat</strong></td><td><strong>1.603,12 €</strong></td></tr>
+<tr><td>Brutto-Erwerbseinkommen</td><td>1.000,00 €</td></tr>
+<tr><td>Freibetrag aus 1.000 € Bruttoeinkommen (100 € + 84 € + 144 €)</td><td>328,00 €</td></tr>
+<tr><td>Netto-Erwerbseinkommen</td><td>800,00 €</td></tr>
+<tr><td>Anrechenbares Einkommen (800 € − 328 €)</td><td>472,00 €</td></tr>
+<tr><td><strong>Bürgergeld pro Monat</strong></td><td><strong>1.663,12 €</strong></td></tr>
 </table>
-<p>Zusammen mit ihrem Lohn verfügt die Familie über 2.403,12 Euro im Monat. Ändern Sie oben nur ein einziges Feld – etwa ein drittes Kind oder eine höhere Miete – und Sie sehen sofort, wie empfindlich das Ergebnis auf jeden Posten reagiert.</p>
+<p>Zusammen mit ihrem Nettoverdienst verfügt die Familie über 2.463,12 Euro im Monat. Ändern Sie oben nur ein einziges Feld – etwa ein drittes Kind oder eine höhere Miete – und Sie sehen sofort, wie empfindlich das Ergebnis auf jeden Posten reagiert.</p>
 </section>
 
 <section class="block">
@@ -257,7 +268,7 @@
 </details>
 <details>
 <summary>Wird mein Einkommen komplett auf das Bürgergeld angerechnet?</summary>
-<p>Nein. Die ersten 100 Euro Ihres Erwerbseinkommens bleiben immer frei. Darüber gelten gestaffelte Freibeträge von 20, 30 und 10 Prozent, erst der Rest wird angerechnet. Bei einem Minijob mit 520 Euro bleiben zum Beispiel 184 Euro anrechnungsfrei.</p>
+<p>Nein. Der Freibetrag wird aus Ihrem Brutto-Erwerbseinkommen berechnet und anschließend von Ihrem Netto-Erwerbseinkommen abgezogen. Die ersten 100 Euro brutto bilden den Grundfreibetrag; darüber gelten gestaffelte Freibeträge von 20, 30 und 10 Prozent. Bei einem Minijob mit 520 Euro brutto und 520 Euro netto bleiben zum Beispiel 184 Euro anrechnungsfrei, angerechnet werden 336 Euro.</p>
 </details>
 <details>
 <summary>Übernimmt das Jobcenter meine volle Miete?</summary>

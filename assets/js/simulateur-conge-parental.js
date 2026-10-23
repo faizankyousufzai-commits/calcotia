@@ -1,5 +1,6 @@
-/* Calcotia - Simulateur conge parental (France) : 3 mini-calculateurs
-   1) Conge maternite  2) Conge paternite  3) Conges payes assistante maternelle */
+/* Calcotia - Simulateur conge parental (France) : 4 mini-calculateurs
+   1) Conge maternite  2) Conge paternite  3) Conges payes assistante maternelle
+   4) Indemnites journalieres maternite / paternite */
 (function () {
   "use strict";
 
@@ -93,7 +94,44 @@
     show("calcCP-result");
   }
 
+  /* ---------- 4) Indemnites journalieres maternite / paternite ----------
+     Regles CPAM (service-public.fr, fiche F2265 ; montants ameli 2026) :
+     salaire journalier de base = (3 derniers salaires bruts mensuels,
+     chacun plafonne au plafond mensuel de la Securite sociale) / 91,25 ;
+     la CPAM retire un taux forfaitaire de 21 % ; l'IJ est ensuite bornee
+     par un minimum et un maximum journaliers. */
+  var IJ_PMSS = 4005;     // plafond mensuel de la Securite sociale 2026
+  var IJ_MIN = 11.12;     // IJ minimale 2026 (maternite / paternite)
+  var IJ_MAX = 104.02;    // IJ maximale 2026 (maternite / paternite)
+  var IJ_DUREES = {
+    "mat-simple":   { jours: 112, label: "112 jours (16 semaines de congé maternité)" },
+    "mat-trois":    { jours: 182, label: "182 jours (26 semaines de congé maternité)" },
+    "mat-jumeaux":  { jours: 238, label: "238 jours (34 semaines de congé maternité)" },
+    "mat-triples":  { jours: 322, label: "322 jours (46 semaines de congé maternité)" },
+    "pat-simple":   { jours: 25,  label: "25 jours de congé de paternité" },
+    "pat-multiple": { jours: 32,  label: "32 jours de congé de paternité" }
+  };
+  function round2(x) { return Math.round(x * 100) / 100; }
+  function calcIJ() {
+    var sal = num("calcIJ-salaire");
+    if (isNaN(sal) || sal <= 0) return;
+    var cfg = IJ_DUREES[document.getElementById("calcIJ-situation").value] || IJ_DUREES["mat-simple"];
+    var retenu = Math.min(sal, IJ_PMSS);
+    var sjb = (retenu * 3) / 91.25;
+    var ij = round2(Math.max(IJ_MIN, Math.min(IJ_MAX, sjb * 0.79)));
+    var total = round2(ij * cfg.jours);
+    document.getElementById("calcIJ-big").textContent =
+      fmtEUR.format(total) + " estimés sur tout le congé";
+    document.getElementById("calcIJ-retenu").textContent =
+      fmtEUR.format(retenu) + " bruts par mois" + (sal > IJ_PMSS ? " (plafond 2026 atteint)" : "");
+    document.getElementById("calcIJ-sjb").textContent = fmtEUR.format(round2(sjb));
+    document.getElementById("calcIJ-jour").textContent = fmtEUR.format(ij) + " par jour calendaire";
+    document.getElementById("calcIJ-duree").textContent = cfg.label;
+    show("calcIJ-result");
+  }
+
   bind(["calcM-dpa", "calcM-situation"], "calcM-btn", calcMaternite);
   bind(["calcP-date", "calcP-type"], "calcP-btn", calcPaternite);
   bind(["calcCP-mois", "calcCP-total", "calcCP-mensuel"], "calcCP-btn", calcCP);
+  bind(["calcIJ-salaire", "calcIJ-situation"], "calcIJ-btn", calcIJ);
 })();

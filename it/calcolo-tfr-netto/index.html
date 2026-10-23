@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calcolo TFR netto online: simula la liquidazione | Calcotia</title>
+<title>Calcolo TFR netto online 2026: simula la liquidazione | Calcotia</title>
 <meta name="description" content="Calcolo TFR netto online gratuito: simula anno per anno quote, rivalutazione ISTAT e tassazione separata e scopri quanto vale la tua liquidazione netta.">
 <link rel="canonical" href="https://calcotia.online/it/calcolo-tfr-netto/">
 <link rel="alternate" hreflang="it-IT" href="https://calcotia.online/it/calcolo-tfr-netto/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Calcolo TFR netto online: simula la liquidazione | Calcotia">
+<meta property="og:title" content="Calcolo TFR netto online 2026: simula la liquidazione | Calcotia">
 <meta property="og:description" content="Calcolo TFR netto online gratuito: simula anno per anno quote, rivalutazione ISTAT e tassazione separata e scopri quanto vale la tua liquidazione netta.">
 <meta property="og:url" content="https://calcotia.online/it/calcolo-tfr-netto/">
 <meta property="og:image" content="https://calcotia.online/assets/img/logo.jpg">
@@ -30,7 +30,7 @@
 {"@type":"Question","name":"Posso usare questo calcolo netto TFR online anche per il TFR versato a un fondo pensione?","acceptedAnswer":{"@type":"Answer","text":"No: il simulatore segue le regole del TFR lasciato in azienda. Le somme destinate a un fondo pensione non si rivalutano con il tasso legale e, al momento della prestazione, sono tassate con un'aliquota tra il 15% e il 9% in base agli anni di partecipazione, senza tassazione separata. I due percorsi danno quindi risultati anche molto diversi."}},
 {"@type":"Question","name":"Che cos'è l'imposta sostitutiva del 17% sulla rivalutazione?","acceptedAnswer":{"@type":"Answer","text":"È un'imposta che il datore di lavoro trattiene ogni anno solo sulla rivalutazione del fondo accumulato, non sulle quote di retribuzione. Grazie a questa trattenuta annuale, quando ricevi la liquidazione la rivalutazione è già tassata e non rientra nella base della tassazione separata, che colpisce solo le quote accantonate."}},
 {"@type":"Question","name":"Quando viene pagato il TFR dopo la fine del rapporto?","acceptedAnswer":{"@type":"Answer","text":"La legge non fissa un giorno unico: di regola il TFR viene liquidato con l'ultima busta paga o nei tempi previsti dal contratto collettivo, spesso entro 30-45 giorni dalla cessazione. Per i dipendenti pubblici che ricevono TFR o TFS dall'INPS i termini sono più lunghi e dipendono dal motivo della cessazione."}},
-{"@type":"Question","name":"Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?","acceptedAnswer":{"@type":"Answer","text":"Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota di TFR di un anno è 19.500 / 13,5, cioè 1.444,44 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota diventa 1.555,56 euro."}},
+{"@type":"Question","name":"Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?","acceptedAnswer":{"@type":"Answer","text":"Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota lorda di un anno è 19.500 / 13,5, cioè 1.444,44 euro; detratto il contributo dello 0,50% al Fondo di garanzia INPS, nel fondo entrano 1.437,22 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota lorda diventa 1.555,56 euro, cioè 1.547,78 euro al netto del contributo."}},
 {"@type":"Question","name":"Il TFR calcolo netto cambia se ho già ricevuto un'anticipazione?","acceptedAnswer":{"@type":"Answer","text":"Sì: l'anticipazione riduce il fondo accumulato e quindi anche il netto finale, perché le somme già erogate sono state tassate al momento dell'anticipo. Per una stima corretta, sottrai dal risultato le anticipazioni lorde già ricevute oppure riduci gli anni inseriti nel simulatore in modo proporzionale."}}
 ]}
 </script>
@@ -64,7 +64,9 @@
 <div class="big" id="itNetto">–</div>
 <table>
 <tr><td>TFR lordo maturato</td><td id="itLordo">–</td></tr>
-<tr><td>Quote accantonate (capitale)</td><td id="itQuote">–</td></tr>
+<tr><td>Quote lorde accantonate (RAL / 13,5)</td><td id="itQuoteLorde">–</td></tr>
+<tr><td>Contributo 0,50% al Fondo di garanzia INPS</td><td id="itContributo">–</td></tr>
+<tr><td>Quote nette accantonate (capitale)</td><td id="itQuote">–</td></tr>
 <tr><td>Rivalutazione netta accreditata</td><td id="itRivNetta">–</td></tr>
 <tr><td>Imposta sostitutiva 17% già trattenuta</td><td id="itImpSost">–</td></tr>
 <tr><td>Reddito di riferimento per la tassazione</td><td id="itRif">–</td></tr>
@@ -76,7 +78,7 @@
 
 <section class="block">
 <h2>Come si calcola il TFR: la formula, passo dopo passo</h2>
-<p>Il trattamento di fine rapporto è disciplinato dall'articolo 2120 del codice civile e si costruisce con due ingredienti che si sommano nel tempo. Il primo è la <strong>quota annua</strong>: per ogni anno di servizio il datore accantona un importo pari alla retribuzione annua lorda divisa per 13,5, cioè circa il 7,41% dello stipendio. Nella retribuzione utile rientrano quasi tutte le voci fisse e continuative della busta paga, come stipendio base, scatti di anzianità, superminimi e tredicesima; restano fuori i rimborsi spese e le voci occasionali.</p>
+<p>Il trattamento di fine rapporto è disciplinato dall'articolo 2120 del codice civile e si costruisce con due ingredienti che si sommano nel tempo. Il primo è la <strong>quota annua</strong>: per ogni anno di servizio il datore accantona un importo pari alla retribuzione annua lorda divisa per 13,5, cioè circa il 7,41% dello stipendio. Nella retribuzione utile rientrano quasi tutte le voci fisse e continuative della busta paga, come stipendio base, scatti di anzianità, superminimi e tredicesima; restano fuori i rimborsi spese e le voci occasionali. Dalla quota così calcolata il datore detrae però lo <strong>0,50%</strong> a titolo di contributo al <strong>Fondo di garanzia dell'INPS</strong>, il fondo che paga il TFR al posto dell'azienda quando questa è insolvente; nelle imprese con almeno 50 dipendenti la stessa trattenuta confluisce invece nel Fondo di tesoreria gestito dall'INPS. Nel fondo del lavoratore entra quindi il 99,5% della quota: in pratica, retribuzione divisa per 13,5 e moltiplicata per 0,995.</p>
 <p>Il secondo ingrediente è la <strong>rivalutazione</strong>: il fondo già accantonato al 31 dicembre dell'anno precedente cresce ogni anno di un tasso pari all'1,5% fisso più il 75% dell'aumento dell'indice ISTAT dei prezzi al consumo per le famiglie di operai e impiegati. Se l'inflazione è al 2%, il tasso di rivalutazione è il 3%. La quota maturata nell'anno in corso non viene rivalutata: inizierà a crescere dall'anno successivo.</p>
 <p>Sulla sola rivalutazione, e non sulle quote, il datore trattiene ogni anno l'<strong>imposta sostitutiva del 17%</strong> e la versa allo Stato. È un dettaglio decisivo: significa che quando il rapporto finisce, la parte di liquidazione formata dalla rivalutazione è già tassata e non viene colpita una seconda volta.</p>
 </section>
@@ -95,17 +97,19 @@
 
 <section class="block">
 <h2>Esempio pratico di TFR calcolo netto</h2>
-<p>Prendiamo un dipendente con retribuzione annua lorda di 30.000 euro, 10 anni di servizio e un'inflazione media del 2% (quindi rivalutazione del 3% annuo). Ogni anno la quota accantonata è 30.000 / 13,5 = 2.222,22 euro e il fondo cresce anche grazie alla rivalutazione netta del 17% di imposta sostitutiva. Ecco il quadro completo, identico a quello prodotto dal simulatore qui sopra con gli stessi dati:</p>
+<p>Prendiamo un dipendente con retribuzione annua lorda di 30.000 euro, 10 anni di servizio e un'inflazione media del 2% (quindi rivalutazione del 3% annuo). Ogni anno la quota lorda è 30.000 / 13,5 = 2.222,22 euro; detratto il contributo dello 0,50% (11,11 euro), nel fondo entrano 2.211,11 euro, e sul fondo accumulato matura la rivalutazione, già al netto dell'imposta sostitutiva del 17%. Ecco il quadro completo, identico a quello prodotto dal simulatore qui sopra con gli stessi dati:</p>
 <table class="data">
 <tr><th>Voce</th><th>Importo</th></tr>
-<tr><td>Quote accantonate in 10 anni</td><td>22.222,22 €</td></tr>
-<tr><td>Rivalutazione lorda complessiva</td><td>3.208,14 €</td></tr>
-<tr><td>Imposta sostitutiva 17% trattenuta negli anni</td><td>− 545,38 €</td></tr>
-<tr><td><strong>TFR lordo maturato</strong></td><td><strong>24.884,98 €</strong></td></tr>
-<tr><td>Reddito di riferimento (22.222,22 / 10 × 12)</td><td>26.666,67 €</td></tr>
+<tr><td>Quote lorde accantonate in 10 anni</td><td>22.222,22 €</td></tr>
+<tr><td>Contributo 0,50% al Fondo di garanzia INPS</td><td>− 111,11 €</td></tr>
+<tr><td>Quote nette accantonate (capitale)</td><td>22.111,11 €</td></tr>
+<tr><td>Rivalutazione netta accreditata</td><td>2.649,45 €</td></tr>
+<tr><td>Imposta sostitutiva 17% trattenuta negli anni</td><td>542,66 €</td></tr>
+<tr><td><strong>TFR lordo maturato</strong></td><td><strong>24.760,56 €</strong></td></tr>
+<tr><td>Reddito di riferimento (22.111,11 / 10 × 12)</td><td>26.533,33 €</td></tr>
 <tr><td>Aliquota media (reddito interamente nel primo scaglione)</td><td>23%</td></tr>
-<tr><td>Imposta separata 5.111,11 € meno detrazione di 70 €</td><td>− 5.041,11 €</td></tr>
-<tr><td><strong>TFR netto</strong></td><td><strong>19.843,87 €</strong></td></tr>
+<tr><td>Imposta separata 5.085,56 € meno detrazione di 70 €</td><td>− 5.015,56 €</td></tr>
+<tr><td><strong>TFR netto</strong></td><td><strong>19.745,00 €</strong></td></tr>
 </table>
 <p>Nota come quasi un quinto del lordo se ne vada in imposta separata: è l'effetto combinato di un capitale consistente e di un'aliquota media ferma al 23%. Con un reddito di riferimento più alto, entrando negli scaglioni del 35% e del 43%, la trattenuta crescerebbe in misura sensibile.</p>
 </section>
@@ -126,7 +130,7 @@
 <details><summary>Posso usare questo calcolo netto TFR online anche per il TFR versato a un fondo pensione?</summary><p>No: il simulatore segue le regole del TFR lasciato in azienda. Le somme destinate a un fondo pensione non si rivalutano con il tasso legale e, al momento della prestazione, sono tassate con un'aliquota tra il 15% e il 9% in base agli anni di partecipazione, senza tassazione separata. I due percorsi danno quindi risultati anche molto diversi.</p></details>
 <details><summary>Che cos'è l'imposta sostitutiva del 17% sulla rivalutazione?</summary><p>È un'imposta che il datore di lavoro trattiene ogni anno solo sulla rivalutazione del fondo accumulato, non sulle quote di retribuzione. Grazie a questa trattenuta annuale, quando ricevi la liquidazione la rivalutazione è già tassata e non rientra nella base della tassazione separata, che colpisce solo le quote accantonate.</p></details>
 <details><summary>Quando viene pagato il TFR dopo la fine del rapporto?</summary><p>La legge non fissa un giorno unico: di regola il TFR viene liquidato con l'ultima busta paga o nei tempi previsti dal contratto collettivo, spesso entro 30-45 giorni dalla cessazione. Per i dipendenti pubblici che ricevono TFR o TFS dall'INPS i termini sono più lunghi e dipendono dal motivo della cessazione.</p></details>
-<details><summary>Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?</summary><p>Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota di TFR di un anno è 19.500 / 13,5, cioè 1.444,44 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota diventa 1.555,56 euro.</p></details>
+<details><summary>Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?</summary><p>Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota lorda di un anno è 19.500 / 13,5, cioè 1.444,44 euro; detratto il contributo dello 0,50% al Fondo di garanzia INPS, nel fondo entrano 1.437,22 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota lorda diventa 1.555,56 euro, cioè 1.547,78 euro al netto del contributo.</p></details>
 <details><summary>Il TFR calcolo netto cambia se ho già ricevuto un'anticipazione?</summary><p>Sì: l'anticipazione riduce il fondo accumulato e quindi anche il netto finale, perché le somme già erogate sono state tassate al momento dell'anticipo. Per una stima corretta, sottrai dal risultato le anticipazioni lorde già ricevute oppure riduci gli anni inseriti nel simulatore in modo proporzionale.</p></details>
 </section>
 

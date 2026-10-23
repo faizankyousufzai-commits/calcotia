@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tính bảo hiểm xã hội 1 lần: công cụ tính online và cách tính mới nhất 2026</title>
-<meta name="description" content="Công cụ tính bảo hiểm xã hội 1 lần theo Luật BHXH 2024: nhập số năm đóng và mức bình quân tiền lương để xem ngay số tiền được nhận, điều kiện hưởng và thủ tục rút mới nhất.">
+<meta name="description" content="Công cụ tính bảo hiểm xã hội 1 lần theo Luật BHXH 2024: nhập thời gian đóng theo từng giai đoạn, công cụ tự tính mức bình quân tiền lương bằng hệ số trượt giá 2026 và cho biết ngay số tiền được nhận.">
 <link rel="canonical" href="https://calcotia.online/vn/tinh-bao-hiem-xa-hoi-1-lan/">
 <link rel="alternate" hreflang="vi-VN" href="https://calcotia.online/vn/tinh-bao-hiem-xa-hoi-1-lan/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tính bảo hiểm xã hội 1 lần: công cụ tính online và cách tính mới nhất 2026">
-<meta property="og:description" content="Tính bảo hiểm xã hội 1 lần theo Luật BHXH 2024: xem ngay số tiền được nhận, điều kiện hưởng và thủ tục rút mới nhất.">
+<meta property="og:description" content="Tính bảo hiểm xã hội 1 lần theo Luật BHXH 2024: nhập theo từng giai đoạn, tự tính mức bình quân theo hệ số trượt giá, xem ngay số tiền được nhận, điều kiện hưởng và thủ tục rút mới nhất.">
 <meta property="og:url" content="https://calcotia.online/vn/tinh-bao-hiem-xa-hoi-1-lan/">
 <meta property="og:image" content="https://calcotia.online/assets/img/logo.jpg">
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -53,13 +53,21 @@
 
 <div class="calc">
 <h2>Công cụ tính bhxh 1 lần trực tuyến</h2>
+<div class="field"><label for="vn-mode">Cách nhập số liệu</label><select id="vn-mode"><option value="simple" selected>Đơn giản: đã biết mức bình quân tiền lương tháng đóng BHXH</option><option value="periods">Theo từng giai đoạn: công cụ tự tính mức bình quân bằng hệ số trượt giá</option></select><span class="hint">Nếu chưa có mức bình quân do cơ quan BHXH tính sẵn, hãy chọn cách nhập theo từng giai đoạn</span></div>
+<div id="vn-simple-wrap">
 <div class="grid2">
 <div class="field"><label for="vn-pre-years">Thời gian đóng trước năm 2014: số năm <span class="hint">Phần nguyên năm của giai đoạn trước 01/01/2014</span></label><input type="number" id="vn-pre-years" min="0" max="60" step="1" value="4"></div>
 <div class="field"><label for="vn-pre-months">Số tháng lẻ trước năm 2014 <span class="hint">Từ 0 đến 11 tháng. Tháng lẻ này sẽ được chuyển sang giai đoạn sau theo quy định</span></label><input type="number" id="vn-pre-months" min="0" max="11" step="1" value="8"></div>
 <div class="field"><label for="vn-post-years">Thời gian đóng từ năm 2014: số năm <span class="hint">Phần nguyên năm của giai đoạn từ 01/01/2014 trở đi</span></label><input type="number" id="vn-post-years" min="0" max="60" step="1" value="7"></div>
 <div class="field"><label for="vn-post-months">Số tháng lẻ từ năm 2014 <span class="hint">Từ 0 đến 11 tháng</span></label><input type="number" id="vn-post-months" min="0" max="11" step="1" value="5"></div>
 </div>
-<div class="field"><label for="vn-salary">Mức bình quân tiền lương tháng đóng BHXH (đồng) <span class="hint">Xem trên sổ BHXH, ứng dụng VssID hoặc hỏi cơ quan BHXH. Đây là con số sau khi đã áp dụng mức điều chỉnh từng năm</span></label><input type="number" id="vn-salary" min="0" step="100000" value="8000000"></div>
+<div class="field"><label for="vn-salary">Mức bình quân tiền lương tháng đóng BHXH (đồng) <span class="hint">Con số cơ quan BHXH đã tính cho bạn sau khi áp dụng mức điều chỉnh từng năm. Xem trên sổ BHXH, ứng dụng VssID hoặc hỏi cơ quan BHXH</span></label><input type="number" id="vn-salary" min="0" step="100000" value="8000000"></div>
+</div>
+<div id="vn-periods-wrap">
+<p>Nhập từng giai đoạn đóng BHXH liên tục, mỗi giai đoạn gồm tháng bắt đầu, tháng kết thúc (tính cả tháng kết thúc) và tiền lương tháng đóng BHXH của giai đoạn đó. Công cụ nhân tiền lương của từng năm với hệ số điều chỉnh (hệ số trượt giá) của năm tương ứng rồi tính ra mức bình quân tiền lương tháng đóng BHXH, đúng cách cơ quan BHXH đang áp dụng. Hai giai đoạn dưới đây là số liệu của ví dụ minh họa ở cuối trang.</p>
+<div id="vn-periods"></div>
+<p><button type="button" id="vn-add-period" class="calc-btn">Thêm giai đoạn đóng</button></p>
+</div>
 <button class="calc-btn" id="vn-calc-btn" type="button">Tính số tiền được nhận</button>
 <div class="result" id="vn-result">
 <div>Số tiền BHXH 1 lần dự kiến</div>
@@ -81,21 +89,45 @@
 <p>Lý do có hai hệ số khác nhau là vì trước năm 2014 mức đóng và mặt bằng tiền lương thấp hơn, nên luật chỉ tính 1,5 tháng cho giai đoạn này; từ năm 2014, hệ số được nâng lên 02 tháng. Đây cũng là lý do hai người có cùng tổng số năm đóng nhưng số tiền nhận được có thể chênh nhau đáng kể nếu thời điểm bắt đầu đóng khác nhau.</p>
 <h3>Mức bình quân tiền lương tháng đóng BHXH là gì?</h3>
 <p>Mức bình quân tiền lương tháng đóng BHXH (thường viết tắt là Mbqtl) không đơn giản là lương tháng gần nhất của bạn. Cơ quan BHXH lấy tiền lương từng tháng bạn đã đóng nhân với mức điều chỉnh của năm tương ứng rồi chia bình quân cho tổng số tháng đóng, để quy đổi sức mua của các khoản đóng cũ về mặt bằng hiện tại. Với người làm việc khu vực nhà nước theo chế độ tiền lương do Nhà nước quy định, cách tính có điểm riêng: tùy thời điểm bắt đầu tham gia mà bình quân được lấy theo số năm cuối trước khi hưởng (5 năm cuối nếu tham gia trước 1995, tăng dần theo từng giai đoạn, và toàn bộ thời gian nếu bắt đầu từ năm 2025). Hiểu đúng cách tính bảo hiểm xã hội ở bước này rất quan trọng, vì chỉ cần Mbqtl chênh nhau vài trăm nghìn đồng, số tiền 1 lần đã thay đổi tới vài triệu. Bạn có thể tra Mbqtl của mình trên sổ BHXH, ứng dụng VssID hoặc nhờ cơ quan BHXH cung cấp bản quá trình đóng.</p>
+<h3>Bảng hệ số trượt giá (hệ số điều chỉnh tiền lương) năm 2026</h3>
+<p>Bảng hệ số dưới đây áp dụng cho tiền lương tháng đã đóng BHXH bắt buộc, do Bảo hiểm xã hội Việt Nam thông báo tại Công văn 340/BHXH-CSXH ngày 03/02/2026, căn cứ điểm a khoản 1 Điều 16 Nghị định 158/2025/NĐ-CP. Tiền lương của năm nào được nhân với hệ số của năm đó: lương đóng năm 2009 được nhân 2,14 lần, trong khi lương đóng năm 2025 và 2026 giữ nguyên hệ số 1,00. Đây cũng là bảng hệ số mà chế độ nhập theo từng giai đoạn của công cụ trên trang này đang dùng.</p>
+<table class="data">
+<tr><th>Năm đóng</th><th>Hệ số</th><th>Năm đóng</th><th>Hệ số</th></tr>
+<tr><td>Trước 1995</td><td>5,81</td><td>2011</td><td>1,65</td></tr>
+<tr><td>1995</td><td>4,91</td><td>2012</td><td>1,51</td></tr>
+<tr><td>1996</td><td>4,65</td><td>2013</td><td>1,42</td></tr>
+<tr><td>1997</td><td>4,50</td><td>2014</td><td>1,36</td></tr>
+<tr><td>1998</td><td>4,18</td><td>2015</td><td>1,36</td></tr>
+<tr><td>1999</td><td>4,01</td><td>2016</td><td>1,32</td></tr>
+<tr><td>2000</td><td>4,07</td><td>2017</td><td>1,28</td></tr>
+<tr><td>2001</td><td>4,09</td><td>2018</td><td>1,23</td></tr>
+<tr><td>2002</td><td>3,94</td><td>2019</td><td>1,20</td></tr>
+<tr><td>2003</td><td>3,81</td><td>2020</td><td>1,16</td></tr>
+<tr><td>2004</td><td>3,54</td><td>2021</td><td>1,14</td></tr>
+<tr><td>2005</td><td>3,27</td><td>2022</td><td>1,11</td></tr>
+<tr><td>2006</td><td>3,05</td><td>2023</td><td>1,07</td></tr>
+<tr><td>2007</td><td>2,81</td><td>2024</td><td>1,03</td></tr>
+<tr><td>2008</td><td>2,29</td><td>2025</td><td>1,00</td></tr>
+<tr><td>2009</td><td>2,14</td><td>2026</td><td>1,00</td></tr>
+<tr><td>2010</td><td>1,96</td><td></td><td></td></tr>
+</table>
 <h3>Cách làm tròn số năm đóng và tháng lẻ</h3>
 <p>Thời gian đóng BHXH hiếm khi tròn năm. Quy định về tháng lẻ như sau: từ 01 đến 06 tháng lẻ được tính là nửa năm, từ 07 đến 11 tháng lẻ được tính là 01 năm. Một điểm rất hay bị bỏ qua: nếu bạn có thời gian đóng ở cả hai giai đoạn, <strong>tháng lẻ của giai đoạn trước năm 2014 sẽ được chuyển sang cộng vào giai đoạn từ năm 2014</strong> rồi mới làm tròn, chứ không làm tròn riêng từng giai đoạn.</p>
-<p>Ví dụ nhỏ: bạn đóng trước năm 2014 được 6 năm 9 tháng và từ năm 2014 được 3 năm 2 tháng. Chín tháng lẻ của giai đoạn đầu được chuyển sang, nên giai đoạn sau thành 3 năm 11 tháng và được tính là 4 năm. Tổng số tháng lương hưởng là 1,5 × 6 + 2 × 4 = 17 tháng Mbqtl. Công cụ tính ở trên đã áp dụng sẵn cách chuyển tháng lẻ này, bạn chỉ cần nhập đúng số năm và số tháng của từng giai đoạn.</p>
+<p>Ví dụ nhỏ: bạn đóng trước năm 2014 được 6 năm 9 tháng và từ năm 2014 được 3 năm 2 tháng. Chín tháng lẻ của giai đoạn đầu được chuyển sang, nên giai đoạn sau thành 3 năm 11 tháng và được tính là 4 năm. Tổng số tháng lương hưởng là 1,5 × 6 + 2 × 4 = 17 tháng Mbqtl. Công cụ tính ở trên đã áp dụng sẵn cách chuyển tháng lẻ này ở cả hai cách nhập: bạn nhập đúng số năm và số tháng của từng giai đoạn (chế độ đơn giản) hoặc nhập tháng bắt đầu, tháng kết thúc của từng giai đoạn (chế độ theo giai đoạn).</p>
 </section>
 
 <section class="block">
 <h2>Ví dụ minh họa tính BHXH 1 lần</h2>
-<p>Chị H. đóng BHXH tổng cộng 12 năm 1 tháng, trong đó giai đoạn trước năm 2014 là 4 năm 8 tháng, giai đoạn từ năm 2014 là 7 năm 5 tháng. Mức bình quân tiền lương tháng đóng BHXH của chị là 8.000.000 đồng. Các bước tính như sau:</p>
+<p>Chị H. đóng BHXH liên tục từ tháng 5/2009 đến hết tháng 5/2021, tổng cộng 12 năm 1 tháng, với hai mức lương khác nhau. Giai đoạn 1: từ tháng 5/2009 đến tháng 12/2013, tức 4 năm 8 tháng, tiền lương đóng BHXH là 4.000.000 đồng/tháng. Giai đoạn 2: từ tháng 1/2014 đến tháng 5/2021, tức 7 năm 5 tháng, tiền lương đóng BHXH là 7.500.000 đồng/tháng. Chị chưa có sẵn mức bình quân do cơ quan BHXH tính, nên ta tính từ tiền lương của từng giai đoạn theo các bước sau:</p>
 <ul>
-<li>Tám tháng lẻ của giai đoạn trước 2014 được chuyển sang giai đoạn sau, nên giai đoạn trước 2014 tính tròn <strong>4 năm</strong>.</li>
-<li>Giai đoạn từ 2014 thành 7 năm 5 tháng cộng thêm 8 tháng, tức 8 năm 1 tháng; 01 tháng lẻ được tính là nửa năm, nên số năm tính hưởng là <strong>8,5 năm</strong>.</li>
+<li>Áp dụng hệ số trượt giá năm 2026 cho từng năm: tiền lương năm 2009 nhân 2,14 thành 8.560.000 đồng/tháng; tiền lương năm 2014 nhân 1,36 thành 10.200.000 đồng/tháng; tiền lương năm 2021 nhân 1,14 thành 8.550.000 đồng/tháng.</li>
+<li>Tổng tiền lương đã điều chỉnh của giai đoạn 1 là <strong>382.400.000 đồng</strong> (56 tháng), của giai đoạn 2 là <strong>844.650.000 đồng</strong> (89 tháng). Cộng cả hai giai đoạn được <strong>1.227.050.000 đồng</strong> cho 145 tháng đóng.</li>
+<li>Mức bình quân tiền lương tháng đóng BHXH: 1.227.050.000 ÷ 145 ≈ <strong>8.462.414 đồng</strong> (làm tròn đến đồng).</li>
+<li>Làm tròn thời gian đóng: tám tháng lẻ của giai đoạn trước 2014 được chuyển sang giai đoạn sau, nên giai đoạn trước 2014 tính tròn <strong>4 năm</strong>; giai đoạn từ 2014 thành 8 năm 1 tháng, 01 tháng lẻ được tính là nửa năm, nên số năm tính hưởng là <strong>8,5 năm</strong>.</li>
 <li>Tổng số tháng lương được hưởng: 1,5 × 4 + 2 × 8,5 = 6 + 17 = <strong>23 tháng</strong>.</li>
-<li>Số tiền BHXH 1 lần: 23 × 8.000.000 = <strong>184.000.000 đồng</strong>.</li>
+<li>Số tiền BHXH 1 lần: 23 × 8.462.414 = <strong>194.635.522 đồng</strong>.</li>
 </ul>
-<p>Bạn có thể nhập đúng các con số của ví dụ này vào công cụ ở đầu trang để kiểm chứng kết quả 184.000.000 đồng, rồi thay bằng số liệu của chính mình.</p>
+<p>Để kiểm chứng, hãy chọn cách nhập "Theo từng giai đoạn" trong công cụ ở đầu trang: hai giai đoạn của ví dụ này đã được điền sẵn và kết quả hiện ra phải đúng 194.635.522 đồng. Sau đó bạn chỉ việc thay bằng thời gian và tiền lương của chính mình. Nếu đã có sẵn mức bình quân tiền lương, bạn vẫn có thể nhập trực tiếp ở chế độ đơn giản như trước.</p>
 </section>
 
 <section class="block">
@@ -148,6 +180,7 @@
 <li>Luật Bảo hiểm xã hội 2024, Điều 70 về hưởng BHXH 1 lần và cách tính mức hưởng: xem phân tích điều khoản tại <a href="https://Luatvietnam.vn/bao-hiem/bao-hiem-xa-hoi-1-lan-563-19525-article.html" rel="noopener" target="_blank">LuatVietnam</a></li>
 <li>Bảo hiểm xã hội Việt Nam, mục Hỏi đáp về điều kiện và thành phần hồ sơ hưởng BHXH 1 lần: <a href="https://baohiemxahoi.gov.vn/hoidap/Pages/default.aspx?ItemID=267284" rel="noopener" target="_blank">baohiemxahoi.gov.vn</a></li>
 <li>Cổng dịch vụ công BHXH Việt Nam (nộp hồ sơ trực tuyến): <a href="https://dichvucong.baohiemxahoi.gov.vn" rel="noopener" target="_blank">dichvucong.baohiemxahoi.gov.vn</a></li>
+<li>Công văn 340/BHXH-CSXH ngày 03/02/2026 của Bảo hiểm xã hội Việt Nam về hệ số điều chỉnh tiền lương, thu nhập tháng đã đóng BHXH năm 2026 (bảng hệ số trượt giá dùng trong công cụ): toàn văn văn bản tại <a href="https://thuvienphapluat.vn/phap-luat-doanh-nghiep/bai-viet/cong-van-340-bhxh-csxh-ve-he-so-dieu-chinh-tien-luong-thu-nhap-thang-da-dong-bhxh-18852.html" rel="noopener" target="_blank">Thư viện Pháp luật</a>, cơ quan ban hành là Bảo hiểm xã hội Việt Nam (<a href="https://baohiemxahoi.gov.vn" rel="noopener" target="_blank">baohiemxahoi.gov.vn</a>)</li>
 </ul>
 </div>
 

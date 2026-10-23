@@ -59,7 +59,7 @@
 <div class="page-head"><div class="wrap">
 <div class="crumb"><a href="/">Hjem</a> / <a href="/no/">Norge</a> / Sykepenger kalkulator</div>
 <h1>Sykepenger kalkulator</h1>
-<p>Blir du sykmeldt, er det greit å vite hva som faktisk kommer inn på kontoen. Denne kalkulatoren viser hvor mye du får i sykepenger per dag, hvor stor del arbeidsgiveren din dekker, og hvor mye som kommer fra NAV. Legg inn månedslønn og antall sykedager, så er svaret klart med en gang.</p>
+<p>Blir du sykmeldt, er det greit å vite hva som faktisk kommer inn på kontoen. Denne kalkulatoren viser hvor mye du får i sykepenger per dag, hvor stor del arbeidsgiveren din dekker, og hvor mye som kommer fra NAV. Legg inn månedslønn, antall sykedager og sykmeldingsgraden din, så er svaret klart med en gang.</p>
 </div></div>
 
 <main><div class="wrap">
@@ -69,6 +69,7 @@
 <div class="grid2">
 <div class="field"><label for="sp-lonn">Månedslønn før skatt (kr)</label><input type="number" id="sp-lonn" value="45000" min="0" step="500"><span class="hint">Brutto lønn per måned. NAV bruker vanligvis gjennomsnittet av de tre siste månedene før du ble syk.</span></div>
 <div class="field"><label for="sp-dager">Antall sykedager (kalenderdager)</label><input type="number" id="sp-dager" value="40" min="0" step="1"><span class="hint">Hele perioden du er borte fra jobb, inkludert helger.</span></div>
+<div class="field"><label for="sp-grad">Sykmeldingsgrad (%)</label><input type="number" id="sp-grad" value="100" min="20" max="100" step="5"><span class="hint">100 % betyr at du er helt sykmeldt. Ved gradert sykmelding, for eksempel 50 %, jobber du resten av stillingen og får sykepenger bare for delen du er borte.</span></div>
 </div>
 <button class="calc-btn" id="sp-btn" type="button">Beregn sykepenger</button>
 <div class="result" id="sp-result">
@@ -77,6 +78,7 @@
 <table>
 <tr><td>Sykepengegrunnlag per år</td><td id="sp-grunnlag">0 kr</td></tr>
 <tr><td>Dagsats (grunnlag / 260)</td><td id="sp-dagsats">0 kr</td></tr>
+<tr><td>Sykmeldingsgrad</td><td id="sp-res-grad">100 %</td></tr>
 <tr><td>Fra arbeidsgiver (første 16 dager)</td><td id="sp-ag">0 kr</td></tr>
 <tr><td>Fra NAV (fra dag 17)</td><td id="sp-nav">0 kr</td></tr>
 <tr><td>Feriepenger av sykepenger fra NAV (10,2 %)</td><td id="sp-ferie">0 kr</td></tr>
@@ -93,6 +95,7 @@
 <p><strong>Taket på 6 G:</strong> Grunnlaget kan aldri bli høyere enn seks ganger grunnbeløpet i folketrygden. Grunnbeløpet, forkortet G, er 136 549 kroner fra 1. mai 2026. Taket er derfor 819 294 kroner. Lønn over dette gir ikke høyere sykepenger fra folketrygden.</p>
 <p><strong>Dagsats</strong> = sykepengegrunnlag delt på 260. Det utbetales sykepenger for virkedager, altså alle dager unntatt lørdag og søndag.</p>
 <p>De første 16 kalenderdagene av et sykefravær kalles arbeidsgiverperioden, og da er det arbeidsgiveren som betaler. Fra dag 17 overtar NAV. NAV kan betale for inntil 248 sykepengedager i løpet av de tre siste årene, slik at den totale perioden med arbeidsgiverperioden blir inntil 52 uker.</p>
+<p><strong>Gradert sykmelding:</strong> Er du bare delvis arbeidsufør, deles sykepengene etter sykmeldingsgraden din. Ved 50 prosent sykmelding får du halv dagsats for dagene i perioden, mens arbeidsgiveren betaler vanlig lønn for den halvdelen av stillingen du fortsatt jobber. Delingen gjelder både i arbeidsgiverperioden og etterpå: De 16 første dagene betales fortsatt av arbeidsgiveren, men med gradert beløp, og fra dag 17 er det NAV som betaler sin del av det graderte beløpet. Også feriepengene fra NAV regnes av det graderte beløpet. Skriv graden inn i kalkulatoren øverst på siden, så blir alle beløpene delt riktig med en gang.</p>
 </section>
 
 <section class="block">

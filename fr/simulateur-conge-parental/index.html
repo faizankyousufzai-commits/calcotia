@@ -67,6 +67,11 @@
       "@type": "Question",
       "name": "Mon employeur peut-il refuser mon congé parental ?",
       "acceptedAnswer": { "@type": "Answer", "text": "Non, si vous avez au moins un an d'ancienneté à la naissance ou à l'arrivée de l'enfant et que vous respectez les délais de prévenance : un mois avant le début du congé s'il suit un congé de maternité, de paternité ou d'adoption, deux mois avant sinon. C'est un droit, non négociable." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que le congé supplémentaire de naissance ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "C'est un nouveau congé indemnisé, ouvert depuis le 1er juillet 2026 aux parents d'un enfant né ou adopté à compter du 1er janvier 2026. Après avoir pris l'intégralité de son congé de maternité, de paternité ou d'adoption, chaque parent peut ajouter 1 ou 2 mois de congé, fractionnables en deux périodes d'un mois, à débuter dans les 9 mois suivant la naissance. La caisse d'assurance maladie indemnise à hauteur de 70 % du salaire journalier de base le premier mois, puis de 60 % le second." }
     }
   ]
 }
@@ -83,7 +88,7 @@
 <div class="page-head"><div class="wrap">
 <div class="crumb"><a href="/">Accueil</a> / <a href="/fr/">France</a> / Simulateur congé parental</div>
 <h1>Simulateur congé parental : maternité, paternité et congés payés de la nounou</h1>
-<p>Un bébé arrive, ou vous employez une assistante maternelle ? Cette page rassemble trois outils gratuits : le calcul des dates du congé maternité, la durée du congé de paternité, et le montant de l'indemnité de congés payés de la nounou. Vous y trouverez aussi le guide complet du congé parental et de la PreParE versée par la Caf.</p>
+<p>Un bébé arrive, ou vous employez une assistante maternelle ? Cette page rassemble quatre outils gratuits : le calcul des dates du congé maternité, la durée du congé de paternité, l'estimation des indemnités journalières versées pendant ces congés, et le montant de l'indemnité de congés payés de la nounou. Vous y trouverez aussi le guide complet du congé parental et de la PreParE versée par la Caf.</p>
 </div></div>
 
 <main><div class="wrap">
@@ -168,6 +173,49 @@
 </section>
 
 <section class="block">
+<h2>Indemnités journalières : combien toucherez-vous pendant le congé ?</h2>
+<p>Pendant le congé maternité comme pendant le congé de paternité, l'employeur ne verse plus de salaire, sauf maintien prévu par certaines conventions collectives : c'est la caisse d'Assurance maladie qui verse des indemnités journalières, pour chaque jour calendaire du congé, week-ends et jours fériés compris. La formule de calcul est la même pour les deux congés. Pour y avoir droit, il faut notamment être affilié à la Sécurité sociale depuis au moins 6 mois et avoir travaillé au moins 150 heures au cours des 3 mois précédant le congé, ou avoir cotisé sur un salaire suffisant pendant cette période.</p>
+<div class="calc">
+<h2>Estimez vos indemnités journalières</h2>
+<div class="field">
+<label for="calcIJ-salaire">Salaire brut mensuel <span class="hint">(celui des 3 mois précédant le congé ; s'il varie, indiquez la moyenne des 3 mois)</span></label>
+<input type="number" id="calcIJ-salaire" min="0" step="1" placeholder="Ex. : 2800">
+</div>
+<div class="field">
+<label for="calcIJ-situation">Congé et situation</label>
+<select id="calcIJ-situation">
+<option value="mat-simple">Congé maternité, 1er ou 2e enfant (112 jours)</option>
+<option value="mat-trois">Congé maternité, 3e enfant ou plus (182 jours)</option>
+<option value="mat-jumeaux">Congé maternité, jumeaux (238 jours)</option>
+<option value="mat-triples">Congé maternité, triplés ou plus (322 jours)</option>
+<option value="pat-simple">Congé de paternité, naissance simple (25 jours)</option>
+<option value="pat-multiple">Congé de paternité, naissance multiple (32 jours)</option>
+</select>
+</div>
+<button type="button" class="calc-btn" id="calcIJ-btn">Estimer mes indemnités</button>
+<div class="result" id="calcIJ-result">
+<p class="big"><span id="calcIJ-big"></span></p>
+<table>
+<tr><td>Salaire retenu pour le calcul</td><td id="calcIJ-retenu"></td></tr>
+<tr><td>Salaire journalier de base</td><td id="calcIJ-sjb"></td></tr>
+<tr><td>Indemnité journalière estimée</td><td id="calcIJ-jour"></td></tr>
+<tr><td>Durée indemnisée</td><td id="calcIJ-duree"></td></tr>
+</table>
+</div>
+</div>
+<h3>Comment la CPAM calcule le montant</h3>
+<p>Le calcul suit trois étapes. D'abord, le salaire journalier de base : on additionne les salaires bruts des 3 derniers mois et on divise le total par 91,25. Ensuite, la CPAM retire un taux forfaitaire de 21 %, qui représente les cotisations salariales : il reste donc 79 % du salaire journalier de base. Enfin, le résultat est encadré par un plancher et un plafond. Chaque salaire mensuel est en outre pris en compte dans la limite du plafond mensuel de la Sécurité sociale, ce qui borne mécaniquement l'indemnité maximale.</p>
+<table class="data">
+<tr><th>Élément 2026</th><th>Montant</th></tr>
+<tr><td>Plafond mensuel de la Sécurité sociale</td><td>4 005 €</td></tr>
+<tr><td>Indemnité journalière minimale</td><td>11,12 €</td></tr>
+<tr><td>Indemnité journalière maximale</td><td>104,02 €</td></tr>
+</table>
+<p><strong>Exemple concret :</strong> avec un salaire brut mensuel de 2 800 €, le salaire journalier de base vaut (2 800 € × 3) ÷ 91,25 = 92,05 €. Après la retenue forfaitaire de 21 %, l'indemnité journalière ressort à 92,05 € × 79 % = 72,72 €. Sur les 112 jours d'un congé maternité pour un premier ou un deuxième enfant, le total estimé atteint donc 72,72 € × 112 = 8 144,64 €. À salaire égal, un congé de paternité de 25 jours représenterait 72,72 € × 25 = 1 818 € d'indemnités journalières.</p>
+<p>Deux précisions utiles : les 3 jours du congé de naissance ne sont pas indemnisés par la CPAM, car ils sont payés par l'employeur, et les montants ci-dessus sont ceux calculés par la caisse, avant déduction de la CSG et de la CRDS (6,70 % au total) et du prélèvement à la source de l'impôt sur le revenu. Les indemnités sont ensuite versées tous les 14 jours.</p>
+</section>
+
+<section class="block">
 <h2>Le congé parental d'éducation et la PreParE de la Caf</h2>
 <h3>Qui peut prendre un congé parental ?</h3>
 <p>Le congé parental d'éducation permet de suspendre son contrat de travail, ou de passer à temps partiel, pour s'occuper d'un enfant de moins de 3 ans. Il est ouvert à tout salarié justifiant d'au moins un an d'ancienneté dans l'entreprise à la naissance de l'enfant ou à son arrivée au foyer (adoption). Les deux parents peuvent en bénéficier, ensemble ou à tour de rôle, sans que l'employeur puisse le refuser. En temps partiel, l'activité conservée ne peut pas descendre sous 16 heures par semaine.</p>
@@ -183,6 +231,15 @@
 <tr><td>PreParE majorée (3 enfants ou plus, arrêt total)</td><td>751,40 €</td></tr>
 </table>
 <p>Côté durée, pour un premier enfant, chaque parent peut percevoir la PreParE 6 mois au maximum, jusqu'au premier anniversaire : en se relayant, un couple couvre une année complète. À partir du deuxième enfant, le versement peut courir jusqu'aux 3 ans de l'enfant, plafond 24 mois par parent. Si les deux parents la touchent le même mois, le cumul est plafonné au montant d'une PreParE à taux plein. La version majorée, réservée aux familles d'au moins 3 enfants en arrêt total, est plus courte : 8 mois maximum par parent, jusqu'au premier anniversaire de l'enfant, et le choix entre les deux formules est définitif.</p>
+</section>
+
+<section class="block">
+<h2>Nouveau depuis le 1er juillet 2026 : le congé supplémentaire de naissance</h2>
+<p>Créé par la loi de financement de la Sécurité sociale pour 2026, le congé supplémentaire de naissance permet à chaque parent d'ajouter 1 ou 2 mois de congé indemnisé après son congé de maternité, de paternité ou d'adoption. Il concerne les enfants nés ou adoptés à compter du 1er janvier 2026, ainsi que les enfants nés un peu avant cette date mais dont la naissance était prévue à partir du 1er janvier 2026. Le dispositif est accessible depuis le 1er juillet 2026.</p>
+<h3>Qui peut en bénéficier, et comment le prendre ?</h3>
+<p>La condition de base : avoir d'abord pris l'intégralité de son congé de maternité, de paternité ou d'adoption (sauf si l'on ne remplissait pas les conditions pour être indemnisé pendant ce premier congé). Le congé supplémentaire dure 1 ou 2 mois par parent et peut être fractionné en deux périodes d'un mois. Les deux parents peuvent le prendre en même temps ou l'un après l'autre, ce qui peut ajouter jusqu'à 4 mois de présence auprès de l'enfant. Il doit débuter dans les 9 mois suivant la naissance ou l'arrivée de l'enfant ; pour les naissances du premier semestre 2026, le départ reste possible jusqu'au 1er avril 2027. Prévenez votre employeur au moins un mois avant le début, par lettre recommandée avec avis de réception ou remise en main propre contre récépissé ; le délai tombe à 15 jours lorsque le congé suit immédiatement un congé de paternité ou d'adoption. L'employeur ne peut pas refuser ce congé, et les salariés n'ont aucune démarche à effectuer auprès de leur caisse d'assurance maladie : c'est l'employeur qui la prévient.</p>
+<h3>Quelle indemnisation pendant ce congé ?</h3>
+<p>La caisse d'assurance maladie verse des indemnités journalières calculées sur la même base que celles de la maternité et de la paternité : salaires bruts des 3 derniers mois, plafonnés à 4 005 € par mois, réduits du taux forfaitaire de 21 % puis divisés par 91,25. La différence tient au taux appliqué : 70 % de ce salaire journalier le premier mois, 60 % le second, avant déduction de la CSG et de la CRDS (6,70 %). Pour un salaire brut de 2 000 € par mois, l'indemnité nette ressort ainsi à 33,92 € par jour le premier mois et à 29,08 € le second, selon le calcul détaillé publié par service-public.fr. L'employeur n'a pas à compléter ces montants, sauf convention collective plus favorable. Dernier point : ce congé ne se cumule pas, au même moment, avec un congé parental indemnisé par la PreParE, mais les deux peuvent se succéder dans le temps.</p>
 </section>
 
 <section class="block">
@@ -260,6 +317,10 @@
 <summary>Mon employeur peut-il refuser mon congé parental ?</summary>
 <p>Non, si vous avez au moins un an d'ancienneté à la naissance ou à l'arrivée de l'enfant et que vous respectez les délais de prévenance : un mois avant le début du congé s'il suit un congé de maternité, de paternité ou d'adoption, deux mois avant sinon. C'est un droit, non négociable.</p>
 </details>
+<details>
+<summary>Qu'est-ce que le congé supplémentaire de naissance ?</summary>
+<p>C'est un nouveau congé indemnisé, ouvert depuis le 1er juillet 2026 aux parents d'un enfant né ou adopté à compter du 1er janvier 2026. Après avoir pris l'intégralité de son congé de maternité, de paternité ou d'adoption, chaque parent peut ajouter 1 ou 2 mois de congé, fractionnables en deux périodes d'un mois, à débuter dans les 9 mois suivant la naissance. La caisse d'assurance maladie indemnise à hauteur de 70 % du salaire journalier de base le premier mois, puis de 60 % le second.</p>
+</details>
 </div>
 </section>
 
@@ -271,6 +332,8 @@
 <li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F519/personnalisation/resultat" rel="noopener" target="_blank">Service Public : congé de maternité dans la fonction publique</a></li>
 <li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F12647" rel="noopener" target="_blank">Service Public : congé de paternité et d'accueil de l'enfant</a></li>
 <li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F2280" rel="noopener" target="_blank">Service Public : congé parental d'éducation</a></li>
+<li><a href="https://www.ameli.fr/entreprise/vos-salaries/montants-reference/indemnites-journalieres-montants-maximum" rel="noopener" target="_blank">Ameli : montants maximum des indemnités journalières en 2026</a></li>
+<li><a href="https://www.service-public.gouv.fr/particuliers/actualites/A18982" rel="noopener" target="_blank">Service Public : congé supplémentaire de naissance, les réponses à vos questions</a></li>
 <li><a href="https://www.caf.fr/node/1760" rel="noopener" target="_blank">Caf : la PreParE et les aides à la naissance</a></li>
 <li><a href="https://www.franceemploidomicile.fr/je-suis-particulier-employeur/assistante-maternelle/conges-payes-guide-particulier-employeur/" rel="noopener" target="_blank">France Emploi Domicile : les congés payés de l'assistante maternelle</a></li>
 </ul>

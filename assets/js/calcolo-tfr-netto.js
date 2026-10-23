@@ -1,8 +1,10 @@
 /* Calcotia - Calcolo TFR netto (Italia)
-   Simulazione anno per anno: quota = RAL / 13,5; rivalutazione sul fondo
-   dell'anno precedente = 1,5% + 75% inflazione ISTAT; imposta sostitutiva 17%
-   sulla rivalutazione. Alla fine: tassazione separata (art. 19 TUIR) con
-   reddito di riferimento, aliquota media IRPEF e detrazione. */
+   Simulazione anno per anno: quota lorda = RAL / 13,5, ridotta dello 0,50%
+   di contributo al Fondo di garanzia INPS (quota netta = RAL / 13,5 x 0,995);
+   rivalutazione sul fondo dell'anno precedente = 1,5% + 75% inflazione ISTAT;
+   imposta sostitutiva 17% sulla rivalutazione. Alla fine: tassazione separata
+   (art. 19 TUIR) sulle quote nette, con reddito di riferimento, aliquota media
+   IRPEF e detrazione. */
 (function () {
   "use strict";
   var fmt = new Intl.NumberFormat("it-IT", { style: "currency", currency: "EUR" });
@@ -30,17 +32,21 @@
       return;
     }
     var tassoRiv = 0.015 + 0.75 * (infl / 100);
-    var quotaAnno = ral / 13.5;
-    var fondo = 0, totQuote = 0, totRivLorda = 0, totImpSost = 0, totRivNetta = 0;
+    var quotaLordaAnno = ral / 13.5;
+    var contributoAnno = quotaLordaAnno * 0.005;
+    var quotaAnno = quotaLordaAnno - contributoAnno;
+    var fondo = 0, totQuote = 0, totQuoteLorde = 0, totContributo = 0;
+    var totRivLorda = 0, totImpSost = 0, totRivNetta = 0;
     var interi = Math.floor(anni);
     var frazione = anni - interi;
-    var i, riv, imp, q;
+    var i, riv, imp, q, ql, ct;
     for (i = 0; i < interi; i++) {
       riv = fondo * tassoRiv;
       imp = riv * 0.17;
       fondo += riv - imp;
       totRivLorda += riv; totImpSost += imp; totRivNetta += riv - imp;
       fondo += quotaAnno; totQuote += quotaAnno;
+      totQuoteLorde += quotaLordaAnno; totContributo += contributoAnno;
     }
     if (frazione > 0) {
       riv = fondo * tassoRiv * frazione;
@@ -48,7 +54,9 @@
       fondo += riv - imp;
       totRivLorda += riv; totImpSost += imp; totRivNetta += riv - imp;
       q = quotaAnno * frazione;
-      fondo += q; totQuote += q;
+      ql = quotaLordaAnno * frazione;
+      ct = contributoAnno * frazione;
+      fondo += q; totQuote += q; totQuoteLorde += ql; totContributo += ct;
     }
     var base = totQuote;
     var redditoRif = base / anni * 12;
@@ -62,6 +70,8 @@
 
     document.getElementById("itNetto").textContent = "TFR netto stimato: " + fmt.format(netto);
     document.getElementById("itLordo").textContent = fmt.format(fondo);
+    document.getElementById("itQuoteLorde").textContent = fmt.format(totQuoteLorde);
+    document.getElementById("itContributo").textContent = fmt.format(totContributo);
     document.getElementById("itQuote").textContent = fmt.format(totQuote);
     document.getElementById("itRivNetta").textContent = fmt.format(totRivNetta);
     document.getElementById("itImpSost").textContent = fmt.format(totImpSost);

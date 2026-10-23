@@ -1,8 +1,10 @@
 // Calcotia - Buergergeld Rechner (Deutschland)
 // Regelbedarfe 2025/2026 (BMAS): alleinstehend 563 EUR, Partner je 506 EUR,
 // 14-17 Jahre 471 EUR, 6-13 Jahre 390 EUR, 0-5 Jahre 357 EUR.
-// Freibetraege nach Paragraf 11b SGB II: 100 EUR Grundfreibetrag,
-// 20 % (100-520), 30 % (520-1.000), 10 % (1.000-1.200 bzw. 1.500 mit Kind).
+// Freibetraege nach Paragraf 11b SGB II werden aus dem Bruttoeinkommen
+// berechnet: 100 EUR Grundfreibetrag, 20 % (100-520), 30 % (520-1.000),
+// 10 % (1.000-1.200 bzw. 1.500 mit minderjaehrigem Kind). Angerechnet wird
+// das Nettoeinkommen abzueglich dieses Freibetrags.
 (function () {
   "use strict";
 
@@ -21,12 +23,12 @@
     return Math.min(10, Math.floor(num(id)));
   }
 
-  function freibetrag(einkommen, hatKind) {
-    var fb = Math.min(einkommen, 100);
-    if (einkommen > 100) fb += 0.20 * (Math.min(einkommen, 520) - 100);
-    if (einkommen > 520) fb += 0.30 * (Math.min(einkommen, 1000) - 520);
-    var grenze = hatKind ? 1500 : 1200;
-    if (einkommen > 1000) fb += 0.10 * (Math.min(einkommen, grenze) - 1000);
+  function freibetrag(bruttoeinkommen, hatMinderjaehrigesKind) {
+    var fb = Math.min(bruttoeinkommen, 100);
+    if (bruttoeinkommen > 100) fb += 0.20 * (Math.min(bruttoeinkommen, 520) - 100);
+    if (bruttoeinkommen > 520) fb += 0.30 * (Math.min(bruttoeinkommen, 1000) - 520);
+    var grenze = hatMinderjaehrigesKind ? 1500 : 1200;
+    if (bruttoeinkommen > 1000) fb += 0.10 * (Math.min(bruttoeinkommen, grenze) - 1000);
     return fb;
   }
 
@@ -61,9 +63,10 @@
     var kdu = num("kaltmiete") + num("nebenkosten") + num("heizkosten");
     var bedarf = erwachsene + kinderBetrag + mehrbedarf + kdu;
 
-    var einkommen = num("einkommen");
-    var fb = freibetrag(einkommen, kinder > 0);
-    var anrechenbar = Math.max(0, einkommen - fb);
+    var bruttoeinkommen = num("bruttoeinkommen");
+    var nettoeinkommen = num("nettoeinkommen");
+    var fb = freibetrag(bruttoeinkommen, kinder > 0);
+    var anrechenbar = Math.max(0, nettoeinkommen - fb);
     var leistung = Math.max(0, bedarf - anrechenbar);
 
     setzen("r-erwachsene", erwachsene);
@@ -71,6 +74,8 @@
     setzen("r-mehrbedarf", mehrbedarf);
     setzen("r-kdu", kdu);
     setzen("r-bedarf", bedarf);
+    setzen("r-brutto", bruttoeinkommen);
+    setzen("r-netto", nettoeinkommen);
     setzen("r-freibetrag", fb);
     setzen("r-anrechenbar", anrechenbar);
     setzen("r-total", leistung);
@@ -87,7 +92,7 @@
   }
 
   var ids = ["haushalt", "kinder05", "kinder613", "kinder1417", "alleinerziehend",
-             "kaltmiete", "nebenkosten", "heizkosten", "einkommen"];
+             "kaltmiete", "nebenkosten", "heizkosten", "bruttoeinkommen", "nettoeinkommen"];
   for (var i = 0; i < ids.length; i++) {
     var el = document.getElementById(ids[i]);
     if (el) {

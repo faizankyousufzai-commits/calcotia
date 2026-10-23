@@ -27,11 +27,11 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Kedy pojdem do dochodku?","acceptedAnswer":{"@type":"Answer","text":"Závisí to od vášho ročníka narodenia a počtu vychovaných detí. Napríklad ročník 1963 má všeobecný dôchodkový vek 63 rokov a 6 mesiacov, ročník 1966 presne 64 rokov a ročník 1968 už 64 rokov a 2 mesiace. Za každé vychované dieťa sa vek znižuje o 6 mesiacov, najviac o 18 mesiacov. Pre ročníky 1969 a mladšie vek zatiaľ nie je pevne stanovený, určuje sa podľa vývoja strednej dĺžky života."}},
-{"@type":"Question","name":"Koľko je dôchodok po 40 rokoch poistenia?","acceptedAnswer":{"@type":"Answer","text":"Pri celoživotnej priemernej mzde (osobný mzdový bod 1,0) vychádza dôchodok po 40 rokoch poistenia v roku 2026 na 40 × 19,7633 €, teda približne 790,53 € mesačne. Pri mzde 1 300 € je odhad okolo 674,40 €. Konkrétna suma vždy závisí od osobného mzdového bodu, teda od pomeru vašich zárobkov k priemernej mzde."}},
+{"@type":"Question","name":"Koľko je dôchodok po 40 rokoch poistenia?","acceptedAnswer":{"@type":"Answer","text":"Pri celoživotnej priemernej mzde (osobný mzdový bod 1,0) vychádza dôchodok po 40 rokoch poistenia v roku 2026 na 40 × 19,7633 €, teda 790,60 €, a po pripočítaní valorizácie 3,7 %, ktorá patrí aj novopriznaným dôchodkom, na 819,90 € mesačne. Pri mzde 1 300 € je odhad okolo 699,40 €. Konkrétna suma vždy závisí od osobného mzdového bodu, teda od pomeru vašich zárobkov k priemernej mzde."}},
 {"@type":"Question","name":"Čo ak nemám 15 rokov dôchodkového poistenia?","acceptedAnswer":{"@type":"Answer","text":"Bez najmenej 15 rokov dôchodkového poistenia nárok na starobný dôchodok nevznikne, a to ani po dovŕšení dôchodkového veku. Chýbajúce obdobia, napríklad štúdium do roku 2004 alebo prácu v zahraničí, si môžete skontrolovať v elektronickom účte poistenca a nechať ich v Sociálnej poisťovni doplniť, prípadne si obdobie dokúpiť."}},
 {"@type":"Question","name":"Ako výchova detí znižuje dôchodkový vek?","acceptedAnswer":{"@type":"Answer","text":"Za každé dieťa vychované do stanoveného veku sa dôchodkový vek znižuje o 6 mesiacov, najviac však o 18 mesiacov, teda za tri a viac detí. Zníženie si môže uplatniť len jeden z rodičov, spravidla ten, ktorý dieťa skutočne vychoval. U starších ročníkov sa vek matiek líšil aj podľa počtu detí priamo v zákonnej tabuľke."}},
 {"@type":"Question","name":"Dostanem 13. dôchodok automaticky?","acceptedAnswer":{"@type":"Answer","text":"Áno. Trinásty dôchodok vypláca Sociálna poisťovňa automaticky v decembri každému, kto má v tom mesiaci nárok na výplatu dôchodku, bez žiadosti. Poberatelia starobného dôchodku dostanú v roku 2026 sumu 667,30 €. Ak poberáte viacero dôchodkov, vyplatí sa len jeden trinásty dôchodok, a to ten najvyšší."}},
-{"@type":"Question","name":"V čom sa kalkulačka na výpočet dôchodku 2025 líši od tohtoročnej?","acceptedAnswer":{"@type":"Answer","text":"Vzorec zostáva rovnaký, mení sa len aktuálna dôchodková hodnota. Kalkulačka na výpočet dôchodku 2025 pracovala s hodnotou 18,7434 €, zatiaľ čo pre rok 2026 platí 19,7633 €. Pri rovnakých údajoch preto vychádza odhad na rok 2026 zhruba o 5,4 % vyšší než pred rokom."}}
+{"@type":"Question","name":"V čom sa kalkulačka na výpočet dôchodku 2025 líši od tohtoročnej?","acceptedAnswer":{"@type":"Answer","text":"Vzorec zostáva rovnaký, mení sa aktuálna dôchodková hodnota a percento valorizácie pri priznaní. Kalkulačka na výpočet dôchodku 2025 pracovala s ADH 18,7434 € a valorizáciou 2,1 %, zatiaľ čo pre rok 2026 platí ADH 19,7633 € a valorizácia 3,7 %. Pri rovnakých údajoch preto vychádza odhad na rok 2026 zhruba o 7,1 % vyšší než pred rokom."}}
 ]}
 </script>
 </head>
@@ -83,6 +83,8 @@
 <tr><td>Použitý osobný mzdový bod (POMB)</td><td id="r-pomb"></td></tr>
 <tr><td>Obdobie poistenia (ODP)</td><td id="r-years"></td></tr>
 <tr><td>Aktuálna dôchodková hodnota (ADH)</td><td id="r-adh"></td></tr>
+<tr><td>Suma dôchodku pred valorizáciou</td><td id="r-base"></td></tr>
+<tr><td id="r-val-label">Valorizácia pri priznaní dôchodku</td><td id="r-val"></td></tr>
 <tr><td>Odhad mesačného dôchodku</td><td id="r-total"></td></tr>
 </table>
 <p id="r-note"></p>
@@ -93,9 +95,10 @@
 <h2>Ako prebieha výpočet dôchodku: vzorec POMB × ODP × ADH</h2>
 <p>Slovenský starobný dôchodok sa počíta jedným vzorcom, do ktorého vstupujú tri veličiny. Prvou je priemerný osobný mzdový bod, skrátene POMB. Ten vyjadruje, ako sa vaše celoživotné zárobky mali k priemernej mzde v hospodárstve: ak ste celý život zarábali presne priemerne, váš bod je 1,0, pri dvojnásobných zárobkoch by bol 2,0. Druhou veličinou je ODP, teda počet rokov, počas ktorých ste boli dôchodkovo poistení. Treťou je aktuálna dôchodková hodnota (ADH), suma v eurách, ktorú štát každoročne stanovuje podľa rastu miezd. Pre rok 2026 je to 19,7633 eura.</p>
 <p>Naša kalkulačka odhaduje POMB jednoduchým delením: vašu priemernú mzdu vydelí priemernou mzdou v hospodárstve za rok 2024, ktorá podľa Štatistického úradu dosiahla 1 524 €. Kto zarábal 1 524 €, dostane bod 1,0, kto zarábal polovicu, má bod 0,5. Ak svoj skutočný POMB poznáte, napríklad z dôchodkovej prognózy, ktorú Sociálna poisťovňa v roku 2026 rozposlala poistencom, zadajte ho priamo do kalkulačky a odhad bude presnejší.</p>
+<p>Do výsledku vstupuje ešte valorizácia. Podľa § 82 zákona o sociálnom poistení sa dôchodková dávka priznaná v príslušnom kalendárnom roku zvyšuje o valorizačné percento toho istého roka, a to odo dňa jej priznania. Kto odchádza do dôchodku v roku 2026, dostane teda k sume zo vzorca ešte 3,7 % navyše; pri dôchodkoch priznaných v roku 2025 to bolo 2,1 %. Kalkulačka toto zvýšenie započítava automaticky podľa zvoleného roka priznania a v rozpise ho uvidíte ako samostatný riadok.</p>
 <p>Počítajte však s tým, že ide o odhad. Sociálna poisťovňa výsledný osobný mzdový bod pred výpočtom ešte upravuje v rámci solidarity: hodnoty nad 1,25 sa započítavajú len čiastočne a veľmi nízke body sa mierne zvyšujú, a do hry vstupujú aj presné vymeriavacie základy za jednotlivé roky. Skutočný dôchodok sa preto môže od výsledku kalkulačky líšiť, rádovo o niekoľko eur až desiatok eur. Nárok na starobný dôchodok pritom vzniká len vtedy, ak máte aspoň 15 rokov dôchodkového poistenia a dovŕšili ste dôchodkový vek.</p>
 <h3>Vypočítaný príklad krok za krokom</h3>
-<p>Poistenec s celoživotnou priemernou hrubou mzdou 1 300 € a 40 rokmi poistenia, ktorý odchádza do dôchodku v roku 2026: POMB = 1 300 / 1 524 = 0,85302. Výpočet dôchodku: 0,85302 × 40 rokov × 19,7633 € ≈ 674,34 €. Sociálna poisťovňa sumy zaokrúhľuje na 10 eurocentov nahor, takže výsledok je <b>674,40 € mesačne</b>. Presne túto hodnotu ukáže aj kalkulačka vyššie pri rovnakých vstupoch.</p>
+<p>Poistenec s celoživotnou priemernou hrubou mzdou 1 300 € a 40 rokmi poistenia, ktorý odchádza do dôchodku v roku 2026: POMB = 1 300 / 1 524 = 0,85302. Výpočet dôchodku: 0,85302 × 40 rokov × 19,7633 € ≈ 674,34 €. Sociálna poisťovňa sumy zaokrúhľuje na 10 eurocentov nahor, teda na 674,40 €. Na novopriznaný dôchodok sa navyše vzťahuje valorizácia roka 2026 vo výške 3,7 %, čo je ďalších 25,00 €, takže výsledok je <b>699,40 € mesačne</b>. Presne túto hodnotu ukáže aj kalkulačka vyššie pri rovnakých vstupoch.</p>
 </section>
 
 <section class="block">
@@ -155,7 +158,7 @@
 <details><summary>Kedy pojdem do dochodku?</summary>
 <p>Závisí to od vášho ročníka narodenia a počtu vychovaných detí. Napríklad ročník 1963 má všeobecný dôchodkový vek 63 rokov a 6 mesiacov, ročník 1966 presne 64 rokov a ročník 1968 už 64 rokov a 2 mesiace. Za každé vychované dieťa sa vek znižuje o 6 mesiacov, najviac o 18 mesiacov. Pre ročníky 1969 a mladšie vek zatiaľ nie je pevne stanovený, určuje sa podľa vývoja strednej dĺžky života.</p></details>
 <details><summary>Koľko je dôchodok po 40 rokoch poistenia?</summary>
-<p>Pri celoživotnej priemernej mzde (osobný mzdový bod 1,0) vychádza dôchodok po 40 rokoch poistenia v roku 2026 na 40 × 19,7633 €, teda približne 790,53 € mesačne. Pri mzde 1 300 € je odhad okolo 674,40 €. Konkrétna suma vždy závisí od osobného mzdového bodu, teda od pomeru vašich zárobkov k priemernej mzde.</p></details>
+<p>Pri celoživotnej priemernej mzde (osobný mzdový bod 1,0) vychádza dôchodok po 40 rokoch poistenia v roku 2026 na 40 × 19,7633 €, teda 790,60 €, a po pripočítaní valorizácie 3,7 %, ktorá patrí aj novopriznaným dôchodkom, na 819,90 € mesačne. Pri mzde 1 300 € je odhad okolo 699,40 €. Konkrétna suma vždy závisí od osobného mzdového bodu, teda od pomeru vašich zárobkov k priemernej mzde.</p></details>
 <details><summary>Čo ak nemám 15 rokov dôchodkového poistenia?</summary>
 <p>Bez najmenej 15 rokov dôchodkového poistenia nárok na starobný dôchodok nevznikne, a to ani po dovŕšení dôchodkového veku. Chýbajúce obdobia, napríklad štúdium do roku 2004 alebo prácu v zahraničí, si môžete skontrolovať v elektronickom účte poistenca a nechať ich v Sociálnej poisťovni doplniť, prípadne si obdobie dokúpiť.</p></details>
 <details><summary>Ako výchova detí znižuje dôchodkový vek?</summary>
@@ -163,7 +166,7 @@
 <details><summary>Dostanem 13. dôchodok automaticky?</summary>
 <p>Áno. Trinásty dôchodok vypláca Sociálna poisťovňa automaticky v decembri každému, kto má v tom mesiaci nárok na výplatu dôchodku, bez žiadosti. Poberatelia starobného dôchodku dostanú v roku 2026 sumu 667,30 €. Ak poberáte viacero dôchodkov, vyplatí sa len jeden trinásty dôchodok, a to ten najvyšší.</p></details>
 <details><summary>V čom sa kalkulačka na výpočet dôchodku 2025 líši od tohtoročnej?</summary>
-<p>Vzorec zostáva rovnaký, mení sa len aktuálna dôchodková hodnota. Kalkulačka na výpočet dôchodku 2025 pracovala s hodnotou 18,7434 €, zatiaľ čo pre rok 2026 platí 19,7633 €. Pri rovnakých údajoch preto vychádza odhad na rok 2026 zhruba o 5,4 % vyšší než pred rokom.</p></details>
+<p>Vzorec zostáva rovnaký, mení sa aktuálna dôchodková hodnota a percento valorizácie pri priznaní. Kalkulačka na výpočet dôchodku 2025 pracovala s ADH 18,7434 € a valorizáciou 2,1 %, zatiaľ čo pre rok 2026 platí ADH 19,7633 € a valorizácia 3,7 %. Pri rovnakých údajoch preto vychádza odhad na rok 2026 zhruba o 7,1 % vyšší než pred rokom.</p></details>
 </section>
 
 <div class="src">
@@ -171,6 +174,7 @@
 <ul>
 <li><a href="https://www.relia.sk/mzdove-veliciny-2026/c/1314" rel="noopener" target="_blank">Relia.sk – Mzdové veličiny 2026: ADH 19,7633 € a dôchodkový vek ročníka 1968</a></li>
 <li><a href="https://www.peniaze.sk/dochodok/17610-13-dochodok-vyplata-terminy-podmienky" rel="noopener" target="_blank">Peniaze.sk – 13. dôchodok: výška dávky, termíny a podmienky</a></li>
+<li><a href="https://www.peniaze.sk/dochodok/15232-kedy-poziadat-o-predcasny-dochodok" rel="noopener" target="_blank">Peniaze.sk – valorizácia novopriznaných dôchodkov: 2,1 % v roku 2025 a 3,7 % v roku 2026 (§ 82 zákona o sociálnom poistení)</a></li>
 <li><a href="https://search.webdepozit.sk/webarchiv/public/20231103102825/https://www.employment.gov.sk/topdf/dochodkovy-vek.pdf?docid=685&amp;insets=20" rel="noopener" target="_blank">Ministerstvo práce, sociálnych vecí a rodiny SR – tabuľka dôchodkového veku (archív)</a></li>
 </ul>
 <p>Kalkulačka poskytuje len orientačný odhad a nenahrádza výpočet Sociálnej poisťovne ani odborné poradenstvo. Rozhodujúce sú údaje evidované v Sociálnej poisťovni.</p>
