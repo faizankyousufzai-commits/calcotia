@@ -1,0 +1,39 @@
+# Calcotia
+
+> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 10 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
+
+## Countries
+
+- [Norway calculators](https://calcotia.online/no/): sick pay, holiday pay and parental benefits
+- [Germany calculators](https://calcotia.online/de/): citizen's income (Bürgergeld)
+- [France calculators](https://calcotia.online/fr/): parental, maternity and paternity leave
+- [Italy calculators](https://calcotia.online/it/): severance pay, parental leave and unemployment benefit
+- [Japan calculators](https://calcotia.online/jp/): retirement money tax and take-home pay
+- [Greece calculators](https://calcotia.online/gr/): dismissal compensation
+- [Israel calculators](https://calcotia.online/il/): recuperation pay
+- [Vietnam calculators](https://calcotia.online/vn/): one-time social insurance payout
+- [Slovakia calculators](https://calcotia.online/sk/): state pension estimate
+- [Serbia calculators](https://calcotia.online/rs/): child allowance eligibility and amount
+
+## Calculators
+
+- [Sykepenger kalkulator](https://calcotia.online/no/sykepenger-kalkulator/): Norway sick pay calculator
+- [Feriepenger kalkulator](https://calcotia.online/no/feriepenger-kalkulator/): Norway holiday pay calculator
+- [Foreldrepenger kalkulator](https://calcotia.online/no/foreldrepenger-kalkulator/): Norway parental benefits calculator
+- [Bürgergeld Rechner](https://calcotia.online/de/buergergeld-rechner/): Germany citizen's income calculator
+- [Simulateur congé parental](https://calcotia.online/fr/simulateur-conge-parental/): France parental leave calculator
+- [Calcolo TFR netto](https://calcotia.online/it/calcolo-tfr-netto/): Italy net severance pay calculator
+- [Calcolo congedo parentale](https://calcotia.online/it/calcolo-congedo-parentale/): Italy parental leave calculator
+- [Calcolo NASpI](https://calcotia.online/it/calcolo-naspi/): Italy unemployment benefit calculator
+- [退職金・退職手当 税金計算](https://calcotia.online/jp/taishokukin-zeikin-keisan/): Japan retirement money tax calculator
+- [Υπολογισμός αποζημίωσης απόλυσης](https://calcotia.online/gr/ypologismos-apozimiosis-apolysis/): Greece dismissal compensation calculator
+- [מחשבון דמי הבראה](https://calcotia.online/il/dmei-havraa/): Israel recuperation pay calculator
+- [Tính bảo hiểm xã hội 1 lần](https://calcotia.online/vn/tinh-bao-hiem-xa-hoi-1-lan/): Vietnam one-time social insurance calculator
+- [Kalkulačka na výpočet dôchodku](https://calcotia.online/sk/kalkulacka-na-vypocet-dochodku/): Slovakia state pension calculator
+- [Kalkulator dečijeg dodatka](https://calcotia.online/rs/kalkulator-decijeg-dodatka/): Serbia child allowance calculator
+
+## About
+
+- [About Calcotia](https://calcotia.online/about.html)
+- [Privacy Policy](https://calcotia.online/privacy.html)
+- [Contact](https://calcotia.online/contact.html)
