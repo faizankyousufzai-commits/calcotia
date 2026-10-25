@@ -16,6 +16,7 @@
 - [Serbia calculators](https://calcotia.online/rs/): child allowance eligibility and amount
 - [Saudi Arabia calculators](https://calcotia.online/sa/): end of service benefits in Arabic and English
 - [Sweden calculators](https://calcotia.online/se/): holiday pay compensation (semesterersättning)
+- [Ireland calculators](https://calcotia.online/ie/): holiday pay (annual leave and public holidays)
 
 ## Calculators
 
@@ -37,6 +38,7 @@
 - [حاسبة نهاية الخدمة](https://calcotia.online/sa/hasibat-nihayat-al-khidma/): Saudi end of service benefits calculator in Arabic
 - [End of Service Calculator](https://calcotia.online/sa/end-of-service-calculator/): Saudi end of service benefits calculator in English
 - [Beräkna semesterersättning](https://calcotia.online/se/berakna-semesterersattning/): Sweden holiday pay compensation calculator
+- [Holiday Pay Calculator Ireland](https://calcotia.online/ie/holiday-pay-calculator/): Ireland holiday pay calculator, annual leave and public holiday pay
 
 ## About
 
