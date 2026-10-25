@@ -71,6 +71,7 @@
 <a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.jpg" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Free calculators for every country</small></span></a>
 <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
 <nav class="main-nav">
+<a href="/">Home</a>
 <div class="nav-menu">
 <button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Tools <span class="nav-caret" aria-hidden="true">▾</span></button>
 <div class="nav-panel nav-panel-tools">
@@ -107,6 +108,13 @@
 </div>
 </div>
 </div>
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
+<form class="header-search" id="headerSearch" role="search" autocomplete="off">
+<input type="search" id="headerSearchInput" placeholder="Search calculators…" aria-label="Search calculators">
+<button type="submit">Search</button>
+<div class="header-search-results" id="headerSearchResults"></div>
+</form>
 </nav>
 </div></header>
 
@@ -114,11 +122,6 @@
 <img class="hero-logo" src="/assets/img/logo.jpg" alt="Calcotia: free calculators for every country" width="150" height="100" fetchpriority="high">
 <h1>Free Online Calculators</h1>
 <p>Sick pay in Norway, severance in Italy, a pension estimate in Slovakia: the answers are set by law, but the law is hard to read. Calcotia turns the official rules of 11 countries into free calculators in the local language, with every step of the working shown.</p>
-<form class="search-box" id="toolSearch" autocomplete="off">
-<input type="text" id="searchInput" placeholder="Search a calculator, e.g. feriepenger or pension" aria-label="Search calculators">
-<button type="submit">Search</button>
-</form>
-<div id="searchResults" class="search-results"></div>
 <div class="stats"><span>17 calculators</span><span>11 countries</span><span>100% free, no sign up</span></div>
 </div></div>
 
@@ -240,7 +243,7 @@
 <p><a href="https://dododirectory.com" target="_blank" rel="dofollow"><img src="https://dododirectory.com/badge-dark.png" alt="Featured on DodoDirectory" width="200" height="54"></a> <a href="https://mozolist.com/launch/calcotia" target="_blank" rel="noopener"><img src="https://mozolist.com/badge?theme=light" alt="Featured on mozolist" width="220" height="54"></a></p>
 </div></footer>
 
-<script src="/assets/js/home-search.js" defer></script>
+<script src="/assets/js/header-search.js" defer></script>
 <script src="/assets/js/nav.js" defer></script>
 </body>
 </html>
