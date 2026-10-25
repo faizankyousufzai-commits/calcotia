@@ -20,7 +20,8 @@
     { n: "حاسبة نهاية الخدمة", s: "Saudi end of service", u: "/sa/hasibat-nihayat-al-khidma/", k: "نهاية الخدمة مكافأة نهاية الخدمة حاسبة نهاية الخدمة قوى السعودية saudi eos" },
     { n: "End of Service Calculator", s: "Saudi end of service", u: "/sa/end-of-service-calculator/", k: "end of service calculator ksa esb saudi benefits" },
     { n: "Beräkna semesterersättning", s: "Sweden holiday pay", u: "/se/berakna-semesterersattning/", k: "semesterersättning beräkna räkna ut semesterlön semestertillägg sweden holiday pay compensation" },
-    { n: "Holiday Pay Calculator Ireland", s: "Ireland holiday pay", u: "/ie/holiday-pay-calculator/", k: "holiday pay calculator ireland annual leave public holiday bank holiday pay part time entitlement" }
+    { n: "Holiday Pay Calculator Ireland", s: "Ireland holiday pay", u: "/ie/holiday-pay-calculator/", k: "holiday pay calculator ireland annual leave public holiday bank holiday pay part time entitlement" },
+    { n: "Orlofsreiknivél", s: "Iceland holiday pay", u: "/is/orlofsreiknivel/", k: "orlof orlofsreiknivél reikna út orlof orlofslaun orlofsuppbót desemberuppbót iceland holiday pay" }
   ];
   var form = document.getElementById('headerSearch');
   var inp = document.getElementById('headerSearchInput');
