@@ -1,5 +1,5 @@
 // Calcotia sitewide header search (moved from the homepage hero, 2026-10-25).
-// Same tool index as the old home search, extended to all 17 calculators.
+// Same tool index as the old home search, extended to all 18 calculators.
 (function () {
   var TOOLS = [
     { n: "Sykepenger kalkulator", s: "Norway sick pay", u: "/no/sykepenger-kalkulator/", k: "sykepenger sick pay norway sykepenge" },
@@ -18,7 +18,8 @@
     { n: "Kalkulačka na výpočet dôchodku", s: "Slovakia pension", u: "/sk/kalkulacka-na-vypocet-dochodku/", k: "dôchodok dochodok pension slovakia kalkulačka" },
     { n: "Kalkulator dečijeg dodatka", s: "Serbia child allowance", u: "/rs/kalkulator-decijeg-dodatka/", k: "dečiji dodatak deciji serbia child allowance cenzus" },
     { n: "حاسبة نهاية الخدمة", s: "Saudi end of service", u: "/sa/hasibat-nihayat-al-khidma/", k: "نهاية الخدمة مكافأة نهاية الخدمة حاسبة نهاية الخدمة قوى السعودية saudi eos" },
-    { n: "End of Service Calculator", s: "Saudi end of service", u: "/sa/end-of-service-calculator/", k: "end of service calculator ksa esb saudi benefits" }
+    { n: "End of Service Calculator", s: "Saudi end of service", u: "/sa/end-of-service-calculator/", k: "end of service calculator ksa esb saudi benefits" },
+    { n: "Beräkna semesterersättning", s: "Sweden holiday pay", u: "/se/berakna-semesterersattning/", k: "semesterersättning beräkna räkna ut semesterlön semestertillägg sweden holiday pay compensation" }
   ];
   var form = document.getElementById('headerSearch');
   var inp = document.getElementById('headerSearchInput');
