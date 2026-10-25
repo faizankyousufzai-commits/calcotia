@@ -11,7 +11,9 @@ var TOOLS = [
   { n: "מחשבון דמי הבראה", s: "Israel recuperation pay", u: "/il/dmei-havraa/", k: "דמי הבראה havraa israel recuperation" },
   { n: "Tính bảo hiểm xã hội 1 lần", s: "Vietnam one-time social insurance", u: "/vn/tinh-bao-hiem-xa-hoi-1-lan/", k: "bảo hiểm xã hội bhxh vietnam" },
   { n: "Kalkulačka na výpočet dôchodku", s: "Slovakia pension", u: "/sk/kalkulacka-na-vypocet-dochodku/", k: "dôchodok dochodok pension slovakia kalkulačka" },
-  { n: "Kalkulator dečijeg dodatka", s: "Serbia child allowance", u: "/rs/kalkulator-decijeg-dodatka/", k: "dečiji dodatak deciji serbia child allowance cenzus" }
+  { n: "Kalkulator dečijeg dodatka", s: "Serbia child allowance", u: "/rs/kalkulator-decijeg-dodatka/", k: "dečiji dodatak deciji serbia child allowance cenzus" },
+  { n: "حاسبة نهاية الخدمة", s: "Saudi end of service", u: "/sa/hasibat-nihayat-al-khidma/", k: "نهاية الخدمة مكافأة نهاية الخدمة حاسبة نهاية الخدمة قوى السعودية saudi eos" },
+  { n: "End of Service Calculator", s: "Saudi end of service", u: "/sa/end-of-service-calculator/", k: "end of service calculator ksa esb saudi benefits" }
 ];
 var inp = document.getElementById('searchInput'), box = document.getElementById('searchResults');
 function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }

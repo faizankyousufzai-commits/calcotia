@@ -1,6 +1,6 @@
 # Calcotia
 
-> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 10 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
+> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 11 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
 
 ## Countries
 
@@ -14,6 +14,7 @@
 - [Vietnam calculators](https://calcotia.online/vn/): one-time social insurance payout
 - [Slovakia calculators](https://calcotia.online/sk/): state pension estimate
 - [Serbia calculators](https://calcotia.online/rs/): child allowance eligibility and amount
+- [Saudi Arabia calculators](https://calcotia.online/sa/): end of service benefits in Arabic and English
 
 ## Calculators
 
@@ -32,6 +33,8 @@
 - [Tính bảo hiểm xã hội 1 lần](https://calcotia.online/vn/tinh-bao-hiem-xa-hoi-1-lan/): Vietnam one-time social insurance calculator
 - [Kalkulačka na výpočet dôchodku](https://calcotia.online/sk/kalkulacka-na-vypocet-dochodku/): Slovakia state pension calculator
 - [Kalkulator dečijeg dodatka](https://calcotia.online/rs/kalkulator-decijeg-dodatka/): Serbia child allowance calculator
+- [حاسبة نهاية الخدمة](https://calcotia.online/sa/hasibat-nihayat-al-khidma/): Saudi end of service benefits calculator in Arabic
+- [End of Service Calculator](https://calcotia.online/sa/end-of-service-calculator/): Saudi end of service benefits calculator in English
 
 ## About
 
