@@ -3,6 +3,7 @@ var TOOLS = [
   { n: "Sykepenger kalkulator", s: "Norway sick pay", u: "/no/sykepenger-kalkulator/", k: "sykepenger sick pay norway sykepenge" },
   { n: "Feriepenger kalkulator", s: "Norway holiday pay", u: "/no/feriepenger-kalkulator/", k: "feriepenger holiday pay norway feriepenge" },
   { n: "Bürgergeld Rechner", s: "Germany citizen's income", u: "/de/buergergeld-rechner/", k: "bürgergeld buergergeld grundsicherung rechner germany" },
+  { n: "Aufstockung Rechner", s: "Germany top-up calculator", u: "/de/aufstockung-rechner/", k: "aufstockung aufstockend alg2 hartz iv aufstocker grundsicherung germany" },
   { n: "Simulateur congé parental", s: "France parental leave", u: "/fr/simulateur-conge-parental/", k: "congé parental maternité paternité france conges payes" },
   { n: "Calcolo TFR netto", s: "Italy severance pay", u: "/it/calcolo-tfr-netto/", k: "tfr calcolo netto italy severance" },
   { n: "退職金・退職手当 税金計算", s: "Japan retirement tax", u: "/jp/taishokukin-zeikin-keisan/", k: "退職金 退職手当 税金 taishokukin japan retirement" },

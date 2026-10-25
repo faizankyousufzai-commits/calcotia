@@ -5,7 +5,7 @@
 ## Countries
 
 - [Norway calculators](https://calcotia.online/no/): sick pay, holiday pay and parental benefits
-- [Germany calculators](https://calcotia.online/de/): citizen's income (Bürgergeld)
+- [Germany calculators](https://calcotia.online/de/): citizen's income (Bürgergeld) and top-up (Aufstockung)
 - [France calculators](https://calcotia.online/fr/): parental, maternity and paternity leave
 - [Italy calculators](https://calcotia.online/it/): severance pay, parental leave and unemployment benefit
 - [Japan calculators](https://calcotia.online/jp/): retirement money tax and take-home pay
@@ -21,6 +21,7 @@
 - [Feriepenger kalkulator](https://calcotia.online/no/feriepenger-kalkulator/): Norway holiday pay calculator
 - [Foreldrepenger kalkulator](https://calcotia.online/no/foreldrepenger-kalkulator/): Norway parental benefits calculator
 - [Bürgergeld Rechner](https://calcotia.online/de/buergergeld-rechner/): Germany citizen's income calculator
+- [Aufstockung Rechner](https://calcotia.online/de/aufstockung-rechner/): Germany top-up calculator
 - [Simulateur congé parental](https://calcotia.online/fr/simulateur-conge-parental/): France parental leave calculator
 - [Calcolo TFR netto](https://calcotia.online/it/calcolo-tfr-netto/): Italy net severance pay calculator
 - [Calcolo congedo parentale](https://calcotia.online/it/calcolo-congedo-parentale/): Italy parental leave calculator
