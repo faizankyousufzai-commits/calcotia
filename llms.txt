@@ -1,6 +1,6 @@
 # Calcotia
 
-> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 15 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
+> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 16 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
 
 ## Countries
 
@@ -19,6 +19,7 @@
 - [Ireland calculators](https://calcotia.online/ie/): holiday pay (annual leave and public holidays)
 - [Iceland calculators](https://calcotia.online/is/): holiday pay (orlof)
 - [Taiwan calculators](https://calcotia.online/tw/): severance pay (new and old system)
+- [Spain calculators](https://calcotia.online/es/): severance pay (despido objetivo, improcedente, temporal and transitional regime)
 
 ## Calculators
 
@@ -43,6 +44,7 @@
 - [Holiday Pay Calculator Ireland](https://calcotia.online/ie/holiday-pay-calculator/): Ireland holiday pay calculator, annual leave and public holiday pay
 - [Orlofsreiknivél](https://calcotia.online/is/orlofsreiknivel/): Iceland holiday pay calculator, orlofslaun and bonuses
 - [資遣費計算機](https://calcotia.online/tw/ziqianfei-jisuanji/): Taiwan severance pay calculator, new and old system
+- [Calculadora indemnización despido](https://calcotia.online/es/calculadora-indemnizacion-despido/): Spain severance pay calculator, 20 and 33 days per year
 
 ## About
 

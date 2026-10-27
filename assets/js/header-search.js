@@ -22,7 +22,8 @@
     { n: "Beräkna semesterersättning", s: "Sweden holiday pay", u: "/se/berakna-semesterersattning/", k: "semesterersättning beräkna räkna ut semesterlön semestertillägg sweden holiday pay compensation" },
     { n: "Holiday Pay Calculator Ireland", s: "Ireland holiday pay", u: "/ie/holiday-pay-calculator/", k: "holiday pay calculator ireland annual leave public holiday bank holiday pay part time entitlement" },
     { n: "Orlofsreiknivél", s: "Iceland holiday pay", u: "/is/orlofsreiknivel/", k: "orlof orlofsreiknivél reikna út orlof orlofslaun orlofsuppbót desemberuppbót iceland holiday pay" },
-    { n: "資遣費計算機", s: "Taiwan severance pay", u: "/tw/ziqianfei-jisuanji/", k: "資遣費 計算機 試算 公式 算法 ziqianfei taiwan severance" }
+    { n: "資遣費計算機", s: "Taiwan severance pay", u: "/tw/ziqianfei-jisuanji/", k: "資遣費 計算機 試算 公式 算法 ziqianfei taiwan severance" },
+    { n: "Calculadora indemnización despido", s: "Spain severance pay", u: "/es/calculadora-indemnizacion-despido/", k: "indemnización despido calculadora finiquito improcedente objetivo españa spain severance" }
   ];
   var form = document.getElementById('headerSearch');
   var inp = document.getElementById('headerSearchInput');
