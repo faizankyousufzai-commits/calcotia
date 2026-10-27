@@ -23,7 +23,10 @@
     { n: "Holiday Pay Calculator Ireland", s: "Ireland holiday pay", u: "/ie/holiday-pay-calculator/", k: "holiday pay calculator ireland annual leave public holiday bank holiday pay part time entitlement" },
     { n: "Orlofsreiknivél", s: "Iceland holiday pay", u: "/is/orlofsreiknivel/", k: "orlof orlofsreiknivél reikna út orlof orlofslaun orlofsuppbót desemberuppbót iceland holiday pay" },
     { n: "資遣費計算機", s: "Taiwan severance pay", u: "/tw/ziqianfei-jisuanji/", k: "資遣費 計算機 試算 公式 算法 ziqianfei taiwan severance" },
-    { n: "Calculadora indemnización despido", s: "Spain severance pay", u: "/es/calculadora-indemnizacion-despido/", k: "indemnización despido calculadora finiquito improcedente objetivo españa spain severance" }
+    { n: "Calculadora indemnización despido", s: "Spain severance pay", u: "/es/calculadora-indemnizacion-despido/", k: "indemnización despido calculadora finiquito improcedente objetivo españa spain severance" },
+    { n: "Gratuity Calculator UAE", s: "United Arab Emirates end of service", u: "/ae/gratuity-calculator/", k: "gratuity calculator uae end of service gratuity mohre uae" },
+    { n: "13th Month Pay Calculator", s: "Philippines 13th month pay", u: "/ph/13th-month-pay-calculator/", k: "13th month pay calculator philippines compute 13th month pay" },
+    { n: "Vakantiegeld berekenen", s: "Netherlands holiday allowance", u: "/nl/vakantiegeld-calculator/", k: "vakantiegeld berekenen vakantiebijslag nederland holiday allowance netto" }
   ];
   var form = document.getElementById('headerSearch');
   var inp = document.getElementById('headerSearchInput');
