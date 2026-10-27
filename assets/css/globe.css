@@ -1,0 +1,66 @@
+/* Calcotia homepage globe (hero only). Loaded from index.html alone,
+   so no other page pays for it. Overrides the centered hero layout
+   with a two-column hero: copy left, globe right. */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: center;
+}
+.hero-copy {
+  text-align: start;
+}
+.hero-copy p {
+  margin: 0 0 22px;
+}
+.hero-copy .stats {
+  justify-content: flex-start;
+}
+.globe-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+#globeCanvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  cursor: grab;
+  touch-action: none;
+}
+#globeCanvas:active {
+  cursor: grabbing;
+}
+.globe-tip {
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+  background: #102b4b;
+  color: #fff;
+  padding: 6px 11px;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+@media (max-width: 820px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-copy {
+    text-align: center;
+  }
+  .hero-copy p {
+    margin: 0 auto 22px;
+  }
+  .hero-copy .stats {
+    justify-content: center;
+  }
+  .globe-wrap {
+    max-width: 400px;
+  }
+}
