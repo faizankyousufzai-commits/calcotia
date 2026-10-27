@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DL5W4ZB2S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0DL5W4ZB2S');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資遣費計算機｜新舊制資遣費試算 | Calcotia</title>
+<meta name="description" content="免費資遣費計算機，依勞動基準法與勞工退休金條例計算新舊制資遣費。輸入年資與平均工資，馬上算出資遣費、預告期與完整計算過程，附公式與範例。">
+<link rel="canonical" href="https://calcotia.online/tw/ziqianfei-jisuanji/">
+<link rel="alternate" hreflang="zh-TW" href="https://calcotia.online/tw/ziqianfei-jisuanji/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="資遣費計算機｜新舊制資遣費試算 | Calcotia">
+<meta property="og:description" content="免費資遣費計算機，依勞動基準法與勞工退休金條例計算新舊制資遣費。輸入年資與平均工資，馬上算出資遣費與預告期。">
+<meta property="og:url" content="https://calcotia.online/tw/ziqianfei-jisuanji/">
+<meta property="og:image" content="https://calcotia.online/assets/img/logo.png">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "資遣費計算機",
+  "url": "https://calcotia.online/tw/ziqianfei-jisuanji/",
+  "applicationCategory": "FinanceApplication",
+  "inLanguage": "zh-TW",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "資遣費計算公式是什麼？", "acceptedAnswer": { "@type": "Answer", "text": "新制公式是：平均工資 × 0.5 × 年資，年資以年、月、日比例計算，最高以 6 個月為限。舊制公式是：平均工資 × 年資，每滿 1 年給 1 個月，未滿 1 年按比例計算，未滿 1 個月以 1 個月計，沒有 6 個月的上限。兩種制度的年資算法不同，算之前要先確認適用哪一種制度。" } },
+    { "@type": "Question", "name": "資遣費計算未滿一年怎麼算？", "acceptedAnswer": { "@type": "Answer", "text": "未滿 1 年按比例計算。新制把未滿 1 年的部分按月、日比例換算，例如工作 8 個月就是 8/12 年，再乘以 0.5 個月的倍率。舊制同樣按比例計算，但是未滿 1 個月直接以 1 個月計。本頁計算機的年、月、日欄位就是為了這種情形設計的。" } },
+    { "@type": "Question", "name": "未滿三個月有資遣費嗎？", "acceptedAnswer": { "@type": "Answer", "text": "有。工作未滿 3 個月仍然有資遣費，按比例計算。要注意的是預告期：年資未滿 3 個月時，法律沒有明文規定預告天數，由勞雇雙方協商；但是離職 10 天前的資遣通報仍然要做。" } },
+    { "@type": "Question", "name": "遣散費和資遣費一樣嗎？", "acceptedAnswer": { "@type": "Answer", "text": "日常用語常常把兩者混用，但是正式名詞是資遣費，指勞動基準法規定的補償。遣散費比較像是一般說法，計算時要以法定資遣費的公式為準，不要只看公司內部或網路上的俗稱。" } },
+    { "@type": "Question", "name": "資遣費計算excel 有範本嗎？", "acceptedAnswer": { "@type": "Answer", "text": "本頁沒有提供下載檔案。如果你搜尋的是資遣費計算 excel 下載，可以直接使用本頁的計算結果明細表：上面列出計算方式、換算月數與金額，把數字複製到自己的 Excel，就可以做出同樣的試算表。這個方法就是最簡單的資遣費試算表excel做法。" } },
+    { "@type": "Question", "name": "舊制和新制怎麼選？", "acceptedAnswer": { "@type": "Answer", "text": "不是由勞工自由選擇，而是看年資適用哪一種制度。2005 年 7 月 1 日勞工退休金條例施行後到職，或選擇新制的勞工，年資適用新制；施行前的舊制年資適用舊制。如果橫跨新舊制，兩段年資要分開計算，再把金額相加。" } },
+    { "@type": "Question", "name": "平均工資只看底薪嗎？", "acceptedAnswer": { "@type": "Answer", "text": "不是。計算基數是離職事由發生日前 6 個月的工資總額，包含底薪、加班費、獎金、津貼與各類加給，只要符合工資定義都要計入。只用底薪計算會低估資遣費，而且與勞工保險投保金額無關。" } },
+    { "@type": "Question", "name": "資遣費要繳稅嗎？", "acceptedAnswer": { "@type": "Answer", "text": "資遣費屬於退職所得，稅務計算有專門的規定與扣除額，而且規定會調整。本頁計算機顯示的是稅前金額，實際應納稅額請以稅務機關最新規定為準，或向會計師確認。" } }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.png" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Free calculators for every country</small></span></a>
+<button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+<nav class="main-nav">
+<a href="/">Home</a>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Tools <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Norway</p><a href="/no/sykepenger-kalkulator/">Sykepenger kalkulator</a><a href="/no/feriepenger-kalkulator/">Feriepenger kalkulator</a><a href="/no/foreldrepenger-kalkulator/">Foreldrepenger kalkulator</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Germany</p><a href="/de/buergergeld-rechner/">Bürgergeld Rechner 2026</a><a href="/de/aufstockung-rechner/">Aufstockung Rechner 2026</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">France</p><a href="/fr/simulateur-conge-parental/">Simulateur congé parental</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italy</p><a href="/it/calcolo-tfr-netto/">Calcolo TFR netto online 2026</a><a href="/it/calcolo-congedo-parentale/">Calcolo congedo parentale 2026</a><a href="/it/calcolo-naspi/">Calcolo NASpI 2026</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japan</p><a href="/jp/taishokukin-zeikin-keisan/">退職手当計算と退職金の税金シミュレーション</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/gr.svg" alt="" width="20" height="15" loading="lazy">Greece</p><a href="/gr/ypologismos-apozimiosis-apolysis/">Υπολογισμός αποζημίωσης απόλυσης</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/il.svg" alt="" width="20" height="15" loading="lazy">Israel</p><a href="/il/dmei-havraa/">מחשבון דמי הבראה 2026</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/vn.svg" alt="" width="20" height="15" loading="lazy">Vietnam</p><a href="/vn/tinh-bao-hiem-xa-hoi-1-lan/">Tính bảo hiểm xã hội 1 lần</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/sk.svg" alt="" width="20" height="15" loading="lazy">Slovakia</p><a href="/sk/kalkulacka-na-vypocet-dochodku/">Kalkulačka na výpočet dôchodku 2026</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/rs.svg" alt="" width="20" height="15" loading="lazy">Serbia</p><a href="/rs/kalkulator-decijeg-dodatka/">Dečiji dodatak kalkulator</a></div>
+<div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/sa.svg" alt="" width="20" height="15" loading="lazy">Saudi Arabia</p><a href="/sa/hasibat-nihayat-al-khidma/">حاسبة نهاية الخدمة السعودية</a><a href="/sa/end-of-service-calculator/">End of Service Calculator Saudi Arabia</a></div><div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/se.svg" alt="" width="20" height="15" loading="lazy">Sweden</p><a href="/se/berakna-semesterersattning/">Beräkna semesterersättning</a></div><div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/ie.svg" alt="" width="20" height="15" loading="lazy">Ireland</p><a href="/ie/holiday-pay-calculator/">Holiday Pay Calculator Ireland</a></div><div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/is.svg" alt="" width="20" height="15" loading="lazy">Iceland</p><a href="/is/orlofsreiknivel/">Orlofsreiknivél</a></div><div class="nav-group"><p class="nav-group-title"><img class="cflag" src="https://flagcdn.com/tw.svg" alt="" width="20" height="15" loading="lazy">Taiwan</p><a href="/tw/ziqianfei-jisuanji/">資遣費計算機</a></div>
+</div>
+</div>
+</div>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Countries <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-countries">
+<div class="nav-panel-grid">
+<a href="/no/"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Norway</a>
+<a href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Germany</a>
+<a href="/fr/"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">France</a>
+<a href="/it/"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italy</a>
+<a href="/jp/"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japan</a>
+<a href="/gr/"><img class="cflag" src="https://flagcdn.com/gr.svg" alt="" width="20" height="15" loading="lazy">Greece</a>
+<a href="/il/"><img class="cflag" src="https://flagcdn.com/il.svg" alt="" width="20" height="15" loading="lazy">Israel</a>
+<a href="/vn/"><img class="cflag" src="https://flagcdn.com/vn.svg" alt="" width="20" height="15" loading="lazy">Vietnam</a>
+<a href="/sk/"><img class="cflag" src="https://flagcdn.com/sk.svg" alt="" width="20" height="15" loading="lazy">Slovakia</a>
+<a href="/rs/"><img class="cflag" src="https://flagcdn.com/rs.svg" alt="" width="20" height="15" loading="lazy">Serbia</a>
+<a href="/sa/"><img class="cflag" src="https://flagcdn.com/sa.svg" alt="" width="20" height="15" loading="lazy">Saudi Arabia</a>
+<a href="/se/"><img class="cflag" src="https://flagcdn.com/se.svg" alt="" width="20" height="15" loading="lazy">Sweden</a>
+<a href="/ie/"><img class="cflag" src="https://flagcdn.com/ie.svg" alt="" width="20" height="15" loading="lazy">Ireland</a>
+<a href="/is/"><img class="cflag" src="https://flagcdn.com/is.svg" alt="" width="20" height="15" loading="lazy">Iceland</a>
+<a href="/tw/"><img class="cflag" src="https://flagcdn.com/tw.svg" alt="" width="20" height="15" loading="lazy">Taiwan</a>
+</div>
+</div>
+</div>
+<a href="/about.html">About</a>
+<a href="/contact.html">Contact</a>
+<form class="header-search" id="headerSearch" role="search" autocomplete="off">
+<input type="search" id="headerSearchInput" placeholder="Search calculators…" aria-label="Search calculators">
+<button type="submit">Search</button>
+<div class="header-search-results" id="headerSearchResults"></div>
+</form>
+</nav>
+</div></header>
+
+<div class="page-head"><div class="wrap">
+<div class="crumb"><a href="/">Home</a> / <a href="/tw/">台灣</a> / 資遣費計算機</div>
+<h1>資遣費計算機</h1>
+<p>這個資遣費計算機幫你算出台灣的資遣費。只要選擇新制還是舊制，輸入工作年資與平均月工資，馬上算出資遣費、預告期與完整計算過程。這個資遣費計算器使用勞動基準法與勞工退休金條例的法定公式，免費使用，不需要註冊。無論你是被資遣的勞工，還是要幫員工結算的公司人資，都可以直接用這個資遣費試算系統對答案。</p>
+</div></div>
+
+<main><div class="wrap">
+
+<div class="calc">
+<h2>計算你的資遣費</h2>
+<div class="grid2">
+<div class="field"><label for="tw-system">適用制度</label><select id="tw-system"><option value="new" selected>新制（勞工退休金條例）</option><option value="old">舊制（勞動基準法）</option></select><span class="hint">2005 年 7 月 1 日勞工退休金條例施行後到職，或選擇新制者適用新制；施行前的舊制年資適用舊制。橫跨新舊制時，兩段年資要分開計算。</span></div>
+<div class="field"><label for="tw-years">工作年資（年）</label><input type="number" id="tw-years" value="3" min="0" step="1"><span class="hint">完整的工作年數，例如 3 年。</span></div>
+<div class="field"><label for="tw-months">工作年資（月）</label><input type="number" id="tw-months" value="6" min="0" max="11" step="1"><span class="hint">不滿 1 年的月數，填 0 到 11 個月。</span></div>
+<div class="field"><label for="tw-days">工作年資（日）</label><input type="number" id="tw-days" value="15" min="0" max="30" step="1"><span class="hint">不滿 1 個月的天數。新制按日比例換算，舊制未滿 1 個月以 1 個月計。</span></div>
+<div class="field"><label for="tw-wage">平均月工資（元）</label><input type="number" id="tw-wage" value="30000" min="0" step="1000"><span class="hint">以離職事由發生日前 6 個月的工資總額計算的平均月工資，包含底薪、加班費、獎金與各類津貼。</span></div>
+</div>
+<button class="calc-btn" id="tw-btn" type="button">計算資遣費</button>
+<div class="result" id="tw-result">
+<div>計算結果</div>
+<div class="big" id="tw-total">53,125 元</div>
+<table>
+<tr><td>計算方式</td><td id="tw-res-method">新制：每年 0.5 個月平均工資，最高以 6 個月為限</td></tr>
+<tr><td>換算月數</td><td id="tw-res-months">1.7708 個月</td></tr>
+<tr><td>上限情形</td><td id="tw-res-cap">未達上限</td></tr>
+<tr><td>預告期</td><td id="tw-res-notice">30 天前預告</td></tr>
+<tr><td>平均月工資</td><td id="tw-res-wage">30,000 元</td></tr>
+</table>
+<p id="tw-note">此金額為稅前估算。平均工資請以離職事由發生日前 6 個月的工資總額計算，包含底薪、加班費、獎金與各類津貼，不只看底薪。</p>
+</div>
+</div>
+
+<section class="block">
+<h2>資遣費是什麼？</h2>
+<p>資遣費是雇主終止勞動契約時必須發給勞工的補償，但不是每一次離職都有。當雇主因為業務緊縮、歇業、改組、轉讓等原因，依勞動基準法第 11 條、第 13 條但書或第 20 條終止契約時，就構成資遣，必須發給資遣費。反過來說，如果是因為可歸責於勞工本身的事由而終止契約，例如勞動基準法第 12 條的情形，那就不屬於資遣，雇主不需要發給資遣費。公司資遣費計算的第一步，永遠是先確認這一次離職是不是資遣，再來算金額。</p>
+<p>資遣費和一般說的遣散費常常被混用。網路上搜尋遣散費資遣費的人，通常想問的就是同一件事：雇主依法到底要給多少錢。正式名詞是資遣費，計算要以勞動基準法的公式為準。遣散費比較像是口頭說法，有些公司內部文件或網路文章會這樣寫，但是金額的算法仍然回到同一套法定標準，不要只看名詞就以為是另一種補償。</p>
+</section>
+
+<section class="block">
+<h2>資遣費計算公式：新制與舊制</h2>
+<p>資遣費算法分成新制與舊制，兩者的倍率與上限完全不同。先看公式，再看範例，就不容易算錯：</p>
+<p><strong>新制公式：</strong>平均工資 × 0.5 × 年資，年資以年、月、日比例計算，最高以 6 個月平均工資為限。</p>
+<p><strong>資遣費計算舊制公式：</strong>平均工資 × 年資，每滿 1 年給 1 個月，未滿 1 年按比例計算，未滿 1 個月以 1 個月計，沒有 6 個月的上限。</p>
+<table class="data">
+<tr><th>項目</th><th>新制（勞工退休金條例）</th><th>舊制（勞動基準法）</th></tr>
+<tr><td>每滿 1 年</td><td>0.5 個月平均工資</td><td>1 個月平均工資</td></tr>
+<tr><td>未滿 1 年</td><td>按月、日比例計算</td><td>按比例計算</td></tr>
+<tr><td>未滿 1 個月</td><td>按日比例計算</td><td>以 1 個月計</td></tr>
+<tr><td>上限</td><td>最高 6 個月平均工資</td><td>沒有 6 個月的上限</td></tr>
+<tr><td>平均工資基數</td><td colspan="2">離職事由發生日前 6 個月的工資總額，包含底薪、加班費、獎金與各類津貼</td></tr>
+</table>
+<p>新制的年資以實際工作日數分月、日比例計算，所以 15 天就是半個月，不會直接進位成 1 個月。舊制則不同，剩餘的日數直接以 1 個月計，這是兩種制度最容易算錯的地方。本頁的資遣費計算程式會依你選擇的制度自動套用正確的公式，不需要自己換算。</p>
+</section>
+
+<section class="block">
+<h2>資遣費計算範例</h2>
+<h3>範例 1：新制與舊制對照，3 年 6 個月 15 天，平均工資 30,000 元</h3>
+<p>新制算法：年資換算為 3 + (6 + 15/30) / 12 = 3.5417 年，再乘以 0.5，得到 1.7708 個月，資遣費為 30,000 × 1.7708 = 53,125 元。舊制算法：剩餘 15 天以 1 個月計，年資換算為 3 + 7/12 = 3.5833 年，資遣費為 30,000 × 3.5833 = 107,500 元。同一份年資與薪資，新舊制的差距將近一倍，選錯制度就會完全算錯。</p>
+<h3>範例 2：新制未滿一年，8 個月，平均工資 45,000 元</h3>
+<p>資遣費計算未滿一年時直接按比例算：8 個月就是 8/12 年，再乘以 0.5，得到 0.3333 個月，資遣費為 45,000 × 0.3333 = 15,000 元。未滿 1 年不需要等到滿 1 年才有資遣費，從到職起按比例累積。</p>
+<h3>範例 3：新制上限，20 年，平均工資 50,000 元</h3>
+<p>不設上限時，20 年乘以 0.5 會得到 10 個月，也就是 500,000 元。但是新制最高以 6 個月為限，所以實際資遣費為 50,000 × 6 = 300,000 元。換句話說，要拿到資遣費 300萬，新制下的平均工資必須達到 50 萬元，因為 6 × 500,000 才等於 3,000,000 元。</p>
+<h3>範例 4：未滿 1 個月，15 天，平均工資 30,000 元</h3>
+<p>新制按日比例計算：15 天等於 0.5 個月，再除以 12 年換算，乘以 0.5 倍率，得到 0.0208 個月，資遣費為 625 元。舊制則不同，未滿 1 個月以 1 個月計，換算為 1/12 年，資遣費為 30,000 × 1/12 = 2,500 元。同一段 15 天的年資，兩種制度的結果差了四倍。</p>
+</section>
+
+<section class="block">
+<h2>資遣費計算方法：平均工資怎麼算？</h2>
+<p>資遣費計算方法最關鍵的一步不是年資，而是平均工資。資遣費計算基數就是離職事由發生日前 6 個月的工資總額，包含底薪、加班費、獎金、交通津貼、伙食津貼與各類加給，只要符合勞動基準法對工資的定義都要計入。只用底薪計算會低估資遣費，而且這個基數與勞工保險投保金額無關，不要拿投保金額來代替。</p>
+<p>時薪制的勞工也是一樣的原則：先把離職前 6 個月的實際薪資總額加起來，包含時薪乘以工時與各項津貼，再換算成平均月工資，然後輸入計算機。派遣資遣費計算的資遣費計費方式與一般員工相同，都是平均工資乘以年資倍率，關鍵是先確認實際雇主與連續年資，不要因為派駐地點不同就以為年資歸零。</p>
+<p>本頁的計算明細表就是為了核對而設計的：結果下方的表格就是一份完整的資遣費計算明細表，列出計算方式、換算月數、上限情形、預告期與平均月工資，方便和薪資單或雇主提供的數字逐項比對。如果你習慣用試算表，也可以把這些數字複製到自己的表格，做成個人的資遣費計算表格。</p>
+</section>
+
+<section class="block">
+<h2>預告期與資遣通報</h2>
+<p>資遣費之外，雇主還必須遵守預告期與通報的規定。預告天數依年資而定：工作 3 個月以上、未滿 1 年者，10 天前預告；工作 1 年以上、未滿 3 年者，20 天前預告；工作 3 年以上者，30 天前預告。預告工資的算法有兩種，取對勞工較有利的一種：預告天數乘以一日工資（離職前 1 個月薪資總額除以 30），或是預告天數乘以平均工資（離職前 6 個月薪資總和除以天數）。</p>
+<p>資遣通報則是另一回事：雇主必須在員工離職前 10 天，向當地主管機關與公立就業服務機構通報。如果沒有依法通報，可以處新台幣 3 萬元以上、15 萬元以下罰鍰。年資未滿 3 個月時，雖然預告天數沒有明文規定，由勞雇雙方協商，但是離職 10 天前的資遣通報仍然要做。裁員資遣費計算時，也要把預告期與通報一起看，不能只算資遣費本身。</p>
+</section>
+
+<section class="block">
+<h2>官方工具與本站的差別</h2>
+<p>勞動部的資遣費試算表是目前排名第一的官方工具，它只問幾個數字就給出答案，適合快速確認。但是它沒有列出公式、沒有新舊制對照、沒有範例，也沒有回答未滿一年、未滿三個月、遣散費與資遣費的差別等問題。本頁使用相同的法定公式，但是把計算過程全部展開，包含換算月數、上限情形與預告期，適合想要一次搞懂、或是要和雇主核對金額的人。兩個工具可以互相對照，數字應該一致，差別只在於本頁多給了過程與說明。</p>
+<p>在 Dcard、PTT 等討論區，資遣費計算 dcard 這類搜尋也很常見，網友分享的金額常常因為制度選錯、平均工資只算底薪、或是年資換算方式不同而差很多。遇到網路上的數字時，先確認對方用的是新制還是舊制、平均工資包含哪些項目，再拿來和自己的情形比較，才不會被錯誤的範例誤導。</p>
+</section>
+
+<section class="block faq">
+<h2>資遣費常見問題</h2>
+<details><summary>資遣費計算公式是什麼？</summary><p>新制公式是：平均工資 × 0.5 × 年資，年資以年、月、日比例計算，最高以 6 個月為限。舊制公式是：平均工資 × 年資，每滿 1 年給 1 個月，未滿 1 年按比例計算，未滿 1 個月以 1 個月計，沒有 6 個月的上限。兩種制度的年資算法不同，算之前要先確認適用哪一種制度。</p></details>
+<details><summary>資遣費計算未滿一年怎麼算？</summary><p>未滿 1 年按比例計算。新制把未滿 1 年的部分按月、日比例換算，例如工作 8 個月就是 8/12 年，再乘以 0.5 個月的倍率。舊制同樣按比例計算，但是未滿 1 個月直接以 1 個月計。本頁計算機的年、月、日欄位就是為了這種情形設計的。</p></details>
+<details><summary>未滿三個月有資遣費嗎？</summary><p>有。工作未滿 3 個月仍然有資遣費，按比例計算。要注意的是預告期：年資未滿 3 個月時，法律沒有明文規定預告天數，由勞雇雙方協商；但是離職 10 天前的資遣通報仍然要做。</p></details>
+<details><summary>遣散費和資遣費一樣嗎？</summary><p>日常用語常常把兩者混用，但是正式名詞是資遣費，指勞動基準法規定的補償。遣散費比較像是一般說法，計算時要以法定資遣費的公式為準，不要只看公司內部或網路上的俗稱。</p></details>
+<details><summary>資遣費計算excel 有範本嗎？</summary><p>本頁沒有提供下載檔案。如果你搜尋的是資遣費計算 excel 下載，可以直接使用本頁的計算結果明細表：上面列出計算方式、換算月數與金額，把數字複製到自己的 Excel，就可以做出同樣的試算表。這個方法就是最簡單的資遣費試算表excel做法。</p></details>
+<details><summary>舊制和新制怎麼選？</summary><p>不是由勞工自由選擇，而是看年資適用哪一種制度。2005 年 7 月 1 日勞工退休金條例施行後到職，或選擇新制的勞工，年資適用新制；施行前的舊制年資適用舊制。如果橫跨新舊制，兩段年資要分開計算，再把金額相加。</p></details>
+<details><summary>平均工資只看底薪嗎？</summary><p>不是。計算基數是離職事由發生日前 6 個月的工資總額，包含底薪、加班費、獎金、津貼與各類加給，只要符合工資定義都要計入。只用底薪計算會低估資遣費，而且與勞工保險投保金額無關。</p></details>
+<details><summary>資遣費要繳稅嗎？</summary><p>資遣費屬於退職所得，稅務計算有專門的規定與扣除額，而且規定會調整。本頁計算機顯示的是稅前金額，實際應納稅額請以稅務機關最新規定為準，或向會計師確認。</p></details>
+</section>
+
+<div class="note"><p><strong>重要提醒：</strong>本計算機顯示的是稅前估算，依勞動基準法與勞工退休金條例的法定公式計算。實際金額可能因為團體協約、工作規則、個別約定或最新解釋而不同。外籍勞工的適用情形依個案與最新規定而定，建議向勞動部或當地勞工局確認。最終金額請以雇主提供的結算單與主管機關的認定為準，本頁結果不是法律或稅務建議。</p></div>
+
+<div class="src"><h3>台灣資遣費官方來源</h3>
+<p>計算公式與範例依據勞動部公布的新舊制資遣費標準，平均工資的定義與預告期、通報規定來自勞動基準法與就業服務法的相關條文。</p>
+<ul>
+<li><a href="https://www.mol.gov.tw/topic/3078/25331/25619/" rel="noopener" target="_blank">勞動部：舊制資遣費給與標準</a></li>
+<li><a href="https://www.mol.gov.tw/topic/3078/25331/25621/" rel="noopener" target="_blank">勞動部：新制資遣費給與標準</a></li>
+</ul>
+<p>想找其他國家的離職補償計算機，可以看 <a href="/it/calcolo-tfr-netto/">義大利 TFR 計算機</a>、<a href="/gr/ypologismos-apozimiosis-apolysis/">希臘解僱補償計算機</a>，或是 <a href="/tw/">台灣計算機專區</a>。</p>
+</div>
+
+</div><section class="block">
+<h2>Related calculators</h2>
+<div class="grid">
+<a class="tool-card" href="/it/calcolo-tfr-netto/"><span class="flag"><img src="https://flagcdn.com/it.svg" alt="Italy flag" width="44" height="33" loading="lazy"></span><h3>Calcolo TFR netto</h3><p>Italy</p><span class="go">→</span></a>
+<a class="tool-card" href="/gr/ypologismos-apozimiosis-apolysis/"><span class="flag"><img src="https://flagcdn.com/gr.svg" alt="Greece flag" width="44" height="33" loading="lazy"></span><h3>Υπολογισμός αποζημίωσης απόλυσης</h3><p>Greece</p><span class="go">→</span></a>
+<a class="tool-card" href="/sa/end-of-service-calculator/"><span class="flag"><img src="https://flagcdn.com/sa.svg" alt="Saudi Arabia flag" width="44" height="33" loading="lazy"></span><h3>End of Service Calculator</h3><p>Saudi Arabia</p><span class="go">→</span></a>
+<a class="tool-card" href="/jp/taishokukin-zeikin-keisan/"><span class="flag"><img src="https://flagcdn.com/jp.svg" alt="Japan flag" width="44" height="33" loading="lazy"></span><h3>退職金・退職手当 税金計算</h3><p>Japan</p><span class="go">→</span></a>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.png" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Free calculators for every country</small></span></a><p>Calcotia offers free online calculators for salary, benefits and severance, for every country in its own language, built on official formulas and current rates. The Taiwan calculator follows the Labor Standards Act and the Labor Pension Act.</p></div>
+<div><h3>Countries</h3><ul>
+<li><a href="/no/"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Norway</a></li><li><a href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Germany</a></li><li><a href="/fr/"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">France</a></li><li><a href="/it/"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italy</a></li><li><a href="/jp/"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japan</a></li><li><a href="/gr/"><img class="cflag" src="https://flagcdn.com/gr.svg" alt="" width="20" height="15" loading="lazy">Greece</a></li><li><a href="/il/"><img class="cflag" src="https://flagcdn.com/il.svg" alt="" width="20" height="15" loading="lazy">Israel</a></li><li><a href="/vn/"><img class="cflag" src="https://flagcdn.com/vn.svg" alt="" width="20" height="15" loading="lazy">Vietnam</a></li><li><a href="/sk/"><img class="cflag" src="https://flagcdn.com/sk.svg" alt="" width="20" height="15" loading="lazy">Slovakia</a></li><li><a href="/rs/"><img class="cflag" src="https://flagcdn.com/rs.svg" alt="" width="20" height="15" loading="lazy">Serbia</a></li><li><a href="/sa/"><img class="cflag" src="https://flagcdn.com/sa.svg" alt="" width="20" height="15" loading="lazy">Saudi Arabia</a></li><li><a href="/se/"><img class="cflag" src="https://flagcdn.com/se.svg" alt="" width="20" height="15" loading="lazy">Sweden</a></li><li><a href="/ie/"><img class="cflag" src="https://flagcdn.com/ie.svg" alt="" width="20" height="15" loading="lazy">Ireland</a></li><li><a href="/is/"><img class="cflag" src="https://flagcdn.com/is.svg" alt="" width="20" height="15" loading="lazy">Iceland</a></li><li><a href="/tw/"><img class="cflag" src="https://flagcdn.com/tw.svg" alt="" width="20" height="15" loading="lazy">Taiwan</a></li>
+</ul></div>
+<div><h3>Popular calculators</h3><ul>
+<li><a href="/no/sykepenger-kalkulator/">Sykepenger kalkulator</a></li>
+<li><a href="/no/feriepenger-kalkulator/">Feriepenger kalkulator</a></li>
+<li><a href="/de/buergergeld-rechner/">Bürgergeld Rechner</a></li>
+<li><a href="/it/calcolo-tfr-netto/">Calcolo TFR netto</a></li>
+<li><a href="/sk/kalkulacka-na-vypocet-dochodku/">Kalkulačka na výpočet dôchodku</a></li>
+<li><a href="/fr/simulateur-conge-parental/">Simulateur congé parental</a></li>
+<li><a href="/vn/tinh-bao-hiem-xa-hoi-1-lan/">Tính bảo hiểm xã hội 1 lần</a></li>
+<li><a href="/rs/kalkulator-decijeg-dodatka/">Kalkulator dečijeg dodatka</a></li>
+</ul></div>
+<div><h3>Calcotia</h3><ul><li><a href="/about.html">About</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+</div>
+<div class="foot-base"><span>© 2026 Calcotia. All rights reserved.</span><span>calcotia.online</span></div>
+</div></footer>
+<script src="/assets/js/ziqianfei-jisuanji.js" defer></script>
+<script src="/assets/js/header-search.js" defer></script>
+<script src="/assets/js/nav.js" defer></script>
+</body>
+</html>
