@@ -356,6 +356,11 @@
   var visible = true;
   var rafId = 0;
   var lastFrame = 0;
+  /* Throttle auto-rotate drawing to ~20fps (50ms): rotation still advances
+     at 2 deg/s, but the full world map is no longer redrawn at 60fps, so
+     the main thread stays freer during page load. Dragging draws directly
+     in pointermove and is not throttled here. */
+  var lastDraw = 0;
 
   function autoRotateOn() {
     return visible && !dragging && !reducedMotion &&
@@ -372,7 +377,10 @@
       rot.lon += dt * 2.0; /* ~2 degrees per second, a bit faster than before */
       if (rot.lon > 180) rot.lon -= 360;
     }
-    draw();
+    if (dragging || ts - lastDraw >= 50) {
+      draw();
+      lastDraw = ts;
+    }
     if (autoRotateOn() || dragging) {
       rafId = requestAnimationFrame(loop);
     } else if (visible) {
