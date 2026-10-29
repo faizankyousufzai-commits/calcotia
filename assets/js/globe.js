@@ -348,6 +348,8 @@
   /* ---------- Interaction ---------- */
   var dragging = false;
   var lastX = 0, lastY = 0, downX = 0, downY = 0, moved = 0;
+  var dragLocked = false, scrollAborted = false, activePointerType = null;
+  var resumeTimer = 0;
   var lastInteract = 0;
   var reducedMotion = (typeof window.matchMedia === 'function') &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -367,12 +369,17 @@
     lastFrame = ts;
     if (dt > 0.1) dt = 0.1;
     if (autoRotateOn()) {
-      rot.lon += dt * 1.0; /* ~1 degree per second, slow */
+      rot.lon += dt * 2.0; /* ~2 degrees per second, a bit faster than before */
       if (rot.lon > 180) rot.lon -= 360;
     }
     draw();
     if (autoRotateOn() || dragging) {
       rafId = requestAnimationFrame(loop);
+    } else if (visible) {
+      /* Loop stops here when idle, so schedule a resume check after the
+         3s idle window, otherwise auto-rotate would never come back
+         after a drag. This was the resume bug. */
+      scheduleResume();
     }
   }
 
@@ -381,6 +388,14 @@
       lastFrame = 0;
       rafId = requestAnimationFrame(loop);
     }
+  }
+
+  function scheduleResume() {
+    if (resumeTimer) clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(function () {
+      resumeTimer = 0;
+      kickLoop();
+    }, 3100);
   }
 
   function canvasPos(e) {
@@ -439,19 +454,46 @@
 
   canvas.addEventListener('pointerdown', function (e) {
     dragging = true;
+    dragLocked = e.pointerType !== 'touch';
+    scrollAborted = false;
+    activePointerType = e.pointerType;
     moved = 0;
     lastX = e.clientX;
     lastY = e.clientY;
     downX = e.clientX;
     downY = e.clientY;
     lastInteract = Date.now();
-    try { canvas.setPointerCapture(e.pointerId); } catch (err) { /* noop */ }
+    /* For touch, do NOT capture yet: a vertical touch must stay free to
+       scroll the page. Capture only once a horizontal drag is locked. */
+    if (dragLocked) {
+      try { canvas.setPointerCapture(e.pointerId); } catch (err) { /* noop */ }
+    }
     kickLoop();
   });
 
   canvas.addEventListener('pointermove', function (e) {
     var pos = canvasPos(e);
     if (dragging) {
+      /* Touch direction lock: wait until the gesture is clearly
+         horizontal before rotating. A mostly vertical touch is a page
+         scroll, not a globe drag, so hand it back to the browser. */
+      if (activePointerType === 'touch' && !dragLocked) {
+        var totalDx = e.clientX - downX;
+        var totalDy = e.clientY - downY;
+        if (Math.abs(totalDy) > Math.abs(totalDx) && Math.abs(totalDy) > 10) {
+          scrollAborted = true;
+          dragging = false;
+          return;
+        }
+        if (Math.abs(totalDx) > Math.abs(totalDy) && Math.abs(totalDx) > 10) {
+          dragLocked = true;
+          try { canvas.setPointerCapture(e.pointerId); } catch (err) { /* noop */ }
+          lastX = e.clientX;
+          lastY = e.clientY;
+        } else {
+          return;
+        }
+      }
       var dx = e.clientX - lastX;
       var dy = e.clientY - lastY;
       lastX = e.clientX;
@@ -484,22 +526,31 @@
   });
 
   function endDrag(e) {
-    if (!dragging) return;
+    if (!dragging && !scrollAborted) return;
+    var wasScroll = scrollAborted;
     dragging = false;
+    dragLocked = false;
+    scrollAborted = false;
+    activePointerType = null;
     lastInteract = Date.now();
-    if (moved < 6 && e && e.clientX !== undefined) {
+    if (!wasScroll && moved < 6 && e && e.clientX !== undefined) {
       var pos = canvasPos(e);
       var hit = hitTest(pos[0], pos[1]);
       if (hit) window.location.href = hit.hub.url;
     }
     kickLoop();
+    scheduleResume();
   }
 
   canvas.addEventListener('pointerup', endDrag);
   canvas.addEventListener('pointercancel', function () {
     dragging = false;
+    dragLocked = false;
+    scrollAborted = false;
+    activePointerType = null;
     lastInteract = Date.now();
     kickLoop();
+    scheduleResume();
   });
   canvas.addEventListener('pointerleave', function () {
     if (!dragging) {

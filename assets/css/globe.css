@@ -28,7 +28,9 @@
   height: auto;
   aspect-ratio: 1 / 1;
   cursor: grab;
-  touch-action: none;
+  /* pan-y, not none: vertical touches scroll the page on mobile,
+     horizontal touches still reach the globe drag handler. */
+  touch-action: pan-y;
 }
 #globeCanvas:active {
   cursor: grabbing;
