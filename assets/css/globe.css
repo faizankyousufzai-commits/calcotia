@@ -47,7 +47,90 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   font-size: 0.85rem;
   font-weight: 600;
-  white-space: nowrap;
+  white-space: pre-line;
+  max-width: 280px;
+  text-align: start;
+}
+.globe-controls {
+  margin-top: 14px;
+  text-align: center;
+}
+.globe-tour-btn {
+  background: #00B981;
+  color: #fff;
+  border: 0;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.globe-tour-btn:hover {
+  background: #00795a;
+}
+.globe-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.globe-chip {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.globe-chip:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+.globe-chip[aria-pressed="true"] {
+  background: #00B981;
+  border-color: #00B981;
+  color: #fff;
+}
+.globe-panel {
+  margin-top: 12px;
+  background: #fff;
+  color: #15345a;
+  border-radius: 14px;
+  padding: 16px 18px;
+  text-align: start;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+}
+.globe-panel[hidden] {
+  display: none;
+}
+.globe-panel h3 {
+  margin: 0 0 8px;
+  color: #102b4b;
+}
+.globe-panel ul {
+  margin: 0 0 12px;
+  padding-inline-start: 20px;
+}
+.globe-panel li {
+  margin-bottom: 4px;
+}
+.globe-panel a {
+  color: #00795a;
+  font-weight: 700;
+}
+.globe-panel button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: inherit;
 }
 @media (max-width: 820px) {
   .hero-grid {
