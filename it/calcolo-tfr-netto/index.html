@@ -31,14 +31,68 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calcolo TFR netto","url":"https://calcotia.online/it/calcolo-tfr-netto/","applicationCategory":"FinanceApplication","operatingSystem":"Any","inLanguage":"it-IT","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Come calcolare il TFR netto se ho lavorato in più aziende?","acceptedAnswer":{"@type":"Answer","text":"Ogni rapporto di lavoro produce un TFR separato: quando cambi azienda, il vecchio datore ti liquida quanto maturato fino a quel momento, con la sua tassazione separata. Per stimare il totale, ripeti il calcolo per ciascun periodo con gli anni e la retribuzione di quel rapporto e somma i netti. Ricorda che gli anni non si cumulano tra datori diversi ai fini della tassazione."}},
-{"@type":"Question","name":"Posso usare questo calcolo netto TFR online anche per il TFR versato a un fondo pensione?","acceptedAnswer":{"@type":"Answer","text":"No: il simulatore segue le regole del TFR lasciato in azienda. Le somme destinate a un fondo pensione non si rivalutano con il tasso legale e, al momento della prestazione, sono tassate con un'aliquota tra il 15% e il 9% in base agli anni di partecipazione, senza tassazione separata. I due percorsi danno quindi risultati anche molto diversi."}},
-{"@type":"Question","name":"Che cos'è l'imposta sostitutiva del 17% sulla rivalutazione?","acceptedAnswer":{"@type":"Answer","text":"È un'imposta che il datore di lavoro trattiene ogni anno solo sulla rivalutazione del fondo accumulato, non sulle quote di retribuzione. Grazie a questa trattenuta annuale, quando ricevi la liquidazione la rivalutazione è già tassata e non rientra nella base della tassazione separata, che colpisce solo le quote accantonate."}},
-{"@type":"Question","name":"Quando viene pagato il TFR dopo la fine del rapporto?","acceptedAnswer":{"@type":"Answer","text":"La legge non fissa un giorno unico: di regola il TFR viene liquidato con l'ultima busta paga o nei tempi previsti dal contratto collettivo, spesso entro 30-45 giorni dalla cessazione. Per i dipendenti pubblici che ricevono TFR o TFS dall'INPS i termini sono più lunghi e dipendono dal motivo della cessazione."}},
-{"@type":"Question","name":"Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?","acceptedAnswer":{"@type":"Answer","text":"Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota lorda di un anno è 19.500 / 13,5, cioè 1.444,44 euro; detratto il contributo dello 0,50% al Fondo di garanzia INPS, nel fondo entrano 1.437,22 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota lorda diventa 1.555,56 euro, cioè 1.547,78 euro al netto del contributo."}},
-{"@type":"Question","name":"Il TFR calcolo netto cambia se ho già ricevuto un'anticipazione?","acceptedAnswer":{"@type":"Answer","text":"Sì: l'anticipazione riduce il fondo accumulato e quindi anche il netto finale, perché le somme già erogate sono state tassate al momento dell'anticipo. Per una stima corretta, sottrai dal risultato le anticipazioni lorde già ricevute oppure riduci gli anni inseriti nel simulatore in modo proporzionale."}}
-]}
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come calcolare il TFR netto se ho lavorato in più aziende?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ogni rapporto di lavoro produce un TFR separato: quando cambi azienda, il vecchio datore ti liquida quanto maturato fino a quel momento, con la sua tassazione separata. Per stimare il totale, ripeti il calcolo per ciascun periodo con gli anni e la retribuzione di quel rapporto e somma i netti. Ricorda che gli anni non si cumulano tra datori diversi ai fini della tassazione."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso usare questo calcolo netto TFR online anche per il TFR versato a un fondo pensione?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No: il simulatore segue le regole del TFR lasciato in azienda. Le somme destinate a un fondo pensione non si rivalutano con il tasso legale e, al momento della prestazione, sono tassate con un'aliquota tra il 15% e il 9% in base agli anni di partecipazione, senza tassazione separata. I due percorsi danno quindi risultati anche molto diversi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Che cos'è l'imposta sostitutiva del 17% sulla rivalutazione?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "È un'imposta che il datore di lavoro trattiene ogni anno solo sulla rivalutazione del fondo accumulato, non sulle quote di retribuzione. Grazie a questa trattenuta annuale, quando ricevi la liquidazione la rivalutazione è già tassata e non rientra nella base della tassazione separata, che colpisce solo le quote accantonate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quando viene pagato il TFR dopo la fine del rapporto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La legge non fissa un giorno unico: di regola il TFR viene liquidato con l'ultima busta paga o nei tempi previsti dal contratto collettivo, spesso entro 30-45 giorni dalla cessazione. Per i dipendenti pubblici che ricevono TFR o TFS dall'INPS i termini sono più lunghi e dipendono dal motivo della cessazione."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota lorda di un anno è 19.500 / 13,5, cioè 1.444,44 euro; detratto il contributo dello 0,50% al Fondo di garanzia INPS, nel fondo entrano 1.437,22 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota lorda diventa 1.555,56 euro, cioè 1.547,78 euro al netto del contributo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il TFR calcolo netto cambia se ho già ricevuto un'anticipazione?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì: l'anticipazione riduce il fondo accumulato e quindi anche il netto finale, perché le somme già erogate sono state tassate al momento dell'anticipo. Per una stima corretta, sottrai dal risultato le anticipazioni lorde già ricevute oppure riduci gli anni inseriti nel simulatore in modo proporzionale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come si calcola il TFR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il TFR si costruisce con la quota annua: per ogni anno di servizio il datore accantona un importo pari alla retribuzione annua lorda divisa per 13,5. Dalla quota così calcolata il datore detrae lo 0,50% a titolo di contributo al Fondo di garanzia dell'INPS, quindi nel fondo del lavoratore entra il 99,5% della quota. Negli anni successivi si aggiunge la rivalutazione legale."
+      }
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -190,6 +244,7 @@
 <details><summary>Quando viene pagato il TFR dopo la fine del rapporto?</summary><p>La legge non fissa un giorno unico: di regola il TFR viene liquidato con l'ultima busta paga o nei tempi previsti dal contratto collettivo, spesso entro 30-45 giorni dalla cessazione. Per i dipendenti pubblici che ricevono TFR o TFS dall'INPS i termini sono più lunghi e dipendono dal motivo della cessazione.</p></details>
 <details><summary>Quanto TFR matura in un anno con uno stipendio di 1.500 euro al mese?</summary><p>Con 1.500 euro lordi al mese per 13 mensilità, la retribuzione annua è 19.500 euro e la quota lorda di un anno è 19.500 / 13,5, cioè 1.444,44 euro; detratto il contributo dello 0,50% al Fondo di garanzia INPS, nel fondo entrano 1.437,22 euro, a cui negli anni successivi si aggiunge la rivalutazione legale. Con 14 mensilità la retribuzione annua sale a 21.000 euro e la quota lorda diventa 1.555,56 euro, cioè 1.547,78 euro al netto del contributo.</p></details>
 <details><summary>Il TFR calcolo netto cambia se ho già ricevuto un'anticipazione?</summary><p>Sì: l'anticipazione riduce il fondo accumulato e quindi anche il netto finale, perché le somme già erogate sono state tassate al momento dell'anticipo. Per una stima corretta, sottrai dal risultato le anticipazioni lorde già ricevute oppure riduci gli anni inseriti nel simulatore in modo proporzionale.</p></details>
+<details><summary>Come si calcola il TFR?</summary><p>Il TFR si costruisce con la quota annua: per ogni anno di servizio il datore accantona un importo pari alla retribuzione annua lorda divisa per 13,5. Dalla quota così calcolata il datore detrae lo 0,50% a titolo di contributo al Fondo di garanzia dell'INPS, quindi nel fondo del lavoratore entra il 99,5% della quota. Negli anni successivi si aggiunge la rivalutazione legale.</p></details>
 </section>
 
 <section class="block">
