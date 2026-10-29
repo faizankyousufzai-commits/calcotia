@@ -56,7 +56,9 @@
   text-align: center;
 }
 .globe-tour-btn {
-  background: #00B981;
+  /* Darker green so white text passes contrast on the navy hero:
+     #00B981 on white was only about 2.1:1, #00795a is about 5:1. */
+  background: #00795a;
   color: #fff;
   border: 0;
   padding: 9px 18px;
@@ -67,7 +69,11 @@
   font-family: inherit;
 }
 .globe-tour-btn:hover {
-  background: #00795a;
+  background: #005a44;
+}
+.globe-tour-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 .globe-chips {
   display: flex;
