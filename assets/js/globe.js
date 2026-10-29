@@ -561,9 +561,13 @@
   });
 
   /* ---------- Sizing + lifecycle ---------- */
+  var lastSizeKey = '';
   function resize() {
     var size = wrap.clientWidth || 440;
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var sizeKey = size + 'x' + dpr;
+    if (sizeKey === lastSizeKey) return;
+    lastSizeKey = sizeKey;
     canvas.width = Math.round(size * dpr);
     canvas.height = Math.round(size * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
