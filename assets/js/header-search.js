@@ -1,5 +1,5 @@
 // Calcotia sitewide header search (moved from the homepage hero, 2026-10-25).
-// Same tool index as the old home search, extended to all 18 calculators.
+// Same tool index as the old home search, extended to all calculators.
 (function () {
   var TOOLS = [
     { n: "Sykepenger kalkulator", s: "Norway sick pay", u: "/no/sykepenger-kalkulator/", k: "sykepenger sick pay norway sykepenge" },
@@ -8,6 +8,7 @@
     { n: "Bürgergeld Rechner", s: "Germany citizen's income", u: "/de/buergergeld-rechner/", k: "bürgergeld buergergeld grundsicherung rechner germany" },
     { n: "Aufstockung Rechner", s: "Germany top-up calculator", u: "/de/aufstockung-rechner/", k: "aufstockung aufstockend alg2 hartz iv aufstocker grundsicherung germany" },
     { n: "Brutto Netto Rechner", s: "Germany gross to net salary", u: "/de/brutto-netto-rechner/", k: "brutto netto rechner netto brutto rechner gehalt netto lohnrechner germany gehaltsrechner" },
+    { n: "Werkstudent Rechner", s: "Germany working student net pay", u: "/de/werkstudent-rechner/", k: "werkstudent werkstudenten rechner brutto netto werkstudent netto rechner werkstudent gehalt stundenlohn germany" },
     { n: "Simulateur congé parental", s: "France parental leave", u: "/fr/simulateur-conge-parental/", k: "congé parental maternité paternité france conges payes" },
     { n: "Calcolo TFR netto", s: "Italy severance pay", u: "/it/calcolo-tfr-netto/", k: "tfr calcolo netto italy severance" },
     { n: "Calcolo congedo parentale", s: "Italy parental leave", u: "/it/calcolo-congedo-parentale/", k: "congedo parentale calcolo italy parental" },
