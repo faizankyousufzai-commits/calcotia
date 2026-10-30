@@ -31,6 +31,7 @@
 - [Foreldrepenger kalkulator](https://calcotia.online/no/foreldrepenger-kalkulator/): Norway parental benefits calculator
 - [Bürgergeld Rechner](https://calcotia.online/de/buergergeld-rechner/): Germany citizen's income calculator
 - [Aufstockung Rechner](https://calcotia.online/de/aufstockung-rechner/): Germany top-up calculator
+- [Brutto Netto Rechner](https://calcotia.online/de/brutto-netto-rechner/): Germany gross to net salary calculator, also reverse net to gross
 - [Simulateur congé parental](https://calcotia.online/fr/simulateur-conge-parental/): France parental leave calculator
 - [Calcolo TFR netto](https://calcotia.online/it/calcolo-tfr-netto/): Italy net severance pay calculator
 - [Calcolo congedo parentale](https://calcotia.online/it/calcolo-congedo-parentale/): Italy parental leave calculator
