@@ -23,7 +23,7 @@
 - [United Arab Emirates calculators](https://calcotia.online/ae/): end of service gratuity (Article 51)
 - [Philippines calculators](https://calcotia.online/ph/): 13th month pay (PD 851)
 - [Netherlands calculators](https://calcotia.online/nl/): holiday allowance (vakantiegeld, 8% of gross salary)
-- [Romania calculators](https://calcotia.online/ro/): overtime pay (ore suplimentare, 75% premium, night premium and holiday premium under the Labour Code)
+- [Romania calculators](https://calcotia.online/ro/): overtime pay (ore suplimentare, 75% premium, night premium and holiday premium under the Labour Code) and net salary (salariu net, CAS, CASS, tax and personal deduction under the Fiscal Code)
 
 ## Calculators
 
@@ -56,6 +56,7 @@
 - [13th Month Pay Calculator](https://calcotia.online/ph/13th-month-pay-calculator/): Philippines 13th month pay calculator, total basic salary divided by 12
 - [Vakantiegeld berekenen](https://calcotia.online/nl/vakantiegeld-calculator/): Netherlands holiday allowance calculator, 8% of gross salary
 - [Calculator ore suplimentare](https://calcotia.online/ro/calculator-ore-suplimentare/): Romania overtime pay calculator, hourly rate, 75% premium, night premium and holiday premium
+- [Calculator salariu net](https://calcotia.online/ro/calculator-salariu-net/): Romania net salary calculator, gross to net with CAS 25%, CASS 10%, tax 10% and personal deduction
 
 ## Guides
 
