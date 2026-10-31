@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://calcotia.online/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://calcotia.online/"/>
@@ -10,21 +10,24 @@
   </url>
   <url>
     <loc>https://calcotia.online/about.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://calcotia.online/about.html"/>
   </url>
   <url>
     <loc>https://calcotia.online/privacy.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://calcotia.online/privacy.html"/>
   </url>
   <url>
     <loc>https://calcotia.online/contact.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://calcotia.online/contact.html"/>
   </url>
   <url>
     <loc>https://calcotia.online/no/</loc>
@@ -35,21 +38,21 @@
   </url>
   <url>
     <loc>https://calcotia.online/no/sykepenger-kalkulator/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://calcotia.online/no/sykepenger-kalkulator/"/>
   </url>
   <url>
     <loc>https://calcotia.online/no/feriepenger-kalkulator/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://calcotia.online/no/feriepenger-kalkulator/"/>
   </url>
   <url>
     <loc>https://calcotia.online/no/foreldrepenger-kalkulator/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="nb-NO" href="https://calcotia.online/no/foreldrepenger-kalkulator/"/>
@@ -119,28 +122,28 @@
   </url>
   <url>
     <loc>https://calcotia.online/it/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://calcotia.online/it/"/>
   </url>
   <url>
     <loc>https://calcotia.online/it/calcolo-tfr-netto/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://calcotia.online/it/calcolo-tfr-netto/"/>
   </url>
   <url>
     <loc>https://calcotia.online/it/calcolo-congedo-parentale/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://calcotia.online/it/calcolo-congedo-parentale/"/>
   </url>
   <url>
     <loc>https://calcotia.online/it/calcolo-naspi/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://calcotia.online/it/calcolo-naspi/"/>
@@ -182,7 +185,7 @@
   </url>
   <url>
     <loc>https://calcotia.online/il/dmei-havraa/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="he-IL" href="https://calcotia.online/il/dmei-havraa/"/>
@@ -248,7 +251,7 @@
   </url>
   <url>
     <loc>https://calcotia.online/sa/end-of-service-calculator/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://calcotia.online/sa/end-of-service-calculator/"/>
@@ -292,7 +295,7 @@
   </url>
   <url>
     <loc>https://calcotia.online/is/orlofsreiknivel/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="is-IS" href="https://calcotia.online/is/orlofsreiknivel/"/>
@@ -306,7 +309,7 @@
   </url>
   <url>
     <loc>https://calcotia.online/tw/ziqianfei-jisuanji/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://calcotia.online/tw/ziqianfei-jisuanji/"/>
@@ -362,7 +365,7 @@
   </url>
   <url>
     <loc>https://calcotia.online/nl/vakantiegeld-calculator/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="nl-NL" href="https://calcotia.online/nl/vakantiegeld-calculator/"/>

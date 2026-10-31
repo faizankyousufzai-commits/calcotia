@@ -4,8 +4,8 @@
 
 ## Countries
 
-- [Norway calculators](https://calcotia.online/no/): sick pay, holiday pay and parental benefits
-- [Germany calculators](https://calcotia.online/de/): citizen's income (Bürgergeld) and top-up (Aufstockung)
+- [Norway calculators](https://calcotia.online/no/): sick pay, holiday pay, parental benefits and parental leave planner
+- [Germany calculators](https://calcotia.online/de/): citizen's income (Bürgergeld), top-up (Aufstockung), gross to net salary (Brutto Netto) and working student net pay (Werkstudent)
 - [France calculators](https://calcotia.online/fr/): parental, maternity and paternity leave
 - [Italy calculators](https://calcotia.online/it/): severance pay, parental leave and unemployment benefit
 - [Japan calculators](https://calcotia.online/jp/): retirement money tax and take-home pay
@@ -29,6 +29,7 @@
 - [Sykepenger kalkulator](https://calcotia.online/no/sykepenger-kalkulator/): Norway sick pay calculator
 - [Feriepenger kalkulator](https://calcotia.online/no/feriepenger-kalkulator/): Norway holiday pay calculator
 - [Foreldrepenger kalkulator](https://calcotia.online/no/foreldrepenger-kalkulator/): Norway parental benefits calculator
+- [Permisjonskalkulator](https://calcotia.online/no/permisjonskalkulator/): Norway parental leave time planner
 - [Bürgergeld Rechner](https://calcotia.online/de/buergergeld-rechner/): Germany citizen's income calculator
 - [Aufstockung Rechner](https://calcotia.online/de/aufstockung-rechner/): Germany top-up calculator
 - [Brutto Netto Rechner](https://calcotia.online/de/brutto-netto-rechner/): Germany gross to net salary calculator, also reverse net to gross
@@ -53,6 +54,10 @@
 - [Gratuity Calculator UAE](https://calcotia.online/ae/gratuity-calculator/): United Arab Emirates end of service gratuity calculator, 21 and 30 days per year
 - [13th Month Pay Calculator](https://calcotia.online/ph/13th-month-pay-calculator/): Philippines 13th month pay calculator, total basic salary divided by 12
 - [Vakantiegeld berekenen](https://calcotia.online/nl/vakantiegeld-calculator/): Netherlands holiday allowance calculator, 8% of gross salary
+
+## Guides
+
+- [Sykemeldt? Regler for oppsigelse, reise og feriepenger](https://calcotia.online/no/sykemeldt-regler/): Norway guide to sick leave rules, dismissal, travel and holiday pay
 
 ## About
 
