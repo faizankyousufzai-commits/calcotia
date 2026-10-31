@@ -1,6 +1,6 @@
 # Calcotia
 
-> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 19 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
+> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 20 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
 
 ## Countries
 
@@ -23,6 +23,7 @@
 - [United Arab Emirates calculators](https://calcotia.online/ae/): end of service gratuity (Article 51)
 - [Philippines calculators](https://calcotia.online/ph/): 13th month pay (PD 851)
 - [Netherlands calculators](https://calcotia.online/nl/): holiday allowance (vakantiegeld, 8% of gross salary)
+- [Romania calculators](https://calcotia.online/ro/): overtime pay (ore suplimentare, 75% premium, night premium and holiday premium under the Labour Code)
 
 ## Calculators
 
@@ -54,6 +55,7 @@
 - [Gratuity Calculator UAE](https://calcotia.online/ae/gratuity-calculator/): United Arab Emirates end of service gratuity calculator, 21 and 30 days per year
 - [13th Month Pay Calculator](https://calcotia.online/ph/13th-month-pay-calculator/): Philippines 13th month pay calculator, total basic salary divided by 12
 - [Vakantiegeld berekenen](https://calcotia.online/nl/vakantiegeld-calculator/): Netherlands holiday allowance calculator, 8% of gross salary
+- [Calculator ore suplimentare](https://calcotia.online/ro/calculator-ore-suplimentare/): Romania overtime pay calculator, hourly rate, 75% premium, night premium and holiday premium
 
 ## Guides
 
