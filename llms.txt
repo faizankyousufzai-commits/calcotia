@@ -1,10 +1,10 @@
 # Calcotia
 
-> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 20 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
+> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 27 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
 
 ## Countries
 
-- [Norway calculators](https://calcotia.online/no/): sick pay, holiday pay, parental benefits and parental leave planner
+- [Norway calculators](https://calcotia.online/no/): sick pay, holiday pay, parental benefits, parental leave planner and unemployment benefit (dagpenger)
 - [Germany calculators](https://calcotia.online/de/): citizen's income (Bürgergeld), top-up (Aufstockung), gross to net salary (Brutto Netto) and working student net pay (Werkstudent)
 - [France calculators](https://calcotia.online/fr/): parental, maternity and paternity leave
 - [Italy calculators](https://calcotia.online/it/): severance pay, parental leave and unemployment benefit
@@ -12,18 +12,25 @@
 - [Greece calculators](https://calcotia.online/gr/): dismissal compensation
 - [Israel calculators](https://calcotia.online/il/): recuperation pay
 - [Vietnam calculators](https://calcotia.online/vn/): one-time social insurance payout
-- [Slovakia calculators](https://calcotia.online/sk/): state pension estimate
+- [Slovakia calculators](https://calcotia.online/sk/): state pension estimate and retirement age by birth year
 - [Serbia calculators](https://calcotia.online/rs/): child allowance eligibility and amount
 - [Saudi Arabia calculators](https://calcotia.online/sa/): end of service benefits in Arabic and English
 - [Sweden calculators](https://calcotia.online/se/): holiday pay compensation (semesterersättning)
 - [Ireland calculators](https://calcotia.online/ie/): holiday pay (annual leave and public holidays)
 - [Iceland calculators](https://calcotia.online/is/): holiday pay (orlof)
 - [Taiwan calculators](https://calcotia.online/tw/): severance pay (new and old system)
-- [Spain calculators](https://calcotia.online/es/): severance pay (despido objetivo, improcedente, temporal and transitional regime)
+- [Spain calculators](https://calcotia.online/es/): severance pay (despido objetivo, improcedente, temporal and transitional regime) and severance pay in English
 - [United Arab Emirates calculators](https://calcotia.online/ae/): end of service gratuity (Article 51)
 - [Philippines calculators](https://calcotia.online/ph/): 13th month pay (PD 851)
 - [Netherlands calculators](https://calcotia.online/nl/): holiday allowance (vakantiegeld, 8% of gross salary)
 - [Romania calculators](https://calcotia.online/ro/): overtime pay (ore suplimentare, 75% premium, night premium and holiday premium under the Labour Code) and net salary (salariu net, CAS, CASS, tax and personal deduction under the Fiscal Code)
+- [Mexico calculators](https://calcotia.online/mx/): final settlement (finiquito) under the Federal Labour Law, in English
+- [Chile calculators](https://calcotia.online/cl/): severance pay (finiquito) under the Labour Code, in English
+- [Czechia calculators](https://calcotia.online/cz/): severance pay (odstupné) under § 67 of the Labour Code
+- [Hungary calculators](https://calcotia.online/hu/): annual leave days (szabadság) and unused-leave payout
+- [Thailand calculators](https://calcotia.online/th/): severance pay (ค่าชดเชย) under Section 118 of the Labour Protection Act
+- [South Korea calculators](https://calcotia.online/kr/): severance pay under the Labour Standards Act, in English
+- [Poland calculators](https://calcotia.online/pl/): severance pay (odprawa pieniężna) under the Labour Code
 
 ## Calculators
 
@@ -57,6 +64,16 @@
 - [Vakantiegeld berekenen](https://calcotia.online/nl/vakantiegeld-calculator/): Netherlands holiday allowance calculator, 8% of gross salary
 - [Calculator ore suplimentare](https://calcotia.online/ro/calculator-ore-suplimentare/): Romania overtime pay calculator, hourly rate, 75% premium, night premium and holiday premium
 - [Calculator salariu net](https://calcotia.online/ro/calculator-salariu-net/): Romania net salary calculator, gross to net with CAS 25%, CASS 10%, tax 10% and personal deduction
+- [Finiquito Calculator Mexico 2026](https://calcotia.online/mx/finiquito-calculator/): Mexico final settlement calculator in English
+- [Dagpengekalkulator 2026](https://calcotia.online/no/dagpengekalkulator/): Norway unemployment benefit (dagpenger) calculator
+- [Kalkulačka dôchodkového veku 2026](https://calcotia.online/sk/kalkulacka-dochodkoveho-veku/): Slovakia retirement age calculator by birth year
+- [Kalkulačka odstupné 2026](https://calcotia.online/cz/kalkulacka-odstupne/): Czechia severance pay calculator
+- [Szabadság kalkulátor 2026](https://calcotia.online/hu/szabadsag-kalkulator/): Hungary annual leave calculator, days and payout
+- [คำนวณค่าชดเชย 2569](https://calcotia.online/th/khamnuan-kha-chotchoei/): Thailand severance pay calculator
+- [Korea Severance Pay Calculator 2026](https://calcotia.online/kr/severance-pay-calculator/): South Korea severance pay calculator in English
+- [Chile Severance Calculator 2026](https://calcotia.online/cl/finiquito-calculator/): Chile severance pay (finiquito) calculator in English
+- [Kalkulator odprawy pieniężnej 2026](https://calcotia.online/pl/kalkulator-odprawy-pienieznej/): Poland severance pay calculator
+- [Spain Severance Pay Calculator 2026](https://calcotia.online/es/severance-pay-calculator/): Spain severance pay calculator in English, 20 and 33 days per year
 
 ## Guides
 
