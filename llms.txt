@@ -24,7 +24,7 @@
 - [Philippines calculators](https://calcotia.online/ph/): 13th month pay (PD 851)
 - [Netherlands calculators](https://calcotia.online/nl/): holiday allowance (vakantiegeld, 8% of gross salary)
 - [Romania calculators](https://calcotia.online/ro/): overtime pay (ore suplimentare, 75% premium, night premium and holiday premium under the Labour Code) and net salary (salariu net, CAS, CASS, tax and personal deduction under the Fiscal Code)
-- [Mexico calculators](https://calcotia.online/mx/): final settlement (finiquito) under the Federal Labour Law, in English
+- [Mexico calculators](https://calcotia.online/mx/): final settlement (finiquito) under the Federal Labour Law, in English and Spanish
 - [Chile calculators](https://calcotia.online/cl/): severance pay (finiquito) under the Labour Code, in English
 - [Czechia calculators](https://calcotia.online/cz/): severance pay (odstupné) under § 67 of the Labour Code
 - [Hungary calculators](https://calcotia.online/hu/): annual leave days (szabadság) and unused-leave payout
@@ -65,6 +65,7 @@
 - [Calculator ore suplimentare](https://calcotia.online/ro/calculator-ore-suplimentare/): Romania overtime pay calculator, hourly rate, 75% premium, night premium and holiday premium
 - [Calculator salariu net](https://calcotia.online/ro/calculator-salariu-net/): Romania net salary calculator, gross to net with CAS 25%, CASS 10%, tax 10% and personal deduction
 - [Finiquito Calculator Mexico 2026](https://calcotia.online/mx/finiquito-calculator/): Mexico final settlement calculator in English
+- [Calculadora de Finiquito 2026](https://calcotia.online/mx/calculadora-finiquito/): Mexico final settlement calculator in Spanish
 - [Dagpengekalkulator 2026](https://calcotia.online/no/dagpengekalkulator/): Norway unemployment benefit (dagpenger) calculator
 - [Kalkulačka dôchodkového veku 2026](https://calcotia.online/sk/kalkulacka-dochodkoveho-veku/): Slovakia retirement age calculator by birth year
 - [Kalkulačka odstupné 2026](https://calcotia.online/cz/kalkulacka-odstupne/): Czechia severance pay calculator
