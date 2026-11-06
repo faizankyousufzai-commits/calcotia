@@ -42,7 +42,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Algemene heffingskorting</td><td>− ' + eur(r.korting) + '</td></tr>' +
         '<tr><td>Te betalen inkomstenbelasting</td><td>' + eur(r.teBetalen) + '</td></tr>' +
         '<tr><td>Zvw-bijdrage (4,85%, apart)</td><td>' + eur(r.zvw) + '</td></tr>';
-    }
+    
+    var res = el('nlzzp-result'); if (res) { res.classList.add('show'); }
+}
     btn.addEventListener('click', render);
     ['nlzzp-winst', 'nlzzp-uren'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     render();

@@ -47,7 +47,9 @@ if (typeof document !== 'undefined') {
         html += '<tr><td>' + k + ' (fórmula de Riegel)</td><td>' + r.predicciones[k].texto + '</td></tr>';
       });
       rows.innerHTML = html;
-    }
+    
+    var res = el('esrit-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esrit-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esrit-dist', 'esrit-h', 'esrit-m', 'esrit-s'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

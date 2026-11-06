@@ -61,7 +61,17 @@ if (typeof document !== 'undefined') {
   function val(id){ var el = document.getElementById(id); return el ? el.value : ''; }
   function setText(id, t){ var el = document.getElementById(id); if (el) el.textContent = t; }
   function setRows(id, rows){ var el = document.getElementById(id); if (el) el.innerHTML = rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); }
-  function bind(btnId, fn){ var b = document.getElementById(btnId); if (b) b.addEventListener('click', fn); }
+  function bind(btnId, fn){
+    var b = document.getElementById(btnId); if (!b) return;
+    function run(){
+      fn();
+      var res = document.getElementById(btnId.replace('-btn', '-result'));
+      if (res) { res.classList.add('show'); }
+    }
+    b.addEventListener('click', run);
+    ['input','change'].forEach(function(ev){ document.querySelectorAll('#' + btnId.replace('-btn','-form') + ' input, #' + btnId.replace('-btn','-form') + ' select').forEach(function(el){ el.addEventListener(ev, run); }); });
+    run();
+  }
   document.addEventListener('DOMContentLoaded', function(){
     bind('no-dekk-btn', function(){ var r = calcDekk({bredde1: val('no-dekk-b1'), profil1: val('no-dekk-p1'), felg1: val('no-dekk-f1'), bredde2: val('no-dekk-b2'), profil2: val('no-dekk-p2'), felg2: val('no-dekk-f2')}); setText('no-dekk-big', fmt(r.diffPct) + ' % diameterforskjell'); setRows('no-dekk-rows', [['Diameter gammelt dekk', fmt(r.dia1,1) + ' cm'], ['Diameter nytt dekk', fmt(r.dia2,1) + ' cm'], ['Rulleomkrets ny', fmt(r.omkrets2,1) + ' cm'], ['Fartsmåler viser 100, du kjører', fmt(r.fartVed100,1) + ' km/t']]); });
     bind('no-fartsbot-btn', function(){ var r = calcFartsbot({grense: val('no-fartsbot-grense'), fart: val('no-fartsbot-fart')}); setText('no-fartsbot-big', r.bot === null ? 'Anmeldelse' : fmt(r.bot,0) + ' kr'); setRows('no-fartsbot-rows', [['Km/t over grensen', fmt(r.over,0) + ' km/t'], ['Prikker', fmt(r.prikker,0)], ['Type reaksjon', r.type]]); });

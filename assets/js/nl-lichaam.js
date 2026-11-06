@@ -67,9 +67,14 @@ if (typeof document !== 'undefined') {
     function f1(n) { return new Intl.NumberFormat('nl-NL', { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(n); }
     function wire(prefix, ids, render) {
       var btn = el(prefix + '-btn'); if (!btn) { return; }
-      btn.addEventListener('click', render);
-      ids.forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
-      render();
+      function run() {
+        render();
+        var res = el(prefix + '-result');
+        if (res) { res.classList.add('show'); }
+      }
+      btn.addEventListener('click', run);
+      ids.forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', run); f.addEventListener('change', run); } });
+      run();
     }
     wire('nllv', ['nllv-geslacht', 'nllv-lengte', 'nllv-gewicht', 'nllv-taille', 'nllv-nek', 'nllv-heup'], function () {
       var r = calcLichaamsvet({ geslacht: el('nllv-geslacht').value, lengteCm: el('nllv-lengte').value, gewichtKg: el('nllv-gewicht').value, tailleCm: el('nllv-taille').value, nekCm: el('nllv-nek').value, heupCm: el('nllv-heup').value });

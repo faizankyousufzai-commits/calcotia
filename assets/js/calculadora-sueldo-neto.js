@@ -50,7 +50,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Retención IRPF</td><td>− ' + eur(r.irpf) + '</td></tr>' +
         '<tr><td>Sueldo neto anual</td><td>' + eur(r.netoAnual) + '</td></tr>' +
         '<tr><td>Sueldo neto mensual (' + r.pagas + ' pagas)</td><td>' + eur(r.netoMensual) + '</td></tr>';
-    }
+    
+    var res = el('essueldo-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('essueldo-btn'); if (btn) { btn.addEventListener('click', render); }
     ['essueldo-bruto', 'essueldo-pagas', 'essueldo-ret', 'essueldo-temporal'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

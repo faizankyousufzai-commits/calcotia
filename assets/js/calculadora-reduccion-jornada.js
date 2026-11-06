@@ -43,7 +43,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Seguridad Social (6,50 %)</td><td>− ' + eur(r.ss) + '</td></tr>' +
         '<tr><td>Retención IRPF</td><td>− ' + eur(r.irpf) + '</td></tr>' +
         '<tr><td>Nuevo sueldo neto estimado</td><td>' + eur(r.netoNuevo) + '</td></tr>';
-    }
+    
+    var res = el('esred-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esred-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esred-bruto', 'esred-completas', 'esred-nuevas', 'esred-ret'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

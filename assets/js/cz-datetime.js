@@ -83,6 +83,7 @@ function run() {
   html += '</tbody></table>';
   if (out.note) html += '<p>' + out.note + '</p>';
   res.innerHTML = html;
+  res.classList.add('show');
 }
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', function () {

@@ -48,7 +48,9 @@ if (typeof document !== 'undefined') {
         big.textContent = r.iban || '–';
         rows.innerHTML = '<tr><td>IBAN</td><td>' + (r.iban || '–') + '</td></tr><tr><td>Bank</td><td>' + (r.banknaam || '–') + '</td></tr><tr><td>Geldig</td><td>' + (r.geldig ? 'Ja (mod-97)' : 'Nee – controleer bankcode en rekeningnummer') + '</td></tr>';
       }
-    }
+    
+    var res = el('nliban-result'); if (res) { res.classList.add('show'); }
+}
     btn.addEventListener('click', render);
     ['nliban-modus', 'nliban-bank', 'nliban-rekening', 'nliban-iban'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     render();

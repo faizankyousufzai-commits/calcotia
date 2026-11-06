@@ -192,7 +192,9 @@
         warn.style.display = msgs.length ? '' : 'none';
         warn.innerHTML = msgs.map(function (m) { return '<p>' + m + '</p>'; }).join('');
       }
-    }
+    
+    var resEl = document.getElementById('sal-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
     document.addEventListener('DOMContentLoaded', function () {
       var form = document.getElementById('sal-form');

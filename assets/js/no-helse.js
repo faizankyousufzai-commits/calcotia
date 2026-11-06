@@ -101,7 +101,17 @@ if (typeof document !== 'undefined') {
   function val(id){ var el = document.getElementById(id); return el ? el.value : ''; }
   function setText(id, t){ var el = document.getElementById(id); if (el) el.textContent = t; }
   function setRows(id, rows){ var el = document.getElementById(id); if (el) el.innerHTML = rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); }
-  function bind(btnId, fn){ var b = document.getElementById(btnId); if (b) b.addEventListener('click', fn); ['input','change'].forEach(function(ev){ document.querySelectorAll('#' + btnId.replace('-btn','-form') + ' input, #' + btnId.replace('-btn','-form') + ' select').forEach(function(el){ el.addEventListener(ev, fn); }); }); }
+  function bind(btnId, fn){
+    var b = document.getElementById(btnId); if (!b) return;
+    function run(){
+      fn();
+      var res = document.getElementById(btnId.replace('-btn', '-result'));
+      if (res) { res.classList.add('show'); }
+    }
+    b.addEventListener('click', run);
+    ['input','change'].forEach(function(ev){ document.querySelectorAll('#' + btnId.replace('-btn','-form') + ' input, #' + btnId.replace('-btn','-form') + ' select').forEach(function(el){ el.addEventListener(ev, run); }); });
+    run();
+  }
   document.addEventListener('DOMContentLoaded', function(){
     bind('no-bmi-btn', function(){ var r = calcBMI({hoydeCm: val('no-bmi-hoyde'), vektKg: val('no-bmi-vekt'), alder: val('no-bmi-alder'), kjonn: val('no-bmi-kjonn')}); setText('no-bmi-big', fmt(r.bmi) + ' BMI'); setRows('no-bmi-rows', [['Kategori', r.kategori], ['Normalvekt for din høyde', fmt(r.normalvektFra,1) + '–' + fmt(r.normalvektTil,1) + ' kg'], ['Din vekt', fmt(Number(val('no-bmi-vekt')),1) + ' kg']]); });
     bind('no-promille-btn', function(){ var r = calcPromille({kjonn: val('no-promille-kjonn'), vektKg: val('no-promille-vekt'), enheter: val('no-promille-enheter'), timer: val('no-promille-timer')}); setText('no-promille-big', fmt(r.promilleNaa) + ' ‰'); setRows('no-promille-rows', [['Promille på det høyeste', fmt(r.promilleTopp) + ' ‰'], ['Timer til under 0,2 ‰', fmt(r.timerTil02,1) + ' timer'], ['Timer til 0,0 ‰', fmt(r.timerTil00,1) + ' timer']]); });

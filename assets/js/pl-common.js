@@ -68,6 +68,8 @@
     }
     var noteEl = calc.querySelector('[data-out-note]');
     if (noteEl && out.note) { noteEl.textContent = out.note; }
+    var resEl = calc.querySelector('.result');
+    if (resEl) { resEl.classList.add('show'); }
   }
 
   function bind() {

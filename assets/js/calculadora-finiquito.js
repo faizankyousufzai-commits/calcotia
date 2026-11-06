@@ -194,7 +194,9 @@ if (typeof document !== 'undefined') {
         var b = document.createElement('td'); b.textContent = row[1];
         tr.appendChild(a); tr.appendChild(b); tbody.appendChild(tr);
       });
-    }
+    
+    var resEl = document.getElementById('mx-result'); if (resEl) { resEl.classList.add('show'); }
+}
     ['mx-hire', 'mx-term', 'mx-monthly', 'mx-unpaid', 'mx-pending', 'mx-taken', 'mx-aguinaldo', 'mx-ptu'].forEach(function (id) {
       var el = $(id);
       if (el) el.addEventListener('input', run);

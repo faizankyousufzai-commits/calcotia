@@ -51,7 +51,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Vacaciones no disfrutadas (' + num(r.vacDays) + ' días)</td><td>' + eur(r.vac) + '</td></tr>' +
         '<tr><td>' + pagasLabel + '</td><td>' + eur(r.pagas) + '</td></tr>' +
         '<tr><td>Total bruto del finiquito</td><td>' + eur(r.total) + '</td></tr>';
-    }
+    
+    var resEl = el('esfin-result'); if (resEl) { resEl.classList.add('show'); }
+}
     var btn = el('esfin-btn');
     if (btn) { btn.addEventListener('click', render); }
     ['esfin-monthly', 'esfin-pagas', 'esfin-prorrateadas', 'esfin-unpaid', 'esfin-vac', 'esfin-months'].forEach(function (id) {

@@ -108,7 +108,17 @@ if (typeof document !== 'undefined') {
   function val(id){ var el = document.getElementById(id); return el ? el.value : ''; }
   function setText(id, t){ var el = document.getElementById(id); if (el) el.textContent = t; }
   function setRows(id, rows){ var el = document.getElementById(id); if (el) el.innerHTML = rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); }
-  function bind(btnId, fn){ var b = document.getElementById(btnId); if (b) b.addEventListener('click', fn); }
+  function bind(btnId, fn){
+    var b = document.getElementById(btnId); if (!b) return;
+    function run(){
+      fn();
+      var res = document.getElementById(btnId.replace('-btn', '-result'));
+      if (res) { res.classList.add('show'); }
+    }
+    b.addEventListener('click', run);
+    ['input','change'].forEach(function(ev){ document.querySelectorAll('#' + btnId.replace('-btn','-form') + ' input, #' + btnId.replace('-btn','-form') + ' select').forEach(function(el){ el.addEventListener(ev, run); }); });
+    run();
+  }
   document.addEventListener('DOMContentLoaded', function(){
     bind('no-mva-btn', function(){ var r = calcMva({belop: val('no-mva-belop'), sats: val('no-mva-sats'), modus: val('no-mva-modus')}); setText('no-mva-big', fmt(r.inklMva,0) + ' kr inkl. mva'); setRows('no-mva-rows', [['Beløp eks. mva', fmt(r.eksMva,0) + ' kr'], ['Mva-beløp', fmt(r.mva,0) + ' kr'], ['Beløp inkl. mva', fmt(r.inklMva,0) + ' kr']]); });
     bind('no-formuesskatt-btn', function(){ var r = calcFormuesskatt({nettoformue: val('no-formuesskatt-formue'), ektepar: val('no-formuesskatt-ektepar')}); setText('no-formuesskatt-big', fmt(r.formuesskatt,0) + ' kr'); setRows('no-formuesskatt-rows', [['Bunnfradrag', fmt(r.bunnfradrag,0) + ' kr'], ['Skattbar formue', fmt(r.skattbarFormue,0) + ' kr'], ['Formuesskatt per år', fmt(r.formuesskatt,0) + ' kr']]); });

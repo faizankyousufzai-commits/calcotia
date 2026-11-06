@@ -40,9 +40,14 @@ if (typeof document !== 'undefined') {
     function el(id) { return document.getElementById(id); }
     function wire(prefix, ids, render) {
       var btn = el(prefix + '-btn'); if (!btn) { return; }
-      btn.addEventListener('click', render);
-      ids.forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
-      render();
+      function run() {
+        render();
+        var res = el(prefix + '-result');
+        if (res) { res.classList.add('show'); }
+      }
+      btn.addEventListener('click', run);
+      ids.forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', run); f.addEventListener('change', run); } });
+      run();
     }
     wire('nlov', ['nlov-lmp', 'nlov-cyclus'], function () {
       var r = calcOvulatie({ laatsteMenstruatie: el('nlov-lmp').value, cyclusDagen: el('nlov-cyclus').value });

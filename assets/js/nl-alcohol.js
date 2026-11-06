@@ -28,7 +28,9 @@ if (typeof document !== 'undefined') {
       var r = calcAlcohol({ geslacht: el('nlal-geslacht').value, gewichtKg: el('nlal-gewicht').value, glazen: el('nlal-glazen').value, uren: el('nlal-uren').value });
       el('nlal-big').textContent = f2(r.promille) + ' ‰';
       el('nlal-rows').innerHTML = '<tr><td>Geschat promillage</td><td>' + f2(r.promille) + ' promille</td></tr><tr><td>Alcohol gedronken</td><td>' + r.gramAlcohol + ' gram</td></tr><tr><td>Nuchter na ongeveer</td><td>' + r.nuchterNaUren + ' uur</td></tr><tr><td>Rijlimiet (0,5 promille)</td><td>' + (r.bovenLimiet ? 'Overschreden – niet rijden' : 'Onder de limiet – rijd nooit na drinken') + '</td></tr>';
-    }
+    
+    var res = el('nlal-result'); if (res) { res.classList.add('show'); }
+}
     btn.addEventListener('click', render);
     ['nlal-geslacht', 'nlal-gewicht', 'nlal-glazen', 'nlal-uren'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     render();

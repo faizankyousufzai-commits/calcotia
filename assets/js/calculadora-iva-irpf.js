@@ -42,7 +42,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>IVA (' + r.ivaPct + ' %)</td><td>' + eur(r.iva) + '</td></tr>' +
         '<tr><td>Retención IRPF (' + r.retencionPct + ' %)</td><td>− ' + eur(r.retencion) + '</td></tr>' +
         '<tr><td>Total a cobrar</td><td>' + eur(r.total) + '</td></tr>';
-    }
+    
+    var res = el('esiva-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esiva-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esiva-base', 'esiva-iva', 'esiva-ret'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

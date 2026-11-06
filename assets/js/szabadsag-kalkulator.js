@@ -121,7 +121,9 @@
       ? 'Több napot vettél ki, mint amennyi időarányosan járt. Nincs általános, automatikus levonás '
         + 'a végső fizetésből; a jogalapot esetenként külön kell megvizsgálni.'
       : '';
-  }
+  
+  var resEl = $('szab-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
   $('szab-btn').addEventListener('click', calc);
 })();

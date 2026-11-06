@@ -50,7 +50,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Resto</td><td>' + r.resto + '</td></tr>' +
         '<tr><td>Con decimales</td><td>' + String(r.cocienteDecimal).replace('.', ',') + '</td></tr>' +
         '<tr><td>Prueba: ' + r.divisor + ' × ' + r.cociente + ' + ' + r.resto + '</td><td>' + r.prueba + '</td></tr>';
-    }
+    
+    var res = el('esdiv-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esdiv-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esdiv-dividendo', 'esdiv-divisor', 'esdiv-decimales'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

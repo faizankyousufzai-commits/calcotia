@@ -180,7 +180,9 @@
           taxNote.textContent = '';
         }
       }
-    }
+    
+    var resEl = document.getElementById('th-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
     document.addEventListener('DOMContentLoaded', function () {
       var form = document.getElementById('th-form');

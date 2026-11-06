@@ -79,7 +79,17 @@ if (typeof document !== 'undefined') {
   function val(id){ var el = document.getElementById(id); return el ? el.value : ''; }
   function setText(id, t){ var el = document.getElementById(id); if (el) el.textContent = t; }
   function setRows(id, rows){ var el = document.getElementById(id); if (el) el.innerHTML = rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); }
-  function bind(btnId, fn){ var b = document.getElementById(btnId); if (b) b.addEventListener('click', fn); }
+  function bind(btnId, fn){
+    var b = document.getElementById(btnId); if (!b) return;
+    function run(){
+      fn();
+      var res = document.getElementById(btnId.replace('-btn', '-result'));
+      if (res) { res.classList.add('show'); }
+    }
+    b.addEventListener('click', run);
+    ['input','change'].forEach(function(ev){ document.querySelectorAll('#' + btnId.replace('-btn','-form') + ' input, #' + btnId.replace('-btn','-form') + ' select').forEach(function(el){ el.addEventListener(ev, run); }); });
+    run();
+  }
   document.addEventListener('DOMContentLoaded', function(){
     bind('no-dagpenger-btn', function(){ var r = calcDagpenger({inntekt12: val('no-dagpenger-inntekt12'), inntekt36: val('no-dagpenger-inntekt36'), barn: val('no-dagpenger-barn')}); setText('no-dagpenger-big', fmt(r.dagsats,0) + ' kr/dag'); setRows('no-dagpenger-rows', [['Dagpengegrunnlag', fmt(r.grunnlag,0) + ' kr'], ['Barnetillegg per dag', fmt(r.barnetillegg,0) + ' kr'], ['Utbetaling per måned (ca.)', fmt(r.mndBeloep,0) + ' kr'], ['Årsbeløp (62,4 %)', fmt(r.arsbeloep,0) + ' kr']]); });
     bind('no-uforetrygd-btn', function(){ var r = calcUforetrygd({inntekt: val('no-uforetrygd-inntekt'), uforegrad: val('no-uforetrygd-grad'), enslig: val('no-uforetrygd-enslig')}); setText('no-uforetrygd-big', fmt(r.mndBeloep,0) + ' kr/mnd'); setRows('no-uforetrygd-rows', [['Årsbeløp', fmt(r.arsbeloep,0) + ' kr'], ['Minstesats (100 % ufør)', fmt(r.minstesats,0) + ' kr/år'], ['Uføregrad', fmt(Number(val('no-uforetrygd-grad')),0) + ' %']]); });

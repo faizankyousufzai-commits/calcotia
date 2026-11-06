@@ -65,7 +65,9 @@ if (typeof document !== 'undefined') {
       rows.innerHTML = '<tr><td>CCC (20 dígitos)</td><td>' + r.ccc + '</td></tr>' +
         '<tr><td>Dígitos de control</td><td>' + r.digitosControl + '</td></tr>' +
         '<tr><td>IBAN válido (mod-97)</td><td>' + (r.valido ? 'Sí' : 'No') + '</td></tr>';
-    }
+    
+    var res = el('esiban-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esiban-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esiban-entidad', 'esiban-oficina', 'esiban-cuenta'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

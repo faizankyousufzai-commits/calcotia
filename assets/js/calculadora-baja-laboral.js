@@ -56,7 +56,9 @@ if (typeof document !== 'undefined') {
       });
       html += '<tr><td>Total a cobrar</td><td>' + eur(r.total) + '</td></tr>';
       rows.innerHTML = html;
-    }
+    
+    var res = el('esbaja-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esbaja-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esbaja-base', 'esbaja-dias', 'esbaja-causa'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

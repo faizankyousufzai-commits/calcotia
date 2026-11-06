@@ -65,7 +65,9 @@ if (typeof document !== 'undefined') {
         ? '<tr><td>Determinante</td><td>' + r.determinante + '</td></tr>' +
           '<tr><td>Inversa</td><td>' + r.inversa.map(function (fila) { return '[' + fila.join(', ') + ']'; }).join('<br>') + '</td></tr>'
         : '<tr><td>Determinante</td><td>0 (matriz singular)</td></tr>';
-    }
+    
+    var res = el('esmat-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esmat-btn'); if (btn) { btn.addEventListener('click', render); }
     render();
   })();

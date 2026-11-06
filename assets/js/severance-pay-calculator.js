@@ -167,7 +167,9 @@ if (typeof document !== 'undefined') {
         $('es-big').textContent = esFmt(r.total);
         $('es-big-label').textContent = 'Total termination package (gross)';
       }
-    }
+    
+    var resEl = document.getElementById('es-result'); if (resEl) { resEl.classList.add('show'); }
+}
     ['es-start', 'es-term', 'es-monthly', 'es-payments', 'es-unpaid', 'es-vac', 'es-extra'].forEach(function (id) {
       var el = $(id);
       if (el) el.addEventListener('input', run);

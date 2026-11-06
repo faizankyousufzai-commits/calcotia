@@ -62,7 +62,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Arbeidskorting</td><td>− ' + eur(r.arbeidskorting) + '</td></tr>' +
         '<tr><td>Te betalen belasting</td><td>' + eur(r.teBetalen) + '</td></tr>' +
         '<tr><td>Netto jaarloon</td><td>' + eur(r.nettoJaar) + '</td></tr>';
-    }
+    
+    var res = el('nlbn-result'); if (res) { res.classList.add('show'); }
+}
     btn.addEventListener('click', render);
     ['nlbn-maand', 'nlbn-vg'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     render();

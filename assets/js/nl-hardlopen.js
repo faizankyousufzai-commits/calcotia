@@ -32,7 +32,9 @@ if (typeof document !== 'undefined') {
       var rows = '<tr><td>Tempo</td><td>' + r.tempo + '</td></tr><tr><td>Snelheid</td><td>' + f2(r.snelheid) + ' km/u</td></tr>';
       r.voorspellingen.forEach(function (v) { rows += '<tr><td>' + v.afstand + '</td><td>' + v.tijd + '</td></tr>'; });
       el('nlhl-rows').innerHTML = rows;
-    }
+    
+    var res = el('nlhl-result'); if (res) { res.classList.add('show'); }
+}
     btn.addEventListener('click', render);
     ['nlhl-afstand', 'nlhl-uren', 'nlhl-minuten', 'nlhl-seconden'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     render();

@@ -34,7 +34,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Parte proporcional devengada</td><td>' + eur(r.parteProporcional) + '</td></tr>' +
         '<tr><td>Prorrateo mensual (paga / 12)</td><td>' + eur(r.prorrateoMensual) + '</td></tr>' +
         '<tr><td>Queda por devengar</td><td>' + eur(r.pendiente) + '</td></tr>';
-    }
+    
+    var res = el('espaga-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('espaga-btn'); if (btn) { btn.addEventListener('click', render); }
     ['espaga-importe', 'espaga-dias', 'espaga-periodo'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

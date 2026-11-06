@@ -41,9 +41,14 @@ if (typeof document !== 'undefined') {
     function f2(n) { return new Intl.NumberFormat('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n); }
     function wire(prefix, ids, render) {
       var btn = el(prefix + '-btn'); if (!btn) { return; }
-      btn.addEventListener('click', render);
-      ids.forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
-      render();
+      function run() {
+        render();
+        var res = el(prefix + '-result');
+        if (res) { res.classList.add('show'); }
+      }
+      btn.addEventListener('click', run);
+      ids.forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', run); f.addEventListener('change', run); } });
+      run();
     }
     wire('nlsr', ['nlsr-start', 'nlsr-maand', 'nlsr-rente', 'nlsr-jaren'], function () {
       var r = samengesteld({ start: el('nlsr-start').value, maandelijks: el('nlsr-maand').value, rentePct: el('nlsr-rente').value, jaren: el('nlsr-jaren').value });

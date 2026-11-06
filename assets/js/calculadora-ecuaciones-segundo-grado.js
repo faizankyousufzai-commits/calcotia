@@ -51,7 +51,9 @@ if (typeof document !== 'undefined') {
       var rows = el('esec-rows'); if (!rows) { return; }
       rows.innerHTML = '<tr><td>Discriminante (b² − 4ac)</td><td>' + (r.discriminante === null ? '—' : r.discriminante) + '</td></tr>' +
         (r.vertice ? '<tr><td>Vértice</td><td>(' + r.vertice.x + ', ' + r.vertice.y + ')</td></tr>' : '');
-    }
+    
+    var res = el('esec-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esec-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esec-a', 'esec-b', 'esec-c'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

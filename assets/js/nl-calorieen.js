@@ -45,7 +45,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Dagelijkse behoefte (TDEE)</td><td>' + fmt(r.tdee) + ' kcal/dag</td></tr>' +
         '<tr><td>Afvallen (TDEE \u2212 500)</td><td>' + fmt(r.afvallen) + ' kcal/dag</td></tr>' +
         '<tr><td>Aankomen (TDEE + 300)</td><td>' + fmt(r.aankomen) + ' kcal/dag</td></tr>';
-    }
+    
+    var res = el('nlcal-result'); if (res) { res.classList.add('show'); }
+}
     function renderMac() {
       var r = calcMacro({ gewichtKg: el('nlmac-gewicht') ? el('nlmac-gewicht').value : 0,
         kcal: el('nlmac-kcal') ? el('nlmac-kcal').value : 0,
@@ -56,7 +58,9 @@ if (typeof document !== 'undefined') {
       rows.innerHTML = '<tr><td>Eiwitten</td><td>' + r.eiwitG + ' g (' + r.eiwitKcal + ' kcal)</td></tr>' +
         '<tr><td>Koolhydraten</td><td>' + r.khG + ' g (' + r.khKcal + ' kcal)</td></tr>' +
         '<tr><td>Vetten</td><td>' + r.vetG + ' g (' + r.vetKcal + ' kcal)</td></tr>';
-    }
+    
+    var res = el('nlmac-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('nlcal-btn');
     if (btn) {
       btn.addEventListener('click', renderCal);

@@ -34,7 +34,9 @@ if (typeof document !== 'undefined') {
         rows.innerHTML = '<tr><td>BMI</td><td>' + (r.bmi > 0 ? fmt(r.bmi) : '–') + '</td></tr>' +
           '<tr><td>Categorie</td><td>' + (r.categorie || '–') + '</td></tr>' +
           '<tr><td>Gezond gewicht (BMI 18,5–24,9)</td><td>' + fmt1(r.gezondMin) + ' – ' + fmt1(r.gezondMax) + ' kg</td></tr>';
-      }
+      
+      var res = el(prefix + '-result'); if (res) { res.classList.add('show'); }
+}
       btn.addEventListener('click', render);
       [prefix + '-lengte', prefix + '-gewicht'].forEach(function (id) {
         var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

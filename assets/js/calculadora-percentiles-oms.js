@@ -78,7 +78,9 @@ if (typeof document !== 'undefined') {
       html += '<tr><td>Percentil exacto (LMS OMS)</td><td>Pendiente de la tabla LMS completa</td></tr>';
       rows.innerHTML = html;
       var note = el('esperc-note'); if (note) { note.textContent = r.aviso; }
-    }
+    
+    var res = el('esperc-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esperc-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esperc-sexo', 'esperc-edad', 'esperc-peso', 'esperc-talla'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

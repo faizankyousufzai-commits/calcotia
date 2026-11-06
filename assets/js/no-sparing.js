@@ -89,7 +89,17 @@ if (typeof document !== 'undefined') {
   function val(id){ var el = document.getElementById(id); return el ? el.value : ''; }
   function setText(id, t){ var el = document.getElementById(id); if (el) el.textContent = t; }
   function setRows(id, rows){ var el = document.getElementById(id); if (el) el.innerHTML = rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); }
-  function bind(btnId, fn){ var b = document.getElementById(btnId); if (b) b.addEventListener('click', fn); }
+  function bind(btnId, fn){
+    var b = document.getElementById(btnId); if (!b) return;
+    function run(){
+      fn();
+      var res = document.getElementById(btnId.replace('-btn', '-result'));
+      if (res) { res.classList.add('show'); }
+    }
+    b.addEventListener('click', run);
+    ['input','change'].forEach(function(ev){ document.querySelectorAll('#' + btnId.replace('-btn','-form') + ' input, #' + btnId.replace('-btn','-form') + ' select').forEach(function(el){ el.addEventListener(ev, run); }); });
+    run();
+  }
   document.addEventListener('DOMContentLoaded', function(){
     bind('no-avkastning-btn', function(){ var r = calcAvkastningFond({engangs: val('no-avkastning-engangs'), mnd: val('no-avkastning-mnd'), ar: val('no-avkastning-ar'), avkastningPct: val('no-avkastning-avkastning'), honorarPct: val('no-avkastning-honorar')}); setText('no-avkastning-big', fmt(r.sluttverdi,0) + ' kr'); setRows('no-avkastning-rows', [['Innbetalt totalt', fmt(r.innbetalt,0) + ' kr'], ['Gevinst før skatt', fmt(r.gevinst,0) + ' kr'], ['Skatt på gevinst (37,84 %)', fmt(r.skatt,0) + ' kr'], ['Verdi etter skatt', fmt(r.etterSkatt,0) + ' kr']]); });
     bind('no-spare-pensjon-btn', function(){ var r = calcSparePensjon({mal: val('no-spare-pensjon-mal'), ar: val('no-spare-pensjon-ar'), rentePct: val('no-spare-pensjon-rente')}); setText('no-spare-pensjon-big', fmt(r.mndSparing,0) + ' kr/mnd'); setRows('no-spare-pensjon-rows', [['Totalt innskudd', fmt(r.totalInnskudd,0) + ' kr'], ['Avkastning i perioden', fmt(r.avkastning,0) + ' kr'], ['Mål ved pensjon', fmt(Number(val('no-spare-pensjon-mal')),0) + ' kr']]); });

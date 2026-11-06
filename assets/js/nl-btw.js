@@ -24,7 +24,9 @@ if (typeof document !== 'undefined') {
       var r = calcBTW({ bedrag: el('nlbtw-bedrag').value, tariefPct: el('nlbtw-tarief').value, inclusief: el('nlbtw-modus').value === 'inclusief' });
       el('nlbtw-big').textContent = eur(r.inclusief);
       el('nlbtw-rows').innerHTML = '<tr><td>Bedrag exclusief btw</td><td>' + eur(r.exclusief) + '</td></tr><tr><td>Btw</td><td>' + eur(r.btw) + '</td></tr><tr><td>Bedrag inclusief btw</td><td>' + eur(r.inclusief) + '</td></tr>';
-    }
+    
+    var res = el('nlbtw-result'); if (res) { res.classList.add('show'); }
+}
     btn.addEventListener('click', render);
     ['nlbtw-bedrag', 'nlbtw-tarief', 'nlbtw-modus'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     render();

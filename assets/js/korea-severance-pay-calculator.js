@@ -115,12 +115,12 @@
       var result = document.getElementById('kr-result');
       var dcPanel = document.getElementById('kr-dc-panel');
       if (plan === 'dc') {
-        if (result) result.style.display = 'none';
-        if (dcPanel) dcPanel.style.display = '';
+        if (result) { result.style.display = 'none'; result.classList.remove('show'); }
+        if (dcPanel) { dcPanel.style.display = ''; dcPanel.classList.add('show'); }
         return;
       }
       if (result) result.style.display = '';
-      if (dcPanel) dcPanel.style.display = 'none';
+      if (dcPanel) { dcPanel.style.display = 'none'; dcPanel.classList.remove('show'); }
 
       if (!r.eligible) {
         set('kr-big', 0);
@@ -150,7 +150,9 @@
           note.textContent = 'Result is pre-tax. Severance is taxed as retirement income, with service-year deductions. It must be paid within 14 days of leaving, or 20% annual delay interest applies.';
         }
       }
-    }
+    
+    var resEl = document.getElementById('kr-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
     document.addEventListener('DOMContentLoaded', function () {
       var form = document.getElementById('kr-form');

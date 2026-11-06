@@ -218,7 +218,9 @@ if (typeof document !== 'undefined') {
         var b = document.createElement('td'); b.textContent = row[1];
         tr.appendChild(a); tr.appendChild(b); tbody.appendChild(tr);
       });
-    }
+    
+    var resEl = document.getElementById('cl-result'); if (resEl) { resEl.classList.add('show'); }
+}
     ['cl-start', 'cl-term', 'cl-monthly', 'cl-uf', 'cl-unpaid', 'cl-fmonths', 'cl-fdays', 'cl-taken', 'cl-gratif', 'cl-afc', 'cl-var1', 'cl-var2', 'cl-var3'].forEach(function (id) {
       var el = $(id);
       if (el) el.addEventListener('input', run);

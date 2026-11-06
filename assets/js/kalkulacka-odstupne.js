@@ -102,7 +102,9 @@
     $('odst-note2').textContent = kontoIgnored
       ? 'Konto pracovní doby se uplatní jen u organizačních důvodů; u této volby se nezapočítává.'
       : '';
-  }
+  
+  var resEl = $('odst-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
   $('odst-btn').addEventListener('click', calc);
 })();

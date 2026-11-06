@@ -124,7 +124,9 @@
           note.textContent = 'Od odprawy pobierany jest podatek PIT, ale nie nalicza się składek ZUS (ani społecznych, ani zdrowotnych). Pracodawca wypłaca odprawę z reguły w ostatnim dniu zatrudnienia.';
         }
       }
-    }
+    
+    var resEl = document.getElementById('pl-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
     document.addEventListener('DOMContentLoaded', function () {
       var form = document.getElementById('pl-form');

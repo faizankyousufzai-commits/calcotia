@@ -71,7 +71,17 @@ if (typeof document !== 'undefined') {
   function val(id){ var el = document.getElementById(id); return el ? el.value : ''; }
   function setText(id, t){ var el = document.getElementById(id); if (el) el.textContent = t; }
   function setRows(id, rows){ var el = document.getElementById(id); if (el) el.innerHTML = rows.map(function(r){ return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); }
-  function bind(btnId, fn){ var b = document.getElementById(btnId); if (b) b.addEventListener('click', fn); }
+  function bind(btnId, fn){
+    var b = document.getElementById(btnId); if (!b) return;
+    function run(){
+      fn();
+      var res = document.getElementById(btnId.replace('-btn', '-result'));
+      if (res) { res.classList.add('show'); }
+    }
+    b.addEventListener('click', run);
+    ['input','change'].forEach(function(ev){ document.querySelectorAll('#' + btnId.replace('-btn','-form') + ' input, #' + btnId.replace('-btn','-form') + ' select').forEach(function(el){ el.addEventListener(ev, run); }); });
+    run();
+  }
   document.addEventListener('DOMContentLoaded', function(){
     bind('no-boliglan-btn', function(){ var r = calcBoliglan({inntekt: val('no-boliglan-inntekt'), egenkapital: val('no-boliglan-egenkapital'), rentePct: val('no-boliglan-rente'), ar: val('no-boliglan-ar')}); setText('no-boliglan-big', fmt(r.maksLan,0) + ' kr'); setRows('no-boliglan-rows', [['Maks kjøpesum', fmt(r.maksKjopesum,0) + ' kr'], ['Månedsbeløp på maks lån', fmt(r.mndBeloep,0) + ' kr'], ['Egenkapitalkrav (10 %)', fmt(r.egenkapitalKrav,0) + ' kr']]); });
     bind('no-forbrukslan-btn', function(){ var r = calcForbrukslan({lan: val('no-forbrukslan-lan'), rentePct: val('no-forbrukslan-rente'), ar: val('no-forbrukslan-ar'), gebyr: val('no-forbrukslan-gebyr')}); setText('no-forbrukslan-big', fmt(r.mndBeloep,0) + ' kr/mnd'); setRows('no-forbrukslan-rows', [['Effektiv rente', fmt(r.effektivRente) + ' %'], ['Total kostnad', fmt(r.totalKostnad,0) + ' kr'], ['Renter og gebyrer', fmt(r.renterOgGebyr,0) + ' kr']]); });

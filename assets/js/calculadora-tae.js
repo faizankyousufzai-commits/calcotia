@@ -58,7 +58,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Importe neto recibido</td><td>' + eur(r.netoRecibido) + '</td></tr>' +
         '<tr><td>Total pagado en cuotas</td><td>' + eur(r.totalPagado) + '</td></tr>' +
         '<tr><td>Intereses y costes</td><td>' + eur(r.interesesYCostes) + '</td></tr>';
-    }
+    
+    var res = el('estae-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('estae-btn'); if (btn) { btn.addEventListener('click', render); }
     ['estae-importe', 'estae-tin', 'estae-meses', 'estae-comision', 'estae-otros'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

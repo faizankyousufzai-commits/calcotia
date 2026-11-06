@@ -88,7 +88,7 @@ if (typeof document !== 'undefined') {
       var btn = el(btnId); if (btn) { btn.addEventListener('click', render); }
       inputIds.forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     }
-    function setRows(id, rows) { var t = el(id); if (t) { t.innerHTML = rows.map(function (r) { return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); } }
+    function setRows(id, rows) { var t = el(id); if (t) { t.innerHTML = rows.map(function (r) { return '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>'; }).join(''); } var res = el(id.replace('-rows', '-big-wrap')); if (res) { res.classList.add('show'); } }
     // IMC
     (function () {
       if (!el('roimc-btn')) { return; }

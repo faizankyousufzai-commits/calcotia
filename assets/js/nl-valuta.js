@@ -19,7 +19,9 @@ if (typeof document !== 'undefined') {
       var r = calcValuta({ bedrag: el('nlval-bedrag').value, koers: el('nlval-koers').value });
       el('nlval-big').textContent = f2(r.omgerekend);
       el('nlval-rows').innerHTML = '<tr><td>Bedrag in euro</td><td>€ ' + f2(parseFloat(el('nlval-bedrag').value) || 0) + '</td></tr><tr><td>Koers</td><td>' + f2(parseFloat(el('nlval-koers').value) || 0) + '</td></tr><tr><td>Omgerekend bedrag</td><td>' + f2(r.omgerekend) + '</td></tr>';
-    }
+    
+    var res = el('nlval-result'); if (res) { res.classList.add('show'); }
+}
     btn.addEventListener('click', render);
     ['nlval-bedrag', 'nlval-koers'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
     render();

@@ -30,7 +30,9 @@ if (typeof document !== 'undefined') {
         var r = calcAnnuiteit({ bedrag: el(prefix + '-bedrag').value, rentePct: el(prefix + '-rente').value, maanden: el(prefix + '-maanden').value, type: el(prefix + '-type') ? el(prefix + '-type').value : 'annuiteit' });
         el(prefix + '-big').textContent = eur(r.maandlast) + ' per maand';
         el(prefix + '-rows').innerHTML = '<tr><td>Maandlast</td><td>' + eur(r.maandlast) + '</td></tr><tr><td>Totale rente</td><td>' + eur(r.totaleRente) + '</td></tr><tr><td>Totaal te betalen</td><td>' + eur(r.totaal) + '</td></tr>';
-      }
+      
+      var res = el(prefix + '-result'); if (res) { res.classList.add('show'); }
+}
       btn.addEventListener('click', render);
       [prefix + '-bedrag', prefix + '-rente', prefix + '-maanden', prefix + '-type'].forEach(function (id) { var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); } });
       render();

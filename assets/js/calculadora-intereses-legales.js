@@ -70,7 +70,9 @@ if (typeof document !== 'undefined') {
       });
       html += '<tr><td>Total (capital + intereses)</td><td>' + eur(r.total) + '</td></tr>';
       rows.innerHTML = html;
-    }
+    
+    var res = el('esint-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('esint-btn'); if (btn) { btn.addEventListener('click', render); }
     ['esint-capital', 'esint-inicio', 'esint-fin', 'esint-tipo'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

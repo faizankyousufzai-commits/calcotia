@@ -39,7 +39,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Pasos</td><td>' + new Intl.NumberFormat('es-ES').format(r.pasos) + '</td></tr>' +
         '<tr><td>Distancia</td><td>' + num(r.km) + ' km</td></tr>' +
         '<tr><td>Tiempo andando</td><td>' + r.horasMin + '</td></tr>';
-    }
+    
+    var res = el('espas-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('espas-btn'); if (btn) { btn.addEventListener('click', render); }
     ['espas-altura', 'espas-pasos', 'espas-km', 'espas-sexo', 'espas-vel'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

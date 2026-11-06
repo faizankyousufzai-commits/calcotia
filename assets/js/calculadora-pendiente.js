@@ -55,7 +55,9 @@ if (typeof document !== 'undefined') {
         '<tr><td>Ángulo</td><td>' + r.grados + '°</td></tr>' +
         '<tr><td>Límite CTE para este tramo</td><td>' + r.limiteCTE + ' %</td></tr>' +
         '<tr><td>¿Cumple el CTE?</td><td>' + (r.cumpleCTE ? 'Sí' : 'No') + '</td></tr>';
-    }
+    
+    var res = el('espen-result'); if (res) { res.classList.add('show'); }
+}
     var btn = el('espen-btn'); if (btn) { btn.addEventListener('click', render); }
     ['espen-desnivel', 'espen-longitud'].forEach(function (id) {
       var f = el(id); if (f) { f.addEventListener('input', render); f.addEventListener('change', render); }

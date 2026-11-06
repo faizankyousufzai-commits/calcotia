@@ -175,7 +175,9 @@
           condNote.textContent = '';
         }
       }
-    }
+    
+    var resEl = document.getElementById('vek-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
     btn.addEventListener('click', run);
     run();

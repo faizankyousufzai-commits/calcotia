@@ -164,7 +164,9 @@
         permNote.style.display = r.permittering ? '' : 'none';
         if (r.permittering) permNote.textContent = 'Permittering: arbeidsgiver betaler de første 15 virkedagene. NAVs 26 uker løper deretter, og en ny permittering hos samme arbeidsgiver innen 18 måneder fortsetter på de samme 26 ukene.';
       }
-    }
+    
+    var resEl = document.getElementById('dag-result'); if (resEl) { resEl.classList.add('show'); }
+}
 
     btn.addEventListener('click', run);
     run();
