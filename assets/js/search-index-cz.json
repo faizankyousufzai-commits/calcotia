@@ -1,0 +1,578 @@
+[
+  {
+    "n": "BMI kalkulačka — index tělesné hmotnosti online",
+    "s": "BMI, index tělesné hmotnosti, je nejjednodušší číslo, které řekne, zda je vaše váha vzhledem k výšce v normě.",
+    "u": "/cz/kalkulacka-bmi/",
+    "k": "BMI kalkulačka index tělesné hmotnosti normální BMI Jak se počítá BMI BMI tabulky obezita BMI kalkulačka — index tělesné hmotnosti online česko czech kalkulačka"
+  },
+  {
+    "n": "BMI kalkulačka pro děti",
+    "s": "BMI kalkulačka pro děti spočítá index tělesné hmotnosti dítěte a porovná ho s normou pro jeho věk.",
+    "u": "/cz/kalkulacka-bmi-deti/",
+    "k": "BMI kalkulačka pro děti percentily WHO normální rozsah percentil dětí BMI BMI kalkulačka pro děti česko czech kalkulačka"
+  },
+  {
+    "n": "BSA kalkulačka — povrch těla online",
+    "s": "BSA kalkulačka spočítá plochu povrchu lidského těla v metrech čtverečních.",
+    "u": "/cz/kalkulacka-bsa/",
+    "k": "BSA kalkulačka povrch těla Plocha povrchu Body Surface Area dávkování léků chemoterapie BSA kalkulačka — povrch těla online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka alkoholu v krvi",
+    "s": "Kalkulačka alkoholu v krvi orientačně spočítá, kolik promile alkoholu máte v krvi po vypití nápoje.",
+    "u": "/cz/kalkulacka-alkoholu/",
+    "k": "Kalkulačka alkoholu v krvi alkohol Kalkulačka alkoholu v krvi česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka BMR — bazální metabolismus online",
+    "s": "BMR kalkulačka spočítá bazální metabolismus, tedy kolik kalorií vaše tělo spálí za den v naprostém klidu.",
+    "u": "/cz/kalkulacka-bmr/",
+    "k": "Kalkulačka BMR bazální metabolismus TDEE hubnutí Mifflin-St Jeor kalorií Kalkulačka BMR — bazální metabolismus online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka denního příjmu vody — kolik pít za den",
+    "s": "Kalkulačka denního příjmu vody spočítá, kolik tekutin byste měli za den vypít podle své váhy a pohybu.",
+    "u": "/cz/kalkulacka-vody/",
+    "k": "Kalkulačka denního příjmu vody kolik pít za den pitný režim 35 ml/kg čaj, káva Denní potřeba tekutin Kalkulačka denního příjmu vody — kolik pít za den česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka HCG — normy v těhotenství a tempo zdvojení",
+    "s": "Kalkulačka hCG spočítá, jak rychle roste hladina těhotenského hormonu hCG mezi dvěma odběry krve.",
+    "u": "/cz/kalkulacka-hcg/",
+    "k": "Kalkulačka HCG Normy HCG tempo zdvojení beta HCG mIU/ml dynamika růstu HCG Kalkulačka HCG — normy v těhotenství a tempo zdvojení česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka ideální váhy",
+    "s": "Kalkulačka ideální váhy spočítá, jaká váha by odpovídala vaší výšce podle Devineova vzorce.",
+    "u": "/cz/kalkulacka-idealni-vahy/",
+    "k": "Kalkulačka ideální váhy optimální hmotnost Broca Hamwi rozsah BMI ideální váhu Kalkulačka ideální váhy česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka obvodu pasu",
+    "s": "Kalkulačka obvodu pasu posoudí, zda váš pas nese zvýšené zdravotní riziko.",
+    "u": "/cz/kalkulacka-co2-bmi/",
+    "k": "Kalkulačka obvodu pasu zdravotní riziko centrální obezita obvod pasu WHO nízké riziko Kalkulačka obvodu pasu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka ŠKF (eGFR)",
+    "s": "Kalkulačka ŠKF (eGFR) odhadne funkci ledvin z hladiny kreatininu v krvi, věku a pohlaví.",
+    "u": "/cz/kalkulacka-shf/",
+    "k": "Kalkulačka ŠKF eGFR rychlost glomerulární filtrace CKD-EPI chronické onemocnění ledvin MDRD Kalkulačka ŠKF (eGFR) česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka spálených kalorií",
+    "s": "Kalkulačka spálených kalorií spočítá, kolik energie spálíte při sportu podle své váhy, délky a druhu aktivity.",
+    "u": "/cz/kalkulacka-spal-kalorii/",
+    "k": "Kalkulačka spálených kalorií kalorie při sportu MET spálené kalorie kalorický výdej chůze Kalkulačka spálených kalorií česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka tělesného tuku",
+    "s": "Kalkulačka tělesného tuku odhadne procento tuku v těle z obvodů pasu, krku a výšky podle metody amerického námořnictva (US Navy).",
+    "u": "/cz/kalkulacka-tuku/",
+    "k": "Kalkulačka tělesného tuku procento tuku U.S. Navy body fat zdravé procento tuku obvody Kalkulačka tělesného tuku česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka tempa běhu",
+    "s": "Kalkulačka tempa běhu spočítá vaše průměrné tempo v minutách na kilometr a rychlost v kilometrech za hodinu.",
+    "u": "/cz/kalkulacka-tempa-behu/",
+    "k": "Kalkulačka tempa běhu tempo běhu pace rychlost aerobní pásmo čas doběhu Kalkulačka tempa běhu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka velikosti podprsenky",
+    "s": "Kalkulačka velikosti podprsenky spočítá vaši velikost z obvodu pod prsy a přes prsa.",
+    "u": "/cz/kalkulacka-podprsenky/",
+    "k": "Kalkulačka velikosti podprsenky správná velikost band size košíček Obvod poprsí měřit pro výběr podprsenky Kalkulačka velikosti podprsenky česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka zón tepové frekvence",
+    "s": "Kalkulačka zón tepové frekvence spočítá pět tréninkových zón podle vašeho věku a klidového tepu.",
+    "u": "/cz/kalkulacka-zony-tep-frekvence/",
+    "k": "Kalkulačka zón tepové frekvence tréninkové zóny max TF Tanaka Karvonovy metody Zóna 2 Kalkulačka zón tepové frekvence česko czech kalkulačka"
+  },
+  {
+    "n": "Kalorická kalkulačka — denní příjem kalorií online",
+    "s": "Kalorická kalkulačka spočítá, kolik kalorií denně potřebujete podle váhy, výšky, věku, pohlaví a aktivity.",
+    "u": "/cz/kalkulacka-kalorii/",
+    "k": "Kalorická kalkulačka denní příjem kalorií Mifflin-St Jeor TDEE makroživiny Bezpečný deficit Kalorická kalkulačka — denní příjem kalorií online česko czech kalkulačka"
+  },
+  {
+    "n": "Očkovací kalkulačka — termíny očkování pro děti",
+    "s": "Očkovací kalkulačka ukáže, jaké očkování vaše dítě čeká podle českého očkovacího kalendáře.",
+    "u": "/cz/kalkulacka-ockovani/",
+    "k": "Očkovací kalkulačka termíny očkování povinné očkování spalničky vyhláška MZ ČR datum narození Očkovací kalkulačka — termíny očkování pro děti česko czech kalkulačka"
+  },
+  {
+    "n": "Ovulační kalkulačka — plodné dny a ovulace online",
+    "s": "Ovulační kalkulačka spočítá plodné dny a den ovulace podle prvního dne poslední menstruace a délky cyklu.",
+    "u": "/cz/kalkulacka-ovulace/",
+    "k": "Ovulační kalkulačka plodné dny ovulace plodné okno bazální tělesná teplota délka cyklu Ovulační kalkulačka — plodné dny a ovulace online česko czech kalkulačka"
+  },
+  {
+    "n": "Spánková kalkulačka — optimální čas probuzení",
+    "s": "Spánková kalkulačka spočítá, v kolik jít spát, abyste se probudili mezi spánkovými cykly a cítili se odpočatí.",
+    "u": "/cz/kalkulacka-spani/",
+    "k": "Spánková kalkulačka optimální čas probuzení spánkový cyklus 90 minut chronotyp čas usnutí Spánková kalkulačka — optimální čas probuzení česko czech kalkulačka"
+  },
+  {
+    "n": "TDEE kalkulačka — celkový denní energetický výdej",
+    "s": "TDEE kalkulačka spočítá celkový denní energetický výdej, tedy kolik kalorií denně spálíte včetně pohybu, práce i sportu.",
+    "u": "/cz/kalkulacka-tdee/",
+    "k": "TDEE kalkulačka celkový denní energetický výdej Total Daily Energy Expenditure bazální metabolismus plánování jídelníčku udržení váhy TDEE kalkulačka — celkový denní energetický výdej česko czech kalkulačka"
+  },
+  {
+    "n": "Těhotenská kalkulačka — termín porodu a týdny online",
+    "s": "Těhotenská kalkulačka spočítá termín porodu a aktuální týden těhotenství podle prvního dne poslední menstruace.",
+    "u": "/cz/kalkulacka-tehotenstvi/",
+    "k": "Těhotenská kalkulačka termín porodu Nägeleho pravidlo trimestry kyselinu listovou 40 týdnů Těhotenská kalkulačka — termín porodu a týdny online česko czech kalkulačka"
+  },
+  {
+    "n": "WHR kalkulačka — poměr pasu a boků",
+    "s": "WHR kalkulačka spočítá poměr obvodu pasu a boků, který ukazuje, kde se ukládá tuk.",
+    "u": "/cz/kalkulacka-whr/",
+    "k": "WHR kalkulačka poměr pasu a boků waist-to-hip ratio centrální obezita kardiovaskulární riziko obvod pasu WHR kalkulačka — poměr pasu a boků česko czech kalkulačka"
+  },
+  {
+    "n": "Daňová kalkulačka — daň z příjmů fyzických osob 2026",
+    "s": "Daňová kalkulačka spočítá daň z příjmů fyzických osob za rok 2026 včetně sociálního a zdravotního pojištění.",
+    "u": "/cz/kalkulacka-dani/",
+    "k": "Daňová kalkulačka daň z příjmů slevy na dani daňové zvýhodnění průměrné mzdy daňový bonus Daňová kalkulačka — daň z příjmů fyzických osob 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Hypoteční kalkulačka — měsíční splátka online 2026",
+    "s": "Hypoteční kalkulačka spočítá měsíční splátku hypotéky a kolik celkem zaplatíte na úrocích.",
+    "u": "/cz/kalkulacka-hypoteky/",
+    "k": "Hypoteční kalkulačka měsíční splátka LTV anuitní splátka úroková sazba mimořádná splátka Hypoteční kalkulačka — měsíční splátka online 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Insolvenční kalkulačka — výpočet splátek oddlužení 2026",
+    "s": "Insolvenční kalkulačka spočítá, za jak dlouho splatíte dluh při dané měsíční splátce a jak dlouho může trvat oddlužení.",
+    "u": "/cz/kalkulacka-insolvence/",
+    "k": "Insolvenční kalkulačka oddlužení nezabavitelné minimum osobní bankrot insolvenční správce 3 roky Insolvenční kalkulačka — výpočet splátek oddlužení 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Investiční kalkulačka — výnos investice a čas zdvojení",
+    "s": "Investiční kalkulačka spočítá, kolik bude mít vaše investice za zvolenou dobu při pravidelném vkladu a průměrném výnosu.",
+    "u": "/cz/kalkulacka-investice/",
+    "k": "Investiční kalkulačka výnos investice pravidlo 72 reálný výnos akciových trhů zdvojení Investiční kalkulačka — výnos investice a čas zdvojení česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka dluhopisů — výnos státních a firemních dluhopisů",
+    "s": "Kalkulačka dluhopisů spočítá spravedlivou cenu dluhopisu podle jeho kupónu, doby do splatnosti a požadovaného výnosu.",
+    "u": "/cz/kalkulacka-dluhopisu/",
+    "k": "Kalkulačka dluhopisů výnos do splatnosti YTM státní dluhopisy kupónový výnos spořicí dluhopisy Kalkulačka dluhopisů — výnos státních a firemních dluhopisů česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka DPH — výpočet ceny s/bez DPH online",
+    "s": "Kalkulačka DPH přepočítá cenu s daní z přidané hodnoty i bez ní.",
+    "u": "/cz/kalkulacka-dph/",
+    "k": "Kalkulačka DPH ceny s/bez DPH Sazby DPH základní sazba cena bez DPH cena s DPH Kalkulačka DPH — výpočet ceny s/bez DPH online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka inflace — vliv inflace na kupní sílu",
+    "s": "Kalkulačka inflace ukáže, kolik bude za pár let stát dnešní částka peněz.",
+    "u": "/cz/kalkulacka-inflace/",
+    "k": "Kalkulačka inflace kupní síla inflace v ČR Cílová inflace spořicí účet hodnota peněz Kalkulačka inflace — vliv inflace na kupní sílu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka procent — výpočet procent online",
+    "s": "Kalkulačka procent spočítá, kolik je dané procento ze základu.",
+    "u": "/cz/kalkulacka-procent/",
+    "k": "Kalkulačka procent výpočet procent procentní změna procentní podíl X % z čísla kolik procent Kalkulačka procent — výpočet procent online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka RPSN — roční procentní sazba nákladů",
+    "s": "Kalkulačka RPSN spočítá roční procentní sazbu nákladů, tedy skutečnou cenu půjčky včetně úroku a poplatků.",
+    "u": "/cz/kalkulacka-rpsn/",
+    "k": "Kalkulačka RPSN roční procentní sazba nákladů úroková sazba porovnání nabídek poplatky skutečná cena půjčky Kalkulačka RPSN — roční procentní sazba nákladů česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka složeného úročení",
+    "s": "Kalkulačka složeného úročení spočítá, kolik bude mít váš vklad po letech, když se úroky připisují k jistině a samy se dále úročí.",
+    "u": "/cz/kalkulacka-slozeneho-uroceni/",
+    "k": "Kalkulačka složeného úročení složené úročení compound interest pravidlo 72 jednoduché úročení úrok z úroku Kalkulačka složeného úročení česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka spoření — kolik naspoříte online",
+    "s": "Kalkulačka spoření spočítá, kolik naspoříte pravidelným měsíčním vkladem při daném úroku.",
+    "u": "/cz/kalkulacka-sporeni/",
+    "k": "Kalkulačka spoření složené úročení úrok z úroku Spořicí účty stavební spoření srážkové dani Kalkulačka spoření — kolik naspoříte online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka zlata — cena zlata online",
+    "s": "Kalkulačka zlata spočítá cenu zlata podle váhy a aktuální ceny za gram.",
+    "u": "/cz/kalkulacka-zlata/",
+    "k": "Kalkulačka zlata cena zlata trojská unce hodnota zlata kurz CZK/USD aktuální kurz Kalkulačka zlata — cena zlata online česko czech kalkulačka"
+  },
+  {
+    "n": "Kurzová kalkulačka — převod měn CZK, EUR, USD",
+    "s": "Kurzová kalkulačka převede částku v eurech na české koruny podle zadaného kurzu.",
+    "u": "/cz/kalkulacka-kurzu/",
+    "k": "Kurzová kalkulačka převod měn aktuální kurz kurzy ČNB cnb.cz koruny na eura Kurzová kalkulačka — převod měn CZK, EUR, USD česko czech kalkulačka"
+  },
+  {
+    "n": "Úvěrová kalkulačka — splátka půjčky online 2026",
+    "s": "Úvěrová kalkulačka spočítá měsíční splátku půjčky a kolik celkem zaplatíte na úrocích.",
+    "u": "/cz/kalkulacka-uveru/",
+    "k": "Úvěrová kalkulačka splátka půjčky spotřebitelský úvěr RPSN celkový přeplatek měsíční splátka Úvěrová kalkulačka — splátka půjčky online 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Důchodová kalkulačka 2026",
+    "s": "Důchodová kalkulačka spočítá orientační výši starobního důchodu pro rok 2026.",
+    "u": "/cz/kalkulacka-duchodu/",
+    "k": "Důchodová kalkulačka starobní důchod důchodový věk procentní výměra předčasný důchod základní výměra Důchodová kalkulačka 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka cestovních náhrad — náhrady při pracovních",
+    "s": "Kalkulačka cestovních náhrad spočítá stravné a náhradu za použití vlastního auta při pracovní cestě v Česku pro rok 2026.",
+    "u": "/cz/kalkulacka-cestovnich-nahrad/",
+    "k": "Kalkulačka cestovních náhrad stravné pracovní cesta sazby stravného 5,90 Kč vyhlášky Kalkulačka cestovních náhrad — náhrady při pracovních česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka čisté mzdy 2026",
+    "s": "Kalkulačka čisté mzdy spočítá, kolik vám z hrubé mzdy zbude po odvodech a dani pro rok 2026.",
+    "u": "/cz/kalkulacka-ciste-mzdy/",
+    "k": "Kalkulačka čisté mzdy čistá mzda hrubé mzdy minimální mzda sleva na poplatníka superhrubá mzda Kalkulačka čisté mzdy 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka dovolené — nárok na dovolenou 2026",
+    "s": "Kalkulačka dovolené spočítá nárok na dovolenou podle týdenní pracovní doby a odpracovaných měsíců.",
+    "u": "/cz/kalkulacka-dovolene/",
+    "k": "Kalkulačka dovolené nárok na dovolenou 4 týdny náhrada za nevyčerpanou dovolenou průměrný výdělek Zákoník práce Kalkulačka dovolené — nárok na dovolenou 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka nemocenské 2026",
+    "s": "Kalkulačka nemocenské spočítá nemocenské od 15.",
+    "u": "/cz/kalkulacka-nemocenske/",
+    "k": "Kalkulačka nemocenské nemocenské denní vyměřovací základ DVZ náhrada mzdy ČSSZ Kalkulačka nemocenské 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka odstupného — výpočet odstupného 2026",
+    "s": "Kalkulačka odstupného spočítá odstupné podle § 67 zákoníku práce.",
+    "u": "/cz/kalkulacka-odstupneho/",
+    "k": "Kalkulačka odstupného nárok na odstupné výše odstupného zákonné odstupné průměrný měsíční výdělek délce zaměstnání Kalkulačka odstupného — výpočet odstupného 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka pracovního stáže",
+    "s": "Kalkulačka pracovního stáže spočítá délku praxe mezi dvěma daty v letech, měsících a dnech.",
+    "u": "/cz/kalkulacka-stazu-prace/",
+    "k": "Kalkulačka pracovního stáže délka zaměstnání výpovědní lhůta výše odstupného délka pracovního poměru zákoníku práce Kalkulačka pracovního stáže česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka předdůchodu — podmínky a výše předdůchodu 2026",
+    "s": "Kalkulačka předdůchodu spočítá, na kolik měsíců vám vystačí naspořená částka v doplňkovém penzijním spoření.",
+    "u": "/cz/kalkulacka-preduchodku/",
+    "k": "Kalkulačka předdůchodu podmínky předdůchodu předčasný důchod penzijního spoření DPS 60 měsíců Kalkulačka předdůchodu — podmínky a výše předdůchodu 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka přesčasů — mzda za práci přesčas 2026",
+    "s": "Kalkulačka přesčasů spočítá mzdu za práci přesčas včetně příplatku.",
+    "u": "/cz/kalkulacka-nadcasu/",
+    "k": "Kalkulačka přesčasů práce přesčas příplatek za přesčas průměrného výdělku náhradním volnem práci o víkendu Kalkulačka přesčasů — mzda za práci přesčas 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka průměrného hodinového výdělku — PHV pro náhrady",
+    "s": "Kalkulačka průměrného hodinového výdělku (PHV) spočítá PHV pro náhrady mzdy, příplatky a dovolenou.",
+    "u": "/cz/kalkulacka-svd/",
+    "k": "Kalkulačka průměrného hodinového výdělku průměrný hodinový výdělek PHV náhrady mzdy odstupného Kalkulačka průměrného hodinového výdělku — PHV pro náhrady česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka výživného — výpočet alimentů 2026",
+    "s": "Kalkulačka výživného spočítá orientační výši alimentů podle příjmu povinného rodiče a počtu dětí.",
+    "u": "/cz/kalkulacka-alimenty/",
+    "k": "Kalkulačka výživného výše výživného alimentů povinného rodiče Ministerstva spravedlnosti pevné minimum Kalkulačka výživného — výpočet alimentů 2026 česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka derivace — numerická derivace funkce online",
+    "s": "Kalkulačka derivace spočítá numerickou derivaci funkce v daném bodě.",
+    "u": "/cz/kalkulacka-derivace/",
+    "k": "Kalkulačka derivace numerická derivace směrnice tečny derivace funkce f'(x) Kalkulačka derivace — numerická derivace funkce online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka integrálů — numerický výpočet určitého integrálu",
+    "s": "Kalkulačka integrálů spočítá určitý integrál funkce mezi dvěma mezemi.",
+    "u": "/cz/kalkulacka-integralu/",
+    "k": "Kalkulačka integrálů určitý integrál trapézová metoda Numerická integrace počet kroků určitého integrálu Kalkulačka integrálů — numerický výpočet určitého integrálu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka logaritmu — log, ln a log libovolného základu",
+    "s": "Kalkulačka logaritmu spočítá logaritmus čísla o libovolném základu.",
+    "u": "/cz/kalkulacka-logaritmu/",
+    "k": "Kalkulačka logaritmu Přirozený logaritmus Dekadický logaritmus libovolného základu logaritmus Kalkulačka logaritmu — log, ln a log libovolného základu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka měřítka — přepočet rozměrů plánů a map",
+    "s": "Kalkulačka měřítka přepočítá skutečný rozměr na rozměr na mapě nebo plánu a naopak.",
+    "u": "/cz/kalkulacka-meritka/",
+    "k": "Kalkulačka měřítka přepočet rozměrů měřítko 1:100 1:100 plány bytů skutečné rozměry Kalkulačka měřítka — přepočet rozměrů plánů a map česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka mocnin — výpočet mocniny čísla online",
+    "s": "Kalkulačka mocnin spočítá základ umocněný na libovolný exponent.",
+    "u": "/cz/kalkulacka-mocnin/",
+    "k": "Kalkulačka mocnin výpočet mocniny Záporný exponent mocnina exponent Kalkulačka mocnin — výpočet mocniny čísla online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka NSD a NSN",
+    "s": "Kalkulačka NSD spočítá největšího společného dělitele dvou čísel a k tomu i nejmenší společný násobek.",
+    "u": "/cz/kalkulacka-nsd/",
+    "k": "Kalkulačka NSD a NSN největší společný dělitel nejmenší společný násobek GCD LCM Kalkulačka NSD a NSN česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka NSN — nejmenší společný násobek online",
+    "s": "Kalkulačka NSN spočítá nejmenší společný násobek dvou čísel a k tomu i největší společný dělitel.",
+    "u": "/cz/kalkulacka-nsn/",
+    "k": "Kalkulačka NSN nejmenší společný násobek LCM NSD kladné celé číslo Kalkulačka NSN — nejmenší společný násobek online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka objemu — krychle, kvádr, válec, koule, kužel",
+    "s": "Kalkulačka objemu spočítá objem krychle, kvádru, válce, koule a kužele.",
+    "u": "/cz/kalkulacka-objemu/",
+    "k": "Kalkulačka objemu objem válce geometrických těles krychle jehlan poloměr podstavy Kalkulačka objemu — krychle, kvádr, válec, koule, kužel česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka obvodu kruhu — průměr, poloměr, obsah",
+    "s": "Kalkulačka obvodu kruhu spočítá z poloměru obvod, obsah i průměr kruhu.",
+    "u": "/cz/kalkulacka-obvodu-kruhu/",
+    "k": "Kalkulačka obvodu kruhu obvod kruhu obsah průměr Vzorce pro kruh poloměr Kalkulačka obvodu kruhu — průměr, poloměr, obsah česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka odmocniny — druhá, třetí a n-tá odmocnina",
+    "s": "Kalkulačka odmocniny spočítá druhou, třetí i n-tou odmocninu libovolného čísla.",
+    "u": "/cz/kalkulacka-odmocniny/",
+    "k": "Kalkulačka odmocniny Druhou odmocninu n-tá odmocnina odmocninu bez kalkulačky Newtonova Kalkulačka odmocniny — druhá, třetí a n-tá odmocnina česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka plochy — obsah čtverce, obdélníku, kruhu a",
+    "s": "Kalkulačka plochy spočítá obsah čtverce, obdélníku, kruhu, trojúhelníku a lichoběžníku.",
+    "u": "/cz/kalkulacka-plochy/",
+    "k": "Kalkulačka plochy obsah kruhu obsah čtverce geometrických obrazců lichoběžníku poloměr Kalkulačka plochy — obsah čtverce, obdélníku, kruhu a česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka převodu jednotek",
+    "s": "Kalkulačka převodu jednotek převede délku mezi milimetry, centimetry, metry, kilometry a mílemi.",
+    "u": "/cz/kalkulacka-prevodu-jednotek/",
+    "k": "Kalkulačka převodu jednotek převod jednotek 1 palec 1 libra Fahrenheit na Celsius Délka, hmotnost Kalkulačka převodu jednotek česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka průměru — aritmetický průměr, medián a modus",
+    "s": "Kalkulačka průměru spočítá aritmetický průměr, medián a modus ze zadaných čísel.",
+    "u": "/cz/kalkulacka-prumeru/",
+    "k": "Kalkulačka průměru aritmetický průměr medián modus vážený průměr průměrem a mediánem Kalkulačka průměru — aritmetický průměr, medián a modus česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka rovnic — lineární a kvadratické rovnice online",
+    "s": "Kalkulačka rovnic vyřeší kvadratickou rovnici ax² + bx + c = 0 a ukáže diskriminant i kořeny.",
+    "u": "/cz/kalkulacka-rovnic/",
+    "k": "Kalkulačka rovnic kvadratické rovnice Diskriminant lineární rovnici kvadratickou rovnici reálné kořeny Kalkulačka rovnic — lineární a kvadratické rovnice online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka rychlosti — výpočet rychlosti, vzdálenosti a času",
+    "s": "Kalkulačka rychlosti spočítá ze dvou zadaných hodnot tu třetí: rychlost z vzdálenosti a času, čas z vzdálenosti a rychlosti, nebo vzdálenost z rychlosti a času.",
+    "u": "/cz/kalkulacka-rychlosti/",
+    "k": "Kalkulačka rychlosti výpočet rychlosti vzdálenost km/h vzorec pro rychlost m/s Kalkulačka rychlosti — výpočet rychlosti, vzdálenosti a času česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka soustavy rovnic — soustava 2 lineárních rovnic",
+    "s": "Kalkulačka soustavy rovnic vyřeší soustavu dvou lineárních rovnic o dvou neznámých x a y.",
+    "u": "/cz/kalkulacka-soustavy-rovnic/",
+    "k": "Kalkulačka soustavy rovnic soustava 2 lineárních rovnic eliminace soustavu dvou rovnic dosazení Kalkulačka soustavy rovnic — soustava 2 lineárních rovnic česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka trojčlenky — přímá a nepřímá úměrnost",
+    "s": "Kalkulačka trojčlenky vyřeší přímou i nepřímou úměrnost ze tří známých hodnot.",
+    "u": "/cz/kalkulacka-trojclenka/",
+    "k": "Kalkulačka trojčlenky přímá a nepřímá úměrnost pravidlo tří nepřímou trojčlenku trojčlenka Kalkulačka trojčlenky — přímá a nepřímá úměrnost česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka trojúhelníku — strany, úhly a obsah",
+    "s": "Kalkulačka trojúhelníku spočítá ze tří stran obvod a obsah trojúhelníku.",
+    "u": "/cz/kalkulacka-trojuhelniku/",
+    "k": "Kalkulačka trojúhelníku obsah trojúhelníku Pythagorova věta Heronův vzorec strany, úhly přepona Kalkulačka trojúhelníku — strany, úhly a obsah česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka váženého průměru",
+    "s": "Kalkulačka váženého průměru spočítá průměr, ve kterém má každá hodnota svou váhu.",
+    "u": "/cz/kalkulacka-vazeneho-prumeru/",
+    "k": "Kalkulačka váženého průměru vážený průměr průměr s vahami školních známek váhy Kalkulačka váženého průměru česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka zlomků — sčítání, odčítání, násobení a dělení",
+    "s": "Kalkulačka zlomků sečte, odečte, vynásobí nebo vydělí dva zlomky a výsledek zkrátí.",
+    "u": "/cz/kalkulacka-zlomku/",
+    "k": "Kalkulačka zlomků sčítání Dělení zlomků nejmenší společný násobek zlomky s různými jmenovateli zkráceném tvaru Kalkulačka zlomků — sčítání, odčítání, násobení a dělení česko czech kalkulačka"
+  },
+  {
+    "n": "Maticová kalkulačka — determinant, inverze a sčítání matic",
+    "s": "Maticová kalkulačka spočítá determinant a inverzní matici k matici 2×2.",
+    "u": "/cz/kalkulacka-matice/",
+    "k": "Maticová kalkulačka determinant matice determinant inverze sčítání matic Maticová kalkulačka — determinant, inverze a sčítání matic česko czech kalkulačka"
+  },
+  {
+    "n": "Pythagorova věta — kalkulačka pravoúhlého trojúhelníku",
+    "s": "Kalkulačka Pythagorovy věty spočítá přeponu pravoúhlého trojúhelníku ze dvou odvěsen.",
+    "u": "/cz/kalkulacka-pythagorova-veta/",
+    "k": "Pythagorova věta pravoúhlého trojúhelníku přepona odvěsny Kalkulačka Pythagorovy věty Pythagorova věta — kalkulačka pravoúhlého trojúhelníku česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka anhydritu — litá podlaha a samonivelační potěr",
+    "s": "Kalkulačka anhydritu spočítá, kolik lité podlahy (samonivelačního potěru) potřebujete na danou plochu a tloušťku.",
+    "u": "/cz/kalkulacka-nalivneho-pole/",
+    "k": "Kalkulačka anhydritu litá podlaha samonivelační potěr Anhydritový potěr minimální tloušťka Kalkulačka anhydritu — litá podlaha a samonivelační potěr česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka barvy — spotřeba barvy na malování",
+    "s": "Kalkulačka barvy spočítá, kolik litrů barvy potřebujete na malování podle plochy, počtu vrstev a vydatnosti barvy.",
+    "u": "/cz/kalkulacka-barvy/",
+    "k": "Kalkulačka barvy spotřeba barvy Disperzní barva průměrná spotřeba barvy vymalování místnosti Kalkulačka barvy — spotřeba barvy na malování česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka betonu — objem a spotřeba materiálu online",
+    "s": "Kalkulačka betonu spočítá objem betonu a orientační spotřebu cementu, písku a štěrku na desku, základ nebo podklad.",
+    "u": "/cz/kalkulacka-betonu/",
+    "k": "Kalkulačka betonu objem betonu třídy betonu C20/25 cementu pytlů Kalkulačka betonu — objem a spotřeba materiálu online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka dlažby a obkladů — počet kusů na plochu",
+    "s": "Kalkulačka dlažby a obkladů spočítá, kolik dlaždic potřebujete na danou plochu včetně rezervy na prořez.",
+    "u": "/cz/kalkulacka-dlazby/",
+    "k": "Kalkulačka dlažby počet kusů počet dlaždic spotřeba lepidla spárovací hmotu obkladů Kalkulačka dlažby a obkladů — počet kusů na plochu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka malty — spotřeba cementu, písku a vody",
+    "s": "Kalkulačka malty spočítá spotřebu cementu, písku a vody na daný objem zdicí malty.",
+    "u": "/cz/kalkulacka-malty/",
+    "k": "Kalkulačka malty spotřeba cementu zdící malta Omítková malta poměr pro zdící maltu omítky Kalkulačka malty — spotřeba cementu, písku a vody česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka podlahy — laminát, parkety a dlaždice na plochu",
+    "s": "Kalkulačka podlahy spočítá, kolik balení laminátu, parket nebo dlaždic potřebujete na danou plochu včetně rezervy na prořez.",
+    "u": "/cz/kalkulacka-podlahy/",
+    "k": "Kalkulačka podlahy laminát kladení diagonálně parkety Kolik laminátu Kalkulačka podlahy — laminát, parkety a dlaždice na plochu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka schodiště — výška stupně a počet stupňů",
+    "s": "Kalkulačka schodiště spočítá počet stupňů, jejich výšku a hloubku podle celkové výšky podlaží.",
+    "u": "/cz/kalkulacka-schodiste/",
+    "k": "Kalkulačka schodiště výška stupně ČSN 73 4130 počet stupňů hloubka stupně Kalkulačka schodiště — výška stupně a počet stupňů česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka spotřeby paliva",
+    "s": "Kalkulačka spotřeby paliva spočítá, kolik litrů paliva spotřebujete na danou trasu a kolik cesta bude stát.",
+    "u": "/cz/kalkulacka-spotreby-paliva/",
+    "k": "Kalkulačka spotřeby paliva spotřeba na 100 km náklady na cestu spotřebu auta benzín vs. naftu Kalkulačka spotřeby paliva česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka střechy — plocha střechy a spotřeba materiálu",
+    "s": "Kalkulačka střechy spočítá plochu sedlové střechy podle délky domu, jeho šířky a sklonu.",
+    "u": "/cz/kalkulacka-strechy/",
+    "k": "Kalkulačka střechy plocha střechy sedlová střecha pultové střechy sklon Kalkulačka střechy — plocha střechy a spotřeba materiálu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka tapet — kolik rolí tapet na místnost",
+    "s": "Kalkulačka tapet spočítá, kolik rolí tapet potřebujete na danou plochu stěn.",
+    "u": "/cz/kalkulacka-tapety/",
+    "k": "Kalkulačka tapet role tapety standardní role tapety počet rolí tapet rolí tapet Kalkulačka tapet — kolik rolí tapet na místnost česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka tepelných ztrát",
+    "s": "Kalkulačka tepelných ztrát spočítá zjednodušeně, kolik tepla uniká stěnou, střechou nebo oknem.",
+    "u": "/cz/kalkulacka-tepelnych-ztrat/",
+    "k": "Kalkulačka tepelných ztrát výkon topení dimenzovat topení ČSN EN 12831 W/m² Kalkulačka tepelných ztrát česko czech kalkulačka"
+  },
+  {
+    "n": "Datumová kalkulačka — přičtení a odečtení dní od data",
+    "s": "Datumová kalkulačka přičte nebo odečte daný počet dní od zvoleného data.",
+    "u": "/cz/kalkulacka-datumu/",
+    "k": "Datumová kalkulačka přičtení a odečtení právní lhůty lhůta pracovní den Datumová kalkulačka — přičtení a odečtení dní od data česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka času — součet a rozdíl hodin a minut",
+    "s": "Kalkulačka času sečte a odečte dva časy v hodinách a minutách.",
+    "u": "/cz/kalkulacka-casu/",
+    "k": "Kalkulačka času součet a rozdíl sečíst hodiny hodiny, minuty 60 minut Kalkulačka času — součet a rozdíl hodin a minut česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka dní zdarma — počet dní, týdnů a měsíců mezi daty",
+    "s": "Kalkulačka dní spočítá počet dní, týdnů a měsíců mezi dvěma daty.",
+    "u": "/cz/kalkulacka-dni/",
+    "k": "Kalkulačka dní počet dní dny mezi dvěma daty týdnů a měsíců datum zahájení Kalkulačka dní zdarma — počet dní, týdnů a měsíců mezi daty česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka měsíců — počet měsíců mezi dvěma daty",
+    "s": "Kalkulačka měsíců spočítá počet celých kalendářních měsíců mezi dvěma daty.",
+    "u": "/cz/kalkulacka-mesicu/",
+    "k": "Kalkulačka měsíců počet měsíců celých měsíců přesný počet měsíců mezi dvěma daty Kalkulačka měsíců — počet měsíců mezi dvěma daty česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka pracovních dní",
+    "s": "Kalkulačka pracovních dní spočítá dny od pondělí do pátku mezi dvěma daty.",
+    "u": "/cz/kalkulacka-pracovnich-dni/",
+    "k": "Kalkulačka pracovních dní pracovních dní státní svátky pracovních dní v roce bez víkendů Kalkulačka pracovních dní česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka věku — přesný věk v letech, měsících a dnech",
+    "s": "Kalkulačka věku spočítá přesný věk v letech, měsících a dnech k dnešnímu dni.",
+    "u": "/cz/kalkulacka-veku/",
+    "k": "Kalkulačka věku přesný věk datum narození den narozenin v letech, měsících Kalkulačka věku — přesný věk v letech, měsících a dnech česko czech kalkulačka"
+  },
+  {
+    "n": "BARF kalkulačka pro psy",
+    "s": "BARF kalkulačka spočítá denní dávku syrové stravy pro psa podle jeho váhy.",
+    "u": "/cz/kalkulacka-barf/",
+    "k": "BARF kalkulačka pro psy denní dávka syrového krmení složení BARF veterinářem BARF kalkulačka pro psy česko czech kalkulačka"
+  },
+  {
+    "n": "IQ kalkulačka — orientační výpočet IQ z věku a skóre",
+    "s": "IQ kalkulačka spočítá orientační IQ z mentálního a chronologického věku podle historického poměrového vzorce.",
+    "u": "/cz/kalkulacka-iq/",
+    "k": "IQ kalkulačka Intelligence Quotient standardní odchylka online IQ test IQ škály mentálního věku IQ kalkulačka — orientační výpočet IQ z věku a skóre česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka nagazování piva",
+    "s": "Kalkulačka nagazování piva spočítá, kolik cukru přidat do piva při lahvování, aby se správně nasytilo oxidem uhličitým.",
+    "u": "/cz/kalkulacka-nagazovani-piva/",
+    "k": "Kalkulačka nagazování piva cukr pro refermentaci nagazování piva sacharóza vol CO₂ Kalkulačka nagazování piva česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka pizzy — suroviny na těsto online",
+    "s": "Kalkulačka pizzy spočítá suroviny na těsto podle počtu pizz.",
+    "u": "/cz/kalkulacka-pizzy/",
+    "k": "Kalkulačka pizzy pizza těsto Hydratace studená fermentace Neapolská pizza Kalkulačka pizzy — suroviny na těsto online česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka spotřeby elektřiny",
+    "s": "Kalkulačka spotřeby elektřiny spočítá, kolik kilowatthodin spotřebič spotřebuje a kolik to bude stát.",
+    "u": "/cz/kalkulacka-spotreby-elektriny/",
+    "k": "Kalkulačka spotřeby elektřiny spotřeba elektřiny cena za kWh náklady na provoz kWh Kalkulačka spotřeby elektřiny česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka věku psa",
+    "s": "Kalkulačka věku psa převede věk psa na lidské roky.",
+    "u": "/cz/kalkulacka-veku-psa/",
+    "k": "Kalkulačka věku psa psí roky lidský věk 1 psí rok velikosti psa Kalkulačka věku psa česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka znamení zvěrokruhu",
+    "s": "Kalkulačka znamení zvěrokruhu určí vaše znamení podle data narození.",
+    "u": "/cz/kalkulacka-znameni-zverokoruhu/",
+    "k": "Kalkulačka znamení zvěrokruhu znamení z data narození hranice znamení čínský horoskop astrologické znamení Kalkulačka znamení zvěrokruhu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalorie v pivu",
+    "s": "Kalkulačka kalorií v pivu spočítá, kolik energie má vypité pivo.",
+    "u": "/cz/kalkulacka-kaloriy-piva/",
+    "k": "Kalorie v pivu kalorická hodnota piva Světlý ležák půllitr piva Nealkoholické pivo Kalorie v pivu česko czech kalkulačka"
+  },
+  {
+    "n": "Numerologická kalkulačka — životní číslo a číslo osudu",
+    "s": "Numerologická kalkulačka spočítá vaše životní číslo z data narození.",
+    "u": "/cz/kalkulacka-numerologie/",
+    "k": "Numerologická kalkulačka životní číslo číslo osudu mistrovská čísla ciferný součet Numerologická kalkulačka — životní číslo a číslo osudu česko czech kalkulačka"
+  },
+  {
+    "n": "Kalkulačka odstupné 2026",
+    "s": "Odstupné podle § 67 zákoníku práce: 1×, 2× nebo 3× průměrný výdělek.",
+    "u": "/cz/kalkulacka-odstupne/",
+    "k": "odstupné kalkulačka odstupné 2026 zákoník práce § 67 česko czech kalkulačka"
+  }
+]

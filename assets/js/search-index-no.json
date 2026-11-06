@@ -1,0 +1,308 @@
+[
+  {
+    "n": "Sykepenger kalkulator",
+    "s": "Se hvor mye du får i sykepenger per dag, hva arbeidsgiveren betaler de første 16 dagene, og hva NAV tar over etterpå.",
+    "u": "/no/sykepenger-kalkulator/",
+    "k": "sykepenger kalkulator norge norway kalkulator nav folketrygdloven"
+  },
+  {
+    "n": "Feriepenger kalkulator",
+    "s": "Regn ut feriepengene dine fra grunnlaget i fjor, og få et anslag på hva du faktisk får utbetalt i juni etter ferietrekket.",
+    "u": "/no/feriepenger-kalkulator/",
+    "k": "feriepenger kalkulator norge norway kalkulator nav folketrygdloven"
+  },
+  {
+    "n": "Foreldrepenger kalkulator",
+    "s": "Se hvor mye hver av dere får i foreldrepenger: mødrekvote, fedrekvote og fellesperiode, og hva valget mellom 100 og 80 prosent betyr i kroner.",
+    "u": "/no/foreldrepenger-kalkulator/",
+    "k": "foreldrepenger kalkulator norge norway kalkulator nav folketrygdloven"
+  },
+  {
+    "n": "Permisjonskalkulator",
+    "s": "Planlegg foreldrepermisjonen uke for uke: mødrekvote, fedrekvote og fellesperiode, og hvilke datoer hver del får, ved 100 eller 80 prosent.",
+    "u": "/no/permisjonskalkulator/",
+    "k": "permisjonskalkulator norge norway kalkulator nav folketrygdloven"
+  },
+  {
+    "n": "Dagpengekalkulator",
+    "s": "Regn ut hvor mye du får i dagpenger fra NAV, basert på inntekten din de siste årene, og hvor lenge du kan få dem.",
+    "u": "/no/dagpengekalkulator/",
+    "k": "dagpengekalkulator norge norway kalkulator nav folketrygdloven"
+  },
+  {
+    "n": "BMI-kalkulator – Regn ut BMI for voksne og barn (iso-BMI)",
+    "s": "Regn ut BMI og iso-BMI for voksne og barn, med kategori etter WHO.",
+    "u": "/no/bmi-kalkulator/",
+    "k": "bmi-kalkulator bmi iso-bmi kroppsmasseindeks kmi normalvekt bmi-kalkulator – regn ut bmi for voksne og barn (iso-bmi) norge norway kalkulator"
+  },
+  {
+    "n": "Promillekalkulator – Regn ut promille gratis",
+    "s": "Regn ut promille med Widmark-formelen, og se når du er under 0,2 og 0,0.",
+    "u": "/no/promille-kalkulator/",
+    "k": "promillekalkulator promille promillegrensen promillekjøring widmark-formelen restpromille promillekalkulator – regn ut promille gratis norge norway kalkulator"
+  },
+  {
+    "n": "HbA1c-kalkulator – Konverter mmol/mol og prosent gratis",
+    "s": "Konverter HbA1c mellom mmol/mol og prosent, med estimert blodsukker.",
+    "u": "/no/hba1c-kalkulator/",
+    "k": "hba1c-kalkulator hba1c mmol/mol langtidsblodsukker gjennomsnittlig blodsukker prediabetes hba1c-kalkulator – konverter mmol/mol og prosent gratis norge norway kalkulator"
+  },
+  {
+    "n": "Kalorikalkulator – Regn ut kaloribehov (BMR og TDEE) gratis",
+    "s": "Regn ut kaloribehov med Mifflin-St Jeor: BMR og TDEE.",
+    "u": "/no/kalori-kalkulator/",
+    "k": "kalorikalkulator kaloribehov bmr tdee mifflin-st jeor hvileforbrenning kalorikalkulator – regn ut kaloribehov (bmr og tdee) gratis norge norway kalkulator"
+  },
+  {
+    "n": "Graviditetskalkulator – Termindato, svangerskapsuke",
+    "s": "Termindato, svangerskapsuke og trimester med 283-dagersregelen.",
+    "u": "/no/graviditet-kalkulator/",
+    "k": "graviditetskalkulator termindato svangerskapsuke trimester esnurra 283 dager graviditetskalkulator – termindato, svangerskapsuke norge norway kalkulator"
+  },
+  {
+    "n": "Makspulskalkulator – Makspuls og pulssoner (Olympiatoppen)",
+    "s": "Makspuls og pulssoner med HUNT-formelen fra NTNU.",
+    "u": "/no/makspuls-kalkulator/",
+    "k": "makspulskalkulator makspuls pulssoner hunt-formelen olympiatoppen karvonen-metoden makspulskalkulator – makspuls og pulssoner (olympiatoppen) norge norway kalkulator"
+  },
+  {
+    "n": "Fettprosentkalkulator – Regn ut kroppsfettprosent gratis",
+    "s": "Regn ut kroppsfettprosent med US Navy-metoden, uten utstyr.",
+    "u": "/no/fettprosent-kalkulator/",
+    "k": "fettprosentkalkulator fettprosent kroppsfettprosent us navy-metoden fettmasse midje fettprosentkalkulator – regn ut kroppsfettprosent gratis norge norway kalkulator"
+  },
+  {
+    "n": "Mensenkalkulator – Regn ut neste mensen og fruktbart vindu",
+    "s": "Regn ut neste mensen, eggløsning og fruktbart vindu.",
+    "u": "/no/mensen-kalkulator/",
+    "k": "mensenkalkulator neste mensen eggløsning fruktbart vindu menstruasjonssyklus sykluslengde mensenkalkulator – regn ut neste mensen og fruktbart vindu norge norway kalkulator"
+  },
+  {
+    "n": "MVA-kalkulator 2026 – Legg til eller trekk fra moms gratis",
+    "s": "Legg til eller trekk fra moms med 25, 15, 12 eller 0 prosent.",
+    "u": "/no/mva-kalkulator/",
+    "k": "mva-kalkulator mva moms mva-satser fritatt unntatt mva-kalkulator 2026 – legg til eller trekk fra moms gratis norge norway kalkulator"
+  },
+  {
+    "n": "Formuesskattkalkulator 2026 – Regn ut formuesskatt gratis",
+    "s": "Regn ut formuesskatt med bunnfradrag og satser for 2026.",
+    "u": "/no/formuesskatt-kalkulator/",
+    "k": "formuesskattkalkulator formuesskatt bunnfradrag primærbolig nettoformue statsskatt formuesskattkalkulator 2026 – regn ut formuesskatt gratis norge norway kalkulator"
+  },
+  {
+    "n": "Boliglånkalkulator 2026 – Hvor mye kan jeg låne? Gratis",
+    "s": "Se hvor mye du kan låne til bolig, og hva det koster i måneden.",
+    "u": "/no/boliglan-kalkulator/",
+    "k": "boliglånkalkulator boliglån egenkapital stresstest annuitetslån serielån boliglånkalkulator 2026 – hvor mye kan jeg låne? gratis norge norway kalkulator"
+  },
+  {
+    "n": "Forbrukslånkalkulator 2026 – Regn ut månedsbeløp og effektiv",
+    "s": "Regn ut månedsbeløp og effektiv rente på forbrukslån.",
+    "u": "/no/forbrukslan-kalkulator/",
+    "k": "forbrukslånkalkulator forbrukslån effektiv rente nominell rente gjeldsregisteret refinansiering forbrukslånkalkulator 2026 – regn ut månedsbeløp og effektiv norge norway kalkulator"
+  },
+  {
+    "n": "Tabelltrekkkalkulator 2026 – Estimer skattetrekk",
+    "s": "Estimer skattetrekk og nettolønn, med halvt trekk i juni.",
+    "u": "/no/tabelltrekk-kalkulator/",
+    "k": "tabelltrekkkalkulator tabelltrekk skattetrekk nettolønn trinnskatt trygdeavgift tabelltrekkkalkulator 2026 – estimer skattetrekk norge norway kalkulator"
+  },
+  {
+    "n": "Avkastningskalkulator 2026 – Hva blir fondssparingen verdt?",
+    "s": "Se hva fondssparingen blir verdt med rentes rente.",
+    "u": "/no/avkastning-fond-kalkulator/",
+    "k": "avkastningskalkulator fondssparing rentes rente forvaltningshonorar aksjesparekonto fondsgevinst avkastningskalkulator 2026 – hva blir fondssparingen verdt? norge norway kalkulator"
+  },
+  {
+    "n": "Studielånkalkulator 2026 – Nedbetaling hos Lånekassen gratis",
+    "s": "Nedbetaling hos Lånekassen, med flytende rente 4,707 %.",
+    "u": "/no/studielan-kalkulator/",
+    "k": "studielånkalkulator studielån lånekassen flytende rente nedbetalingstid terminbeløp studielånkalkulator 2026 – nedbetaling hos lånekassen gratis norge norway kalkulator"
+  },
+  {
+    "n": "KPI-kalkulator 2026 – Hva er pengene verdt i dag?",
+    "s": "Hva er pengene verdt i dag? Regn om med SSBs KPI.",
+    "u": "/no/konsumprisindeks-kalkulator/",
+    "k": "kpi-kalkulator konsumprisindeks kpi pengeverdi inflasjon prisvekst kpi-kalkulator 2026 – hva er pengene verdt i dag? norge norway kalkulator"
+  },
+  {
+    "n": "Billånkalkulator 2026 – Regn ut månedsbeløp og effektiv",
+    "s": "Regn ut månedsbeløp og effektiv rente på billån.",
+    "u": "/no/billan-kalkulator/",
+    "k": "billånkalkulator billån effektiv rente egenkapital annuitetslån nominell rente billånkalkulator 2026 – regn ut månedsbeløp og effektiv norge norway kalkulator"
+  },
+  {
+    "n": "Spare til pensjon 2026 – Hvor mye må du spare per måned?",
+    "s": "Hvor mye må du spare per måned for å nå pensjonsmålet?",
+    "u": "/no/spare-til-pensjon-kalkulator/",
+    "k": "spare til pensjon pensjonssparing ips tjenestepensjon sparemål rentes rente spare til pensjon 2026 – hvor mye må du spare per måned? norge norway kalkulator"
+  },
+  {
+    "n": "Eiendomsskattkalkulator 2026 – Regn ut eiendomsskatt",
+    "s": "Regn ut eiendomsskatt på bolig med kommunens sats.",
+    "u": "/no/eiendomsskatt-kalkulator/",
+    "k": "eiendomsskattkalkulator eiendomsskatt bunnfradrag promillesats boligverdi reduksjonsfaktor eiendomsskattkalkulator 2026 – regn ut eiendomsskatt norge norway kalkulator"
+  },
+  {
+    "n": "IBAN-kalkulator – Regn ut norsk IBAN fra kontonummer",
+    "s": "Regn ut norsk IBAN fra kontonummer, med MOD11 og MOD97.",
+    "u": "/no/iban-kalkulator/",
+    "k": "iban-kalkulator iban kontonummer kontrollsiffer mod 97 bic iban-kalkulator – regn ut norsk iban fra kontonummer norge norway kalkulator"
+  },
+  {
+    "n": "Refinansiering kalkulator 2026 – Samle gjeld i boliglånet",
+    "s": "Samle gjeld i boliglånet og se besparelsen.",
+    "u": "/no/refinansiering-kalkulator/",
+    "k": "refinansiering kalkulator refinansiering boliglånet belåningsgrad tinglysingsgebyr samle gjeld refinansiering kalkulator 2026 – samle gjeld i boliglånet norge norway kalkulator"
+  },
+  {
+    "n": "Kredittkort kalkulator – Nedbetalingstid, renter",
+    "s": "Nedbetalingstid, renter og minstebeløp på kredittkortgjeld.",
+    "u": "/no/kredittkort-kalkulator/",
+    "k": "kredittkort kalkulator kredittkortgjeld minstebeløp effektiv rente rentefri periode gjeldsregisteret kredittkort kalkulator – nedbetalingstid, renter norge norway kalkulator"
+  },
+  {
+    "n": "BSU-kalkulator 2026 – Regn ut skattefradraget ditt gratis",
+    "s": "Regn ut skattefradraget på BSU-sparingen din.",
+    "u": "/no/bsu-kalkulator/",
+    "k": "bsu-kalkulator bsu skattefradrag boligsparing for ungdom innskuddsrom 27 500 kr bsu-kalkulator 2026 – regn ut skattefradraget ditt gratis norge norway kalkulator"
+  },
+  {
+    "n": "Norgespris kalkulator 2026 – Lønner Norgespris seg for deg?",
+    "s": "Lønner Norgespris seg for deg? Sammenlign med strømstøtte.",
+    "u": "/no/norgespris-kalkulator/",
+    "k": "norgespris kalkulator norgespris spotpris strømstøtte fast strømpris 50 øre norgespris kalkulator 2026 – lønner norgespris seg for deg? norge norway kalkulator"
+  },
+  {
+    "n": "Strømstøttekalkulator 2026 – Se hva staten dekker",
+    "s": "Se hva staten dekker av strømregningen din.",
+    "u": "/no/stromstotte-kalkulator/",
+    "k": "strømstøttekalkulator strømstøtte terskel spotpris norgespris 5 000 kwh strømstøttekalkulator 2026 – se hva staten dekker norge norway kalkulator"
+  },
+  {
+    "n": "Egenkapital kalkulator 2026 – Hvor mye egenkapital trenger",
+    "s": "Hvor mye egenkapital trenger du til bolig?",
+    "u": "/no/egenkapital-kalkulator/",
+    "k": "egenkapital kalkulator egenkapital belåningsgrad fellesgjeld dokumentavgift utlånsforskriften egenkapital kalkulator 2026 – hvor mye egenkapital trenger norge norway kalkulator"
+  },
+  {
+    "n": "IPS-kalkulator 2026 – Regn ut skattefradraget",
+    "s": "Regn ut skattefradraget på pensjonssparing i IPS.",
+    "u": "/no/ips-kalkulator/",
+    "k": "ips-kalkulator ips pensjonssparing skattefradrag 25 000 kr bsu ips-kalkulator 2026 – regn ut skattefradraget norge norway kalkulator"
+  },
+  {
+    "n": "Valutakalkulator – Regn om euro, dollar, pund og svenske",
+    "s": "Regn om euro, dollar, pund og svenske kroner til NOK.",
+    "u": "/no/valuta-kalkulator/",
+    "k": "valutakalkulator valutakurs euro norges bank midtkurs valutapåslag valutakalkulator – regn om euro, dollar, pund og svenske norge norway kalkulator"
+  },
+  {
+    "n": "Gullpris kalkulator – Regn ut verdien av gullet ditt",
+    "s": "Regn ut verdien av gullet ditt i kroner.",
+    "u": "/no/gullpris-kalkulator/",
+    "k": "gullpris kalkulator gullpris smelteverdi stempel karat troy unse gullpris kalkulator – regn ut verdien av gullet ditt norge norway kalkulator"
+  },
+  {
+    "n": "Studiepoengkalkulator – Sjekk forsinkelsen din hos",
+    "s": "Sjekk forsinkelsen din hos Lånekassen.",
+    "u": "/no/studiepoeng-kalkulator/",
+    "k": "studiepoengkalkulator studiepoeng forsinkelse lånekassen omgjøring stipend studiepoengkalkulator – sjekk forsinkelsen din hos norge norway kalkulator"
+  },
+  {
+    "n": "Husleiekalkulator 2026 – KPI-regulering av husleie og gjengs",
+    "s": "KPI-regulering av husleie og gjengs leie.",
+    "u": "/no/gjengs-leie-kalkulator/",
+    "k": "husleiekalkulator husleie gjengs leie kpi-regulering indeksregulering husleieloven husleiekalkulator 2026 – kpi-regulering av husleie og gjengs norge norway kalkulator"
+  },
+  {
+    "n": "Dagpengekalkulator 2026 – Regn ut dagpenger fra NAV gratis",
+    "s": "Regn ut dagpenger fra NAV, med barnetillegg.",
+    "u": "/no/dagpenger-kalkulator/",
+    "k": "dagpengekalkulator dagpenger dagpengegrunnlag dagsats barnetillegg stønadsperiode dagpengekalkulator 2026 – regn ut dagpenger fra nav gratis norge norway kalkulator"
+  },
+  {
+    "n": "Uføretrygdkalkulator 2026 – Regn ut uføretrygd fra NAV",
+    "s": "Regn ut uføretrygd fra NAV, med minstesats.",
+    "u": "/no/uforetrygd-kalkulator/",
+    "k": "uføretrygdkalkulator uføretrygd beregningsgrunnlag minstesats trygdetid uføregrad uføretrygdkalkulator 2026 – regn ut uføretrygd fra nav norge norway kalkulator"
+  },
+  {
+    "n": "Barnebidragkalkulator 2026 – Estimer barnebidrag gratis",
+    "s": "Estimer barnebidrag etter NAVs sjablonger.",
+    "u": "/no/barnebidrag-kalkulator/",
+    "k": "barnebidragkalkulator barnebidrag underholdskostnad samværsfradrag bidragsevne barnetrygd barnebidragkalkulator 2026 – estimer barnebidrag gratis norge norway kalkulator"
+  },
+  {
+    "n": "Timelønnkalkulator 2026 – Regn om timelønn, månedslønn",
+    "s": "Regn om timelønn, månedslønn og årslønn.",
+    "u": "/no/timelonn-kalkulator/",
+    "k": "timelønnkalkulator timelønn årslønn månedslønn 1950 overtid timelønnkalkulator 2026 – regn om timelønn, månedslønn norge norway kalkulator"
+  },
+  {
+    "n": "Kjøregodtgjørelsekalkulator 2026 – Skattefri",
+    "s": "Skattefri og skattepliktig sats for kjøring i jobben.",
+    "u": "/no/kjoregodtgjorelse-kalkulator/",
+    "k": "kjøregodtgjørelsekalkulator kjøregodtgjørelse statens sats skattefri passasjertillegg skattepliktig kjøregodtgjørelsekalkulator 2026 – skattefri norge norway kalkulator"
+  },
+  {
+    "n": "Reisefradragkalkulator 2026 – Regn ut skattefradraget",
+    "s": "Regn ut skattefradraget for arbeidsreiser.",
+    "u": "/no/reisefradrag-kalkulator/",
+    "k": "reisefradragkalkulator reisefradrag bunnbeløp 1,90 kr arbeidsreiser bompenger reisefradragkalkulator 2026 – regn ut skattefradraget norge norway kalkulator"
+  },
+  {
+    "n": "Firmabilkalkulator 2026 – Regn ut fordelsbeskatning av fri",
+    "s": "Regn ut fordelsbeskatning av fri bil.",
+    "u": "/no/firmabil-kalkulator/",
+    "k": "firmabilkalkulator firmabil fordelsbeskatning listepris skattepliktig fordel egenbetaling firmabilkalkulator 2026 – regn ut fordelsbeskatning av fri norge norway kalkulator"
+  },
+  {
+    "n": "AAP-kalkulator 2026 – Regn ut arbeidsavklaringspenger fra",
+    "s": "Regn ut arbeidsavklaringspenger fra NAV.",
+    "u": "/no/aap-kalkulator/",
+    "k": "aap-kalkulator arbeidsavklaringspenger aap minstesats barnetillegg meldekort aap-kalkulator 2026 – regn ut arbeidsavklaringspenger fra norge norway kalkulator"
+  },
+  {
+    "n": "Permitteringskalkulator 2026 – Lønn og dagpenger ved",
+    "s": "Lønn og dagpenger ved permittering.",
+    "u": "/no/permittering-kalkulator/",
+    "k": "permitteringskalkulator permittering lønnsplikt dagpenger egenandel permitteringsvarsel permitteringskalkulator 2026 – lønn og dagpenger ved norge norway kalkulator"
+  },
+  {
+    "n": "Kontantstøttekalkulator 2026 – Se hva du får utbetalt",
+    "s": "Se hva du får utbetalt i kontantstøtte.",
+    "u": "/no/kontantstotte-kalkulator/",
+    "k": "kontantstøttekalkulator kontantstøtte barnehage oppholdstid skattefri 7 500 kr kontantstøttekalkulator 2026 – se hva du får utbetalt norge norway kalkulator"
+  },
+  {
+    "n": "Dekk kalkulator – Regn ut dekkdiameter, rulleomkrets",
+    "s": "Sammenlign dekkdimensjoner, diameter og fartsmålerfeil.",
+    "u": "/no/dekk-kalkulator/",
+    "k": "dekk kalkulator dekkdiameter rulleomkrets dekkdimensjon speedometer sidevegg dekk kalkulator – regn ut dekkdiameter, rulleomkrets norge norway kalkulator"
+  },
+  {
+    "n": "Fartsbotkalkulator 2026 – Se bot og prikker",
+    "s": "Se bot og prikker for fartsovertredelse.",
+    "u": "/no/fartsbot-kalkulator/",
+    "k": "fartsbotkalkulator fartsbot fartsbøter prikker forenklet forelegg førerkortbeslag fartsbotkalkulator 2026 – se bot og prikker norge norway kalkulator"
+  },
+  {
+    "n": "Karaktersnittkalkulator 2026 – Karaktersnitt, skolepoeng",
+    "s": "Karaktersnitt, skolepoeng og konkurransepoeng.",
+    "u": "/no/karaktersnitt-kalkulator/",
+    "k": "karaktersnittkalkulator karaktersnitt skolepoeng konkurransepoeng alderspoeng realfagspoeng karaktersnittkalkulator 2026 – karaktersnitt, skolepoeng norge norway kalkulator"
+  },
+  {
+    "n": "BH-størrelsekalkulator – Finn riktig bh-størrelse fra mål",
+    "s": "Finn riktig bh-størrelse fra mål.",
+    "u": "/no/bh-storrelse-kalkulator/",
+    "k": "bh-størrelsekalkulator bh-størrelse underbyst overbyst søsterstørrelser cupstørrelse bh-størrelsekalkulator – finn riktig bh-størrelse fra mål norge norway kalkulator"
+  },
+  {
+    "n": "Drivstoffkalkulator – Regn ut drivstoffkostnad",
+    "s": "Regn ut drivstoffkostnad og literforbruk for turen.",
+    "u": "/no/drivstoff-kalkulator/",
+    "k": "drivstoffkalkulator drivstoffkostnad liter per mil liter per 100 km drivstoffpriser elbil drivstoffkalkulator – regn ut drivstoffkostnad norge norway kalkulator"
+  }
+]
