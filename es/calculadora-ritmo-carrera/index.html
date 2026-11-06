@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DL5W4ZB2S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0DL5W4ZB2S');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de ritmo de carrera</title>
+<meta name="description" content="Calcula tu ritmo de carrera en min/km y tu velocidad en km/h a partir de la distancia y el tiempo.">
+<link rel="canonical" href="https://calcotia.online/es/calculadora-ritmo-carrera/">
+<link rel="alternate" hreflang="es-ES" href="https://calcotia.online/es/calculadora-ritmo-carrera/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de ritmo de carrera">
+<meta property="og:description" content="Calcula tu ritmo de carrera en min/km y tu velocidad en km/h a partir de la distancia y el tiempo.">
+<meta property="og:site_name" content="Calcotia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de ritmo de carrera">
+<meta name="twitter:description" content="Calcula tu ritmo de carrera en min/km y tu velocidad en km/h a partir de la distancia y el tiempo.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://calcotia.online/es/calculadora-ritmo-carrera/">
+<meta property="og:image" content="https://calcotia.online/assets/img/logo.png">
+<meta property="og:image:alt" content="Calcotia logo">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:image" content="https://calcotia.online/assets/img/logo.png">
+
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://flagcdn.com">
+<link rel="preconnect" href="https://dododirectory.com">
+<link rel="preconnect" href="https://mozolist.com">
+<link rel="stylesheet" href="/assets/css/style.css?v=20261105">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de ritmo de carrera – min/km, km/h y tiempos de 5K a maratón", "url": "https://calcotia.online/es/calculadora-ritmo-carrera/", "applicationCategory": "HealthApplication", "inLanguage": "es-ES", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "operatingSystem": "Web", "author": {"@type": "Organization", "name": "Calcotia", "url": "https://calcotia.online/"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Qué es el ritmo en min/km?", "acceptedAnswer": {"@type": "Answer", "text": "El ritmo en min/km es el tiempo que tardas en recorrer un kilómetro. Si corres 5 km en 25 minutos, tu ritmo es 5:00 min/km: cuanto menor es el número, más rápido vas."}},
+    {"@type": "Question", "name": "¿Cómo paso de min/km a km/h?", "acceptedAnswer": {"@type": "Answer", "text": "Divide 60 entre tu ritmo en minutos por kilómetro: un ritmo de 5:00 min/km son 12 km/h. La velocidad y el ritmo son la misma información expresada al revés."}},
+    {"@type": "Question", "name": "¿Qué es la fórmula de Riegel?", "acceptedAnswer": {"@type": "Answer", "text": "La fórmula de Riegel estima el tiempo en una distancia nueva como el tiempo conocido multiplicado por la relación entre las distancias elevada a 1,06. Sirve para predecir tiempos de 5K, 10K, media maratón y maratón a partir de una sola marca."}},
+    {"@type": "Question", "name": "¿Son exactas las predicciones de media maratón y maratón?", "acceptedAnswer": {"@type": "Answer", "text": "No: son estimaciones que suponen un estado de forma equivalente y no tienen en cuenta el desnivel ni el calor. En distancias largas, la resistencia y la estrategia pesan tanto como la velocidad, así que tómalas como objetivos realistas, no como promesas."}}
+  ]
+}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://calcotia.online/"}, {"@type": "ListItem", "position": 2, "name": "Salud y deporte", "item": "https://calcotia.online/es/#Salud y deporte"}, {"@type": "ListItem", "position": 3, "name": "Calculadora de ritmo de carrera – min/km, km/h y tiempos de 5K a maratón", "item": "https://calcotia.online/es/calculadora-ritmo-carrera/"}]}</script>
+</head>
+<body>
+
+<header class="site-header"><div class="wrap">
+<a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.png" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Calculadoras gratuitas para todos los países</small></span></a>
+<button class="nav-toggle" type="button" aria-label="Menú" aria-expanded="false">☰</button>
+<nav class="main-nav">
+<a href="/">Inicio</a>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Salud y deporte <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Salud y deporte</p><a href="/es/calculadora-percentiles/">Calculadora de percentiles infantiles OMS</a><a href="/es/calculadora-pasos-km/">Calculadora de pasos a km</a><a href="/es/calculadora-ritmo-carrera/">Calculadora de ritmo de carrera</a><a href="/es/#salud-y-deporte">Todas las calculadoras de Salud y deporte →</a></div>
+</div>
+</div>
+</div>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Finanzas <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Finanzas</p><a href="/es/calculadora-iva-irpf/">Calculadora IVA e IRPF 2026</a><a href="/es/calculadora-tae/">Calculadora TAE</a><a href="/es/calculadora-iban/">Calculadora IBAN</a><a href="/es/#finanzas">Todas las calculadoras de Finanzas →</a></div>
+</div>
+</div>
+</div>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Trabajo y nómina <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Trabajo y nómina</p><a href="/es/calculadora-sueldo-neto/">Calculadora sueldo neto 2026</a><a href="/es/calculadora-baja-laboral/">Calculadora baja laboral 2026</a><a href="/es/calculadora-paga-extra/">Calculadora paga extra 2026</a><a href="/es/calculadora-reduccion-jornada/">Calculadora reducción de jornada 2026</a><a href="/es/calculadora-finiquito/">Calculadora Finiquito 2026</a><a href="/es/calculadora-indemnizacion-despido/">Calculadora indemnización despido</a><a href="/es/#trabajo-y-nomina">Todas las calculadoras de Trabajo y nómina →</a></div>
+</div>
+</div>
+</div>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Más <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Jurídico</p><a href="/es/calculadora-intereses-legales/">Calculadora de intereses legales 2026</a><a href="/es/#juridico">Todas las calculadoras de Jurídico →</a></div>
+<div class="nav-group"><p class="nav-group-title">Matemáticas</p><a href="/es/calculadora-ecuaciones-segundo-grado/">Calculadora de ecuaciones de segundo grado</a><a href="/es/calculadora-matriz-inversa/">Calculadora de matriz inversa</a><a href="/es/calculadora-pendiente/">Calculadora de pendiente</a><a href="/es/calculadora-divisiones/">Calculadora de divisiones</a><a href="/es/#matematicas">Todas las calculadoras de Matemáticas →</a></div>
+</div>
+</div>
+</div>
+<a href="/blog/">Blog</a> <a href="/about.html">Sobre nosotros</a>
+<a href="/contact.html">Contacto</a>
+
+<div class="lang-switcher">
+<button class="lang-switcher-btn" type="button" aria-haspopup="true" aria-expanded="false"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code">ES</span><span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="lang-panel" hidden>
+<a href="/no/"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Noruega</a>
+<a href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Alemania</a>
+<a href="/fr/"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">Francia</a>
+<a href="/it/"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italia</a>
+<a href="/jp/"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japón</a>
+<a href="/gr/"><img class="cflag" src="https://flagcdn.com/gr.svg" alt="" width="20" height="15" loading="lazy">Grecia</a>
+<a href="/il/"><img class="cflag" src="https://flagcdn.com/il.svg" alt="" width="20" height="15" loading="lazy">Israel</a>
+<a href="/vn/"><img class="cflag" src="https://flagcdn.com/vn.svg" alt="" width="20" height="15" loading="lazy">Vietnam</a>
+<a href="/sk/"><img class="cflag" src="https://flagcdn.com/sk.svg" alt="" width="20" height="15" loading="lazy">Eslovaquia</a>
+<a href="/rs/"><img class="cflag" src="https://flagcdn.com/rs.svg" alt="" width="20" height="15" loading="lazy">Serbia</a>
+<a href="/sa/"><img class="cflag" src="https://flagcdn.com/sa.svg" alt="" width="20" height="15" loading="lazy">Arabia Saudita</a>
+<a href="/se/"><img class="cflag" src="https://flagcdn.com/se.svg" alt="" width="20" height="15" loading="lazy">Suecia</a>
+<a href="/ie/"><img class="cflag" src="https://flagcdn.com/ie.svg" alt="" width="20" height="15" loading="lazy">Irlanda</a>
+<a href="/is/"><img class="cflag" src="https://flagcdn.com/is.svg" alt="" width="20" height="15" loading="lazy">Islandia</a>
+<a href="/tw/"><img class="cflag" src="https://flagcdn.com/tw.svg" alt="" width="20" height="15" loading="lazy">Taiwán</a>
+<a href="/es/" class="lang-current" aria-current="true"><img class="cflag" src="https://flagcdn.com/es.svg" alt="" width="20" height="15" loading="lazy">España</a>
+<a href="/ae/"><img class="cflag" src="https://flagcdn.com/ae.svg" alt="" width="20" height="15" loading="lazy">Emiratos Árabes Unidos</a>
+<a href="/ph/"><img class="cflag" src="https://flagcdn.com/ph.svg" alt="" width="20" height="15" loading="lazy">Filipinas</a>
+<a href="/nl/"><img class="cflag" src="https://flagcdn.com/nl.svg" alt="" width="20" height="15" loading="lazy">Países Bajos</a>
+<a href="/ro/"><img class="cflag" src="https://flagcdn.com/ro.svg" alt="" width="20" height="15" loading="lazy">Rumanía</a>
+<a href="/mx/"><img class="cflag" src="https://flagcdn.com/mx.svg" alt="" width="20" height="15" loading="lazy">México</a>
+<a href="/cl/"><img class="cflag" src="https://flagcdn.com/cl.svg" alt="" width="20" height="15" loading="lazy">Chile</a>
+<a href="/cz/"><img class="cflag" src="https://flagcdn.com/cz.svg" alt="" width="20" height="15" loading="lazy">Chequia</a>
+<a href="/hu/"><img class="cflag" src="https://flagcdn.com/hu.svg" alt="" width="20" height="15" loading="lazy">Hungría</a>
+<a href="/th/"><img class="cflag" src="https://flagcdn.com/th.svg" alt="" width="20" height="15" loading="lazy">Tailandia</a>
+<a href="/kr/"><img class="cflag" src="https://flagcdn.com/kr.svg" alt="" width="20" height="15" loading="lazy">Corea del Sur</a>
+<a href="/pl/"><img class="cflag" src="https://flagcdn.com/pl.svg" alt="" width="20" height="15" loading="lazy">Polonia</a>
+</div>
+</div>
+</nav>
+</div></header>
+
+<div class="page-head"><div class="wrap">
+<div class="crumb"><a href="/">Inicio</a> / <a href="/es/">Salud y deporte</a> / Calculadora de ritmo de carrera – min/km, km/h y tiempos de 5K a maratón</div>
+<h1>Calculadora de ritmo de carrera – min/km, km/h y tiempos de 5K a maratón</h1><span class="badge-new">NUEVO</span>
+<p class="note">Última actualización 2026-11-06 · Por Faizan Khan Yousufzai</p>
+
+<p>Calcula tu ritmo de carrera en min/km y tu velocidad en km/h a partir de la distancia y el tiempo.</p>
+</div></div>
+
+<main><div class="wrap">
+
+
+<div class="calc" id="esrit-form">
+<h2>Calcula tu ritmo de carrera</h2>
+<div class="grid2">
+<div class="field"><label for="esrit-dist">Distancia (km)</label><input type="number" id="esrit-dist" value="5" min="0" step="0.01"><span class="hint">La distancia que has corrido, en kilómetros: 5 para un 5K, 10 para un 10K, 21,0975 para una media maratón y 42,195 para un maratón.</span></div>
+<div class="field"><label for="esrit-h">Horas</label><input type="number" id="esrit-h" value="0" min="0" step="1"><span class="hint">Horas de tu tiempo total.</span></div>
+<div class="field"><label for="esrit-m">Minutos</label><input type="number" id="esrit-m" value="25" min="0" max="59" step="1"><span class="hint">Minutos de tu tiempo total.</span></div>
+<div class="field"><label for="esrit-s">Segundos</label><input type="number" id="esrit-s" value="0" min="0" max="59" step="1"><span class="hint">Segundos de tu tiempo total.</span></div>
+</div>
+<button class="calc-btn" id="esrit-btn" type="button">Calcular ritmo</button>
+<div class="result" id="esrit-result">
+<div id="esrit-big-label">Tu ritmo</div>
+<div class="big" id="esrit-big">5:00 min/km</div>
+<table>
+<tbody id="esrit-rows">
+<tr><td>Velocidad</td><td>12 km/h</td></tr>
+<tr><td>5K (fórmula de Riegel)</td><td>25:00</td></tr>
+<tr><td>10K (fórmula de Riegel)</td><td>52:07</td></tr>
+<tr><td>Media maratón (fórmula de Riegel)</td><td>115:00</td></tr>
+<tr><td>Maratón (fórmula de Riegel)</td><td>239:47</td></tr>
+</tbody>
+</table>
+<p id="esrit-note">Las predicciones usan la fórmula de Riegel y son estimaciones: suponen un estado de forma equivalente y no tienen en cuenta el desnivel ni el calor.</p>
+</div>
+</div>
+
+
+<section class="block">
+<h2>¿Qué es la calculadora de ritmo de carrera?</h2>
+<p>La calculadora de ritmo de carrera convierte tu tiempo y tu distancia en ritmo y velocidad, y estima tus tiempos en otras distancias. El ritmo de carrera se mide en minutos por kilómetro (min/km): es el tiempo que tardas en recorrer un kilómetro, y es la cifra que miran los corredores para saber si van rápido o lento.</p>
+</section>
+<section class="block">
+<h2>¿Cómo se calcula el ritmo?</h2>
+<p>El ritmo es el tiempo total dividido entre la distancia: si corres 5 kilómetros en 25 minutos, tu ritmo es 25 entre 5, es decir, 5:00 min/km. La velocidad es la distancia dividida entre el tiempo en horas: 5 kilómetros entre 25 minutos, que son 0,4167 horas, dan 12 km/h.</p>
+</section>
+<section class="block">
+<h2>Ejemplo: 5K en 25:00</h2>
+<p>Un corredor que hace 5 kilómetros en 25 minutos exactos lleva un ritmo de 5:00 min/km y una velocidad de 12 km/h, los datos que trae la calculadora al abrirla. A partir de esa marca, la fórmula de Riegel estima sus tiempos en distancias más largas: el 10K en 52:07, la media maratón en 1 hora y 55 minutos y el maratón en 3 horas, 59 minutos y 47 segundos.</p>
+</section>
+<section class="block">
+<h2>La fórmula de Riegel y sus límites</h2>
+<p>La fórmula de Riegel estima el tiempo en una distancia nueva como el tiempo conocido multiplicado por la relación entre las distancias elevada a 1,06. En palabras sencillas: al doblar la distancia, el tiempo no se dobla, sino que crece un poco más del doble, porque el cuerpo se cansa. La fórmula supone un estado de forma equivalente y no tiene en cuenta el desnivel, el calor, el viento ni la diferencia entre correr en llano o en montaña.</p>
+<p>Para medir tus paseos andando en lugar de corriendo, usa la <a href="/es/calculadora-pasos-km/">calculadora de pasos a km</a>, que convierte tus pasos en kilómetros según tu altura. Y si quieres seguir el crecimiento de tus hijos, la <a href="/es/calculadora-percentiles/">calculadora de percentiles infantiles OMS</a> compara su peso y su talla con los patrones de la OMS.</p>
+</section>
+
+
+<section class="block faq">
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué es el ritmo en min/km?</summary><p>El ritmo en min/km es el tiempo que tardas en recorrer un kilómetro. Si corres 5 km en 25 minutos, tu ritmo es 5:00 min/km: cuanto menor es el número, más rápido vas.</p></details><details><summary>¿Cómo paso de min/km a km/h?</summary><p>Divide 60 entre tu ritmo en minutos por kilómetro: un ritmo de 5:00 min/km son 12 km/h. La velocidad y el ritmo son la misma información expresada al revés.</p></details><details><summary>¿Qué es la fórmula de Riegel?</summary><p>La fórmula de Riegel estima el tiempo en una distancia nueva como el tiempo conocido multiplicado por la relación entre las distancias elevada a 1,06. Sirve para predecir tiempos de 5K, 10K, media maratón y maratón a partir de una sola marca.</p></details><details><summary>¿Son exactas las predicciones de media maratón y maratón?</summary><p>No: son estimaciones que suponen un estado de forma equivalente y no tienen en cuenta el desnivel ni el calor. En distancias largas, la resistencia y la estrategia pesan tanto como la velocidad, así que tómalas como objetivos realistas, no como promesas.</p></details>
+</section>
+
+<div class="note"><p><strong>Importante:</strong> Las predicciones de esta calculadora son estimaciones basadas en la fórmula de Riegel: suponen un estado de forma equivalente y no tienen en cuenta el desnivel, el calor, el viento ni tu entrenamiento específico. Úsalas para planificar objetivos, no como un resultado garantizado.</p></div>
+
+<div class="src"><h3>Fuentes oficiales</h3>
+<p>El ritmo es el tiempo dividido entre la distancia y la velocidad es la distancia dividida entre el tiempo; las predicciones usan la fórmula de Riegel (T2 igual a T1 por (D2/D1) elevado a 1,06). La OMS recomienda a los adultos entre 150 y 300 minutos semanales de actividad física moderada o 75 a 150 minutos de actividad intensa, y correr es una de las formas de sumarlos.</p>
+<ul>
+<li><a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" rel="noopener" target="_blank">OMS – Actividad física</a></li>
+</ul>
+</div>
+
+<p class="note">Ver todas las calculadoras de España: <a href="/es/">Calculadoras España</a></p>
+
+
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.png" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Calculadoras gratuitas para todos los países</small></span></a><p>Calcotia ofrece calculadoras en línea gratuitas para salarios, prestaciones e indemnizaciones, en el idioma de cada país y basadas en las normas oficiales.</p></div>
+<div><h3>Países</h3><ul>
+<li><a href="/no/"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Noruega</a></li><li><a href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Alemania</a></li><li><a href="/fr/"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">Francia</a></li><li><a href="/it/"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italia</a></li><li><a href="/jp/"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japón</a></li><li><a href="/gr/"><img class="cflag" src="https://flagcdn.com/gr.svg" alt="" width="20" height="15" loading="lazy">Grecia</a></li><li><a href="/il/"><img class="cflag" src="https://flagcdn.com/il.svg" alt="" width="20" height="15" loading="lazy">Israel</a></li><li><a href="/vn/"><img class="cflag" src="https://flagcdn.com/vn.svg" alt="" width="20" height="15" loading="lazy">Vietnam</a></li><li><a href="/sk/"><img class="cflag" src="https://flagcdn.com/sk.svg" alt="" width="20" height="15" loading="lazy">Eslovaquia</a></li><li><a href="/rs/"><img class="cflag" src="https://flagcdn.com/rs.svg" alt="" width="20" height="15" loading="lazy">Serbia</a></li><li><a href="/sa/"><img class="cflag" src="https://flagcdn.com/sa.svg" alt="" width="20" height="15" loading="lazy">Arabia Saudita</a></li><li><a href="/se/"><img class="cflag" src="https://flagcdn.com/se.svg" alt="" width="20" height="15" loading="lazy">Suecia</a></li><li><a href="/ie/"><img class="cflag" src="https://flagcdn.com/ie.svg" alt="" width="20" height="15" loading="lazy">Irlanda</a></li><li><a href="/is/"><img class="cflag" src="https://flagcdn.com/is.svg" alt="" width="20" height="15" loading="lazy">Islandia</a></li><li><a href="/tw/"><img class="cflag" src="https://flagcdn.com/tw.svg" alt="" width="20" height="15" loading="lazy">Taiwán</a></li><li><a href="/es/"><img class="cflag" src="https://flagcdn.com/es.svg" alt="" width="20" height="15" loading="lazy">España</a></li><li><a href="/ae/"><img class="cflag" src="https://flagcdn.com/ae.svg" alt="" width="20" height="15" loading="lazy">Emiratos Árabes Unidos</a></li><li><a href="/ph/"><img class="cflag" src="https://flagcdn.com/ph.svg" alt="" width="20" height="15" loading="lazy">Filipinas</a></li><li><a href="/nl/"><img class="cflag" src="https://flagcdn.com/nl.svg" alt="" width="20" height="15" loading="lazy">Países Bajos</a></li><li><a href="/ro/"><img class="cflag" src="https://flagcdn.com/ro.svg" alt="" width="20" height="15" loading="lazy">Rumanía</a></li><li><a href="/mx/"><img class="cflag" src="https://flagcdn.com/mx.svg" alt="" width="20" height="15" loading="lazy">México</a></li><li><a href="/cl/"><img class="cflag" src="https://flagcdn.com/cl.svg" alt="" width="20" height="15" loading="lazy">Chile</a></li><li><a href="/cz/"><img class="cflag" src="https://flagcdn.com/cz.svg" alt="" width="20" height="15" loading="lazy">Chequia</a></li><li><a href="/hu/"><img class="cflag" src="https://flagcdn.com/hu.svg" alt="" width="20" height="15" loading="lazy">Hungría</a></li><li><a href="/th/"><img class="cflag" src="https://flagcdn.com/th.svg" alt="" width="20" height="15" loading="lazy">Tailandia</a></li><li><a href="/kr/"><img class="cflag" src="https://flagcdn.com/kr.svg" alt="" width="20" height="15" loading="lazy">Corea del Sur</a></li><li><a href="/pl/"><img class="cflag" src="https://flagcdn.com/pl.svg" alt="" width="20" height="15" loading="lazy">Polonia</a></li>
+</ul></div>
+<div><h3>Calculadoras populares</h3><ul>
+<li><a href="/no/sykepenger-kalkulator/">Sykepenger kalkulator</a></li>
+<li><a href="/no/feriepenger-kalkulator/">Feriepenger kalkulator</a></li>
+<li><a href="/de/buergergeld-rechner/">Bürgergeld Rechner</a></li>
+<li><a href="/it/calcolo-tfr-netto/">Calcolo TFR netto</a></li>
+<li><a href="/sk/kalkulacka-na-vypocet-dochodku/">Kalkulačka na výpočet dôchodku</a></li>
+<li><a href="/fr/simulateur-conge-parental/">Simulateur congé parental</a></li>
+<li><a href="/vn/tinh-bao-hiem-xa-hoi-1-lan/">Tính bảo hiểm xã hội 1 lần</a></li>
+<li><a href="/rs/kalkulator-decijeg-dodatka/">Kalkulator dečijeg dodatka</a></li>
+</ul></div>
+<div><h3>Calcotia</h3><ul><li><a href="/about.html">Sobre nosotros</a></li><li><a href="/privacy.html">Política de privacidad</a></li><li><a href="/contact.html">Contacto</a></li><li><a href="https://www.linkedin.com/in/calcotia-online">LinkedIn</a></li></ul></div>
+<div><h3>Otros idiomas</h3><ul class="other-langs">
+<li><a href="/no/">Noruega</a></li><li><a href="/de/">Alemania</a></li><li><a href="/fr/">Francia</a></li><li><a href="/it/">Italia</a></li><li><a href="/jp/">Japón</a></li><li><a href="/gr/">Grecia</a></li><li><a href="/il/">Israel</a></li><li><a href="/vn/">Vietnam</a></li><li><a href="/sk/">Eslovaquia</a></li><li><a href="/rs/">Serbia</a></li><li><a href="/sa/">Arabia Saudita</a></li><li><a href="/se/">Suecia</a></li><li><a href="/ie/">Irlanda</a></li><li><a href="/is/">Islandia</a></li><li><a href="/tw/">Taiwán</a></li><li><a href="/ae/">Emiratos Árabes Unidos</a></li><li><a href="/ph/">Filipinas</a></li><li><a href="/nl/">Países Bajos</a></li><li><a href="/ro/">Rumanía</a></li><li><a href="/mx/">México</a></li><li><a href="/cl/">Chile</a></li><li><a href="/cz/">Chequia</a></li><li><a href="/hu/">Hungría</a></li><li><a href="/th/">Tailandia</a></li><li><a href="/kr/">Corea del Sur</a></li><li><a href="/pl/">Polonia</a></li>
+</ul></div>
+</div>
+<div class="foot-base"><span>© 2026 Calcotia. All rights reserved.</span><span>calcotia.online</span></div>
+</div></footer>
+<script src="/assets/js/calculadora-ritmo-carrera.js?v=20261105" defer></script>
+<script src="/assets/js/lang-switcher.js?v=20261105" defer></script>
+<script src="/assets/js/nav.js?v=20261105" defer></script>
+</body>
+</html>
