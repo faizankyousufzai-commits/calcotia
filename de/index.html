@@ -74,12 +74,11 @@
 </div>
 </div>
 </div>
-<div class="nav-menu">
-<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Länder <span class="nav-caret" aria-hidden="true">▾</span></button>
-<div class="nav-panel nav-panel-countries">
-<div class="nav-panel-grid">
+<div class="lang-switcher">
+<button class="lang-switcher-btn" type="button" aria-haspopup="true" aria-expanded="false"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code">DE</span><span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="lang-panel" hidden>
 <a href="/no/"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Norwegen</a>
-<a href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Deutschland</a>
+<a class="lang-current" aria-current="true" href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Deutschland</a>
 <a href="/fr/"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">Frankreich</a>
 <a href="/it/"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italien</a>
 <a href="/jp/"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japan</a>
@@ -96,7 +95,8 @@
 <a href="/es/"><img class="cflag" src="https://flagcdn.com/es.svg" alt="" width="20" height="15" loading="lazy">Spanien</a>
 <a href="/ae/"><img class="cflag" src="https://flagcdn.com/ae.svg" alt="" width="20" height="15" loading="lazy">Vereinigte Arabische Emirate</a>
 <a href="/ph/"><img class="cflag" src="https://flagcdn.com/ph.svg" alt="" width="20" height="15" loading="lazy">Philippinen</a>
-<a href="/nl/"><img class="cflag" src="https://flagcdn.com/nl.svg" alt="" width="20" height="15" loading="lazy">Niederlande</a><a href="/ro/"><img class="cflag" src="https://flagcdn.com/ro.svg" alt="" width="20" height="15" loading="lazy">Rumänien</a>
+<a href="/nl/"><img class="cflag" src="https://flagcdn.com/nl.svg" alt="" width="20" height="15" loading="lazy">Niederlande</a>
+<a href="/ro/"><img class="cflag" src="https://flagcdn.com/ro.svg" alt="" width="20" height="15" loading="lazy">Rumänien</a>
 <a href="/mx/"><img class="cflag" src="https://flagcdn.com/mx.svg" alt="" width="20" height="15" loading="lazy">Mexiko</a>
 <a href="/cl/"><img class="cflag" src="https://flagcdn.com/cl.svg" alt="" width="20" height="15" loading="lazy">Chile</a>
 <a href="/cz/"><img class="cflag" src="https://flagcdn.com/cz.svg" alt="" width="20" height="15" loading="lazy">Tschechien</a>
@@ -104,7 +104,6 @@
 <a href="/th/"><img class="cflag" src="https://flagcdn.com/th.svg" alt="" width="20" height="15" loading="lazy">Thailand</a>
 <a href="/kr/"><img class="cflag" src="https://flagcdn.com/kr.svg" alt="" width="20" height="15" loading="lazy">Südkorea</a>
 <a href="/pl/"><img class="cflag" src="https://flagcdn.com/pl.svg" alt="" width="20" height="15" loading="lazy">Polen</a>
-</div>
 </div>
 </div>
 <a href="/blog/">Blog</a> <a href="/about.html">Über uns</a>
@@ -275,6 +274,7 @@
 </div></footer>
 
 <script src="/assets/js/header-search.js?v=20261105" defer></script>
+<script src="/assets/js/lang-switcher.js?v=20261105" defer></script>
 <script src="/assets/js/nav.js?v=20261105" defer></script>
 </body>
 </html>
