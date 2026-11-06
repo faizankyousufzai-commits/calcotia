@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DL5W4ZB2S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0DL5W4ZB2S');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de matriz inversa</title>
+<meta name="description" content="Calcula la matriz inversa 2x2 a 5x5 paso a paso por Gauss-Jordan, con el determinante y la matriz adjunta.">
+<link rel="canonical" href="https://calcotia.online/es/calculadora-matriz-inversa/">
+<link rel="alternate" hreflang="es-ES" href="https://calcotia.online/es/calculadora-matriz-inversa/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de matriz inversa">
+<meta property="og:description" content="Calcula la matriz inversa 2x2 a 5x5 paso a paso por Gauss-Jordan, con el determinante y la matriz adjunta.">
+<meta property="og:site_name" content="Calcotia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de matriz inversa">
+<meta name="twitter:description" content="Calcula la matriz inversa 2x2 a 5x5 paso a paso por Gauss-Jordan, con el determinante y la matriz adjunta.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://calcotia.online/es/calculadora-matriz-inversa/">
+<meta property="og:image" content="https://calcotia.online/assets/img/logo.png">
+<meta property="og:image:alt" content="Calcotia logo">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:image" content="https://calcotia.online/assets/img/logo.png">
+
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://flagcdn.com">
+<link rel="preconnect" href="https://dododirectory.com">
+<link rel="preconnect" href="https://mozolist.com">
+<link rel="stylesheet" href="/assets/css/style.css?v=20261105">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de matriz inversa paso a paso – determinante y matriz adjunta", "url": "https://calcotia.online/es/calculadora-matriz-inversa/", "applicationCategory": "EducationalApplication", "inLanguage": "es-ES", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "operatingSystem": "Web", "author": {"@type": "Organization", "name": "Calcotia", "url": "https://calcotia.online/"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+{"@type": "Question", "name": "¿Cuándo tiene inversa una matriz?", "acceptedAnswer": {"@type": "Answer", "text": "Una matriz cuadrada tiene matriz inversa si y solo si su determinante es distinto de cero. Si el determinante es cero, la matriz es singular y no tiene inversa."}},
+{"@type": "Question", "name": "¿Qué es el método de Gauss-Jordan?", "acceptedAnswer": {"@type": "Answer", "text": "El método de Gauss-Jordan calcula la inversa escribiendo la matriz junto a la identidad, [A | I], y aplicando operaciones por filas hasta convertir la parte izquierda en la identidad. La parte derecha se convierte entonces en la inversa."}},
+{"@type": "Question", "name": "¿Qué es la matriz adjunta?", "acceptedAnswer": {"@type": "Answer", "text": "La matriz adjunta es la traspuesta de la matriz de cofactores. Cada cofactor es el determinante de la submatriz que queda al quitar una fila y una columna, con su signo. La inversa es la adjunta dividida entre el determinante."}},
+{"@type": "Question", "name": "¿Qué es una matriz singular?", "acceptedAnswer": {"@type": "Answer", "text": "Una matriz singular es una matriz cuadrada con determinante cero, que no tiene inversa. Sus filas dependen unas de otras, así que el sistema asociado no tiene solución única."}}
+  ]
+}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://calcotia.online/"}, {"@type": "ListItem", "position": 2, "name": "Matemáticas", "item": "https://calcotia.online/es/#Matemáticas"}, {"@type": "ListItem", "position": 3, "name": "Calculadora de matriz inversa paso a paso – determinante y matriz adjunta", "item": "https://calcotia.online/es/calculadora-matriz-inversa/"}]}</script>
+</head>
+<body>
+
+<header class="site-header"><div class="wrap">
+<a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.png" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Calculadoras gratuitas para todos los países</small></span></a>
+<button class="nav-toggle" type="button" aria-label="Menú" aria-expanded="false">☰</button>
+<nav class="main-nav">
+<a href="/">Inicio</a>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Salud y deporte <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Salud y deporte</p><a href="/es/calculadora-percentiles/">Calculadora de percentiles infantiles OMS</a><a href="/es/calculadora-pasos-km/">Calculadora de pasos a km</a><a href="/es/calculadora-ritmo-carrera/">Calculadora de ritmo de carrera</a><a href="/es/#salud-y-deporte">Todas las calculadoras de Salud y deporte →</a></div>
+</div>
+</div>
+</div>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Finanzas <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Finanzas</p><a href="/es/calculadora-iva-irpf/">Calculadora IVA e IRPF 2026</a><a href="/es/calculadora-tae/">Calculadora TAE</a><a href="/es/calculadora-iban/">Calculadora IBAN</a><a href="/es/#finanzas">Todas las calculadoras de Finanzas →</a></div>
+</div>
+</div>
+</div>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Trabajo y nómina <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Trabajo y nómina</p><a href="/es/calculadora-sueldo-neto/">Calculadora sueldo neto 2026</a><a href="/es/calculadora-baja-laboral/">Calculadora baja laboral 2026</a><a href="/es/calculadora-paga-extra/">Calculadora paga extra 2026</a><a href="/es/calculadora-reduccion-jornada/">Calculadora reducción de jornada 2026</a><a href="/es/calculadora-finiquito/">Calculadora Finiquito 2026</a><a href="/es/calculadora-indemnizacion-despido/">Calculadora indemnización despido</a><a href="/es/#trabajo-y-nomina">Todas las calculadoras de Trabajo y nómina →</a></div>
+</div>
+</div>
+</div>
+<div class="nav-menu">
+<button class="nav-menu-btn" type="button" aria-haspopup="true" aria-expanded="false">Más <span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="nav-panel nav-panel-tools">
+<div class="nav-panel-grid">
+<div class="nav-group"><p class="nav-group-title">Jurídico</p><a href="/es/calculadora-intereses-legales/">Calculadora de intereses legales 2026</a><a href="/es/#juridico">Todas las calculadoras de Jurídico →</a></div>
+<div class="nav-group"><p class="nav-group-title">Matemáticas</p><a href="/es/calculadora-ecuaciones-segundo-grado/">Calculadora de ecuaciones de segundo grado</a><a href="/es/calculadora-matriz-inversa/">Calculadora de matriz inversa</a><a href="/es/calculadora-pendiente/">Calculadora de pendiente</a><a href="/es/calculadora-divisiones/">Calculadora de divisiones</a><a href="/es/#matematicas">Todas las calculadoras de Matemáticas →</a></div>
+</div>
+</div>
+</div>
+<a href="/blog/">Blog</a> <a href="/about.html">Sobre nosotros</a>
+<a href="/contact.html">Contacto</a>
+
+<div class="lang-switcher">
+<button class="lang-switcher-btn" type="button" aria-haspopup="true" aria-expanded="false"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-code">ES</span><span class="nav-caret" aria-hidden="true">▾</span></button>
+<div class="lang-panel" hidden>
+<a href="/no/"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Noruega</a>
+<a href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Alemania</a>
+<a href="/fr/"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">Francia</a>
+<a href="/it/"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italia</a>
+<a href="/jp/"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japón</a>
+<a href="/gr/"><img class="cflag" src="https://flagcdn.com/gr.svg" alt="" width="20" height="15" loading="lazy">Grecia</a>
+<a href="/il/"><img class="cflag" src="https://flagcdn.com/il.svg" alt="" width="20" height="15" loading="lazy">Israel</a>
+<a href="/vn/"><img class="cflag" src="https://flagcdn.com/vn.svg" alt="" width="20" height="15" loading="lazy">Vietnam</a>
+<a href="/sk/"><img class="cflag" src="https://flagcdn.com/sk.svg" alt="" width="20" height="15" loading="lazy">Eslovaquia</a>
+<a href="/rs/"><img class="cflag" src="https://flagcdn.com/rs.svg" alt="" width="20" height="15" loading="lazy">Serbia</a>
+<a href="/sa/"><img class="cflag" src="https://flagcdn.com/sa.svg" alt="" width="20" height="15" loading="lazy">Arabia Saudita</a>
+<a href="/se/"><img class="cflag" src="https://flagcdn.com/se.svg" alt="" width="20" height="15" loading="lazy">Suecia</a>
+<a href="/ie/"><img class="cflag" src="https://flagcdn.com/ie.svg" alt="" width="20" height="15" loading="lazy">Irlanda</a>
+<a href="/is/"><img class="cflag" src="https://flagcdn.com/is.svg" alt="" width="20" height="15" loading="lazy">Islandia</a>
+<a href="/tw/"><img class="cflag" src="https://flagcdn.com/tw.svg" alt="" width="20" height="15" loading="lazy">Taiwán</a>
+<a href="/es/" class="lang-current" aria-current="true"><img class="cflag" src="https://flagcdn.com/es.svg" alt="" width="20" height="15" loading="lazy">España</a>
+<a href="/ae/"><img class="cflag" src="https://flagcdn.com/ae.svg" alt="" width="20" height="15" loading="lazy">Emiratos Árabes Unidos</a>
+<a href="/ph/"><img class="cflag" src="https://flagcdn.com/ph.svg" alt="" width="20" height="15" loading="lazy">Filipinas</a>
+<a href="/nl/"><img class="cflag" src="https://flagcdn.com/nl.svg" alt="" width="20" height="15" loading="lazy">Países Bajos</a>
+<a href="/ro/"><img class="cflag" src="https://flagcdn.com/ro.svg" alt="" width="20" height="15" loading="lazy">Rumanía</a>
+<a href="/mx/"><img class="cflag" src="https://flagcdn.com/mx.svg" alt="" width="20" height="15" loading="lazy">México</a>
+<a href="/cl/"><img class="cflag" src="https://flagcdn.com/cl.svg" alt="" width="20" height="15" loading="lazy">Chile</a>
+<a href="/cz/"><img class="cflag" src="https://flagcdn.com/cz.svg" alt="" width="20" height="15" loading="lazy">Chequia</a>
+<a href="/hu/"><img class="cflag" src="https://flagcdn.com/hu.svg" alt="" width="20" height="15" loading="lazy">Hungría</a>
+<a href="/th/"><img class="cflag" src="https://flagcdn.com/th.svg" alt="" width="20" height="15" loading="lazy">Tailandia</a>
+<a href="/kr/"><img class="cflag" src="https://flagcdn.com/kr.svg" alt="" width="20" height="15" loading="lazy">Corea del Sur</a>
+<a href="/pl/"><img class="cflag" src="https://flagcdn.com/pl.svg" alt="" width="20" height="15" loading="lazy">Polonia</a>
+</div>
+</div>
+</nav>
+</div></header>
+
+<div class="page-head"><div class="wrap">
+<div class="crumb"><a href="/">Inicio</a> / <a href="/es/">Matemáticas</a> / Calculadora de matriz inversa paso a paso – determinante y matriz adjunta</div>
+<h1>Calculadora de matriz inversa paso a paso – determinante y matriz adjunta</h1><span class="badge-new">NUEVO</span>
+<p class="note">Última actualización 2026-11-06 · Por Faizan Khan Yousufzai</p>
+
+<p>Calcula la matriz inversa 2x2 a 5x5 paso a paso por Gauss-Jordan, con el determinante y la matriz adjunta.</p>
+</div></div>
+
+<main><div class="wrap">
+
+
+<div class="calc" id="esmat-form">
+<h2>Calcula la matriz inversa</h2>
+<div class="grid2">
+<div class="field"><label for="esmat-n">Tamaño de la matriz (2 a 5)</label><input type="number" id="esmat-n" value="2" min="2" max="5" step="1"><span class="hint">Elige 2 para una matriz 2x2, 3 para una 3x3, y así hasta 5x5. Rellena solo las casillas de ese tamaño.</span></div>
+</div>
+<div class="field"><label>Matriz (rellena las casillas)</label>
+<table>
+<tbody>
+<tr><td><input type="number" id="esmat-0-0" value="4" step="any" aria-label="Fila 1, columna 1"></td><td><input type="number" id="esmat-0-1" value="7" step="any" aria-label="Fila 1, columna 2"></td><td><input type="number" id="esmat-0-2" value="0" step="any" aria-label="Fila 1, columna 3"></td><td><input type="number" id="esmat-0-3" value="0" step="any" aria-label="Fila 1, columna 4"></td><td><input type="number" id="esmat-0-4" value="0" step="any" aria-label="Fila 1, columna 5"></td></tr>
+<tr><td><input type="number" id="esmat-1-0" value="2" step="any" aria-label="Fila 2, columna 1"></td><td><input type="number" id="esmat-1-1" value="6" step="any" aria-label="Fila 2, columna 2"></td><td><input type="number" id="esmat-1-2" value="0" step="any" aria-label="Fila 2, columna 3"></td><td><input type="number" id="esmat-1-3" value="0" step="any" aria-label="Fila 2, columna 4"></td><td><input type="number" id="esmat-1-4" value="0" step="any" aria-label="Fila 2, columna 5"></td></tr>
+<tr><td><input type="number" id="esmat-2-0" value="0" step="any" aria-label="Fila 3, columna 1"></td><td><input type="number" id="esmat-2-1" value="0" step="any" aria-label="Fila 3, columna 2"></td><td><input type="number" id="esmat-2-2" value="0" step="any" aria-label="Fila 3, columna 3"></td><td><input type="number" id="esmat-2-3" value="0" step="any" aria-label="Fila 3, columna 4"></td><td><input type="number" id="esmat-2-4" value="0" step="any" aria-label="Fila 3, columna 5"></td></tr>
+<tr><td><input type="number" id="esmat-3-0" value="0" step="any" aria-label="Fila 4, columna 1"></td><td><input type="number" id="esmat-3-1" value="0" step="any" aria-label="Fila 4, columna 2"></td><td><input type="number" id="esmat-3-2" value="0" step="any" aria-label="Fila 4, columna 3"></td><td><input type="number" id="esmat-3-3" value="0" step="any" aria-label="Fila 4, columna 4"></td><td><input type="number" id="esmat-3-4" value="0" step="any" aria-label="Fila 4, columna 5"></td></tr>
+<tr><td><input type="number" id="esmat-4-0" value="0" step="any" aria-label="Fila 5, columna 1"></td><td><input type="number" id="esmat-4-1" value="0" step="any" aria-label="Fila 5, columna 2"></td><td><input type="number" id="esmat-4-2" value="0" step="any" aria-label="Fila 5, columna 3"></td><td><input type="number" id="esmat-4-3" value="0" step="any" aria-label="Fila 5, columna 4"></td><td><input type="number" id="esmat-4-4" value="0" step="any" aria-label="Fila 5, columna 5"></td></tr>
+</tbody>
+</table>
+<span class="hint">Para matrices de 3x3 o mayores, rellena las casillas extra de la derecha y de abajo. Las casillas que no uses se ignoran.</span></div>
+<button class="calc-btn" id="esmat-btn" type="button">Calcular matriz inversa</button>
+<div class="result" id="esmat-result">
+<div id="esmat-big-label">Resultado</div>
+<div class="big" id="esmat-big">Matriz invertible · det = 10</div>
+<table>
+<tbody id="esmat-rows">
+<tr><td>Determinante</td><td>10</td></tr>
+<tr><td>Inversa</td><td>[0.6, -0.7]<br>[-0.2, 0.4]</td></tr>
+</tbody>
+</table>
+<p id="esmat-note">La inversa existe solo si el determinante es distinto de cero. Si la matriz es singular, la herramienta lo indica y no devuelve inversa.</p>
+</div>
+</div>
+
+
+<section class="block">
+<h2>¿Qué es la matriz inversa?</h2>
+<p>La matriz inversa de una matriz cuadrada A es otra matriz del mismo tamaño, escrita A⁻¹, que al multiplicarse por A da la matriz identidad, con unos en la diagonal y ceros fuera. Esta calculadora de matriz inversa te da la inversa de matrices de 2x2 a 5x5, con su determinante y su matriz adjunta.</p>
+
+</section>
+
+<section class="block">
+<h2>El método de Gauss-Jordan paso a paso</h2>
+<p>El método de Gauss-Jordan calcula la inversa sin usar determinantes ni adjuntas. Se escribe la matriz A junto a la identidad, formando [A | I], y se aplican operaciones elementales por filas hasta convertir la parte izquierda en la identidad. Las mismas operaciones transforman la parte derecha en la inversa.</p>
+<p>Las operaciones permitidas son tres: intercambiar dos filas, multiplicar una fila por un número distinto de cero y sumar a una fila un múltiplo de otra. Se avanza columna a columna: se busca el pivote mayor, se convierte en 1 y se usa para anular el resto de la columna. Si no queda ningún pivote distinto de cero, la matriz es singular y no tiene inversa.</p>
+</section>
+
+<section class="block">
+<h2>El determinante y la matriz adjunta</h2>
+<p>Antes de calcular nada, el determinante ya dice si la inversa existe: una matriz cuadrada tiene inversa si y solo si su determinante es distinto de cero. Si es cero, la matriz es singular y el sistema asociado no tiene solución única. Por eso la calculadora muestra el determinante junto a la inversa.</p>
+<p>Hay otra forma de escribir la inversa, con la matriz adjunta: A⁻¹ es igual a la adjunta dividida entre el determinante, como muestra la <a href="/es/calculadora-divisiones/">calculadora de divisiones</a>. La adjunta es la traspuesta de la matriz de cofactores. Para una matriz 2x2 el cálculo es inmediato: si A tiene filas [a, b] y [c, d], su inversa es 1 entre (ad − bc) por [d, −b; −c, a].</p>
+<p>Y si tu problema es una sola ecuación con una incógnita al cuadrado, la <a href="/es/calculadora-ecuaciones-segundo-grado/">calculadora de ecuaciones de segundo grado</a> la resuelve con la fórmula general y el discriminante.</p>
+</section>
+
+<section class="block">
+<h2>Ejemplo: la inversa de [[4, 7], [2, 6]]</h2>
+<p>Ejemplo con la matriz que trae la calculadora al abrirla: primera fila 4 y 7, segunda fila 2 y 6. Primero el determinante: 4 por 6 menos 7 por 2, es decir, 24 − 14 = 10. Como no es cero, la matriz tiene inversa.</p>
+<p>Con la fórmula de la matriz 2x2, la inversa es 1 entre 10 por [6, −7; −2, 4], es decir, [[0,6, −0,7], [−0,2, 0,4]]. Comprueba: 4 por 0,6 más 7 por (−0,2) es 1, y 4 por (−0,7) más 7 por 0,4 es 0.</p>
+</section>
+
+
+<section class="block faq">
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Cuándo tiene inversa una matriz?</summary><p>Una matriz cuadrada tiene matriz inversa si y solo si su determinante es distinto de cero. Si el determinante es cero, la matriz es singular y no tiene inversa.</p></details><details><summary>¿Qué es el método de Gauss-Jordan?</summary><p>El método de Gauss-Jordan calcula la inversa escribiendo la matriz junto a la identidad, [A | I], y aplicando operaciones por filas hasta convertir la parte izquierda en la identidad. La parte derecha se convierte entonces en la inversa.</p></details><details><summary>¿Qué es la matriz adjunta?</summary><p>La matriz adjunta es la traspuesta de la matriz de cofactores. Cada cofactor es el determinante de la submatriz que queda al quitar una fila y una columna, con su signo. La inversa es la adjunta dividida entre el determinante.</p></details><details><summary>¿Qué es una matriz singular?</summary><p>Una matriz singular es una matriz cuadrada con determinante cero, que no tiene inversa. Sus filas dependen unas de otras, así que el sistema asociado no tiene solución única.</p></details>
+</section>
+
+<div class="note"><p><strong>Importante:</strong> Esta calculadora trabaja con matrices cuadradas de 2x2 a 5x5 con coeficientes reales. Los valores se muestran redondeados a 4 decimales; el cálculo interno usa precisión completa. Una matriz singular no tiene inversa y la herramienta lo indica.</p></div>
+
+<div class="src"><h3>Fuentes oficiales</h3>
+<p>El método es el estándar de álgebra lineal: inversa por Gauss-Jordan sobre [A | I], determinante distinto de cero como condición de existencia, y A⁻¹ = adj(A) / det(A).</p>
+<ul>
+<li><a href="https://es.wikipedia.org/wiki/Matriz_invertible" rel="noopener" target="_blank">Matriz invertible (Wikipedia)</a></li>
+</ul>
+</div>
+
+<p class="note">Ver todas las calculadoras de España: <a href="/es/">Calculadoras España</a></p>
+
+
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="/"><img class="logo-img" src="/assets/img/logo-mark.png" alt="Calcotia logo" width="38" height="38"><span>Calcotia<small>Calculadoras gratuitas para todos los países</small></span></a><p>Calcotia ofrece calculadoras en línea gratuitas para salarios, prestaciones e indemnizaciones, en el idioma de cada país y basadas en las normas oficiales.</p></div>
+<div><h3>Países</h3><ul>
+<li><a href="/no/"><img class="cflag" src="https://flagcdn.com/no.svg" alt="" width="20" height="15" loading="lazy">Noruega</a></li><li><a href="/de/"><img class="cflag" src="https://flagcdn.com/de.svg" alt="" width="20" height="15" loading="lazy">Alemania</a></li><li><a href="/fr/"><img class="cflag" src="https://flagcdn.com/fr.svg" alt="" width="20" height="15" loading="lazy">Francia</a></li><li><a href="/it/"><img class="cflag" src="https://flagcdn.com/it.svg" alt="" width="20" height="15" loading="lazy">Italia</a></li><li><a href="/jp/"><img class="cflag" src="https://flagcdn.com/jp.svg" alt="" width="20" height="15" loading="lazy">Japón</a></li><li><a href="/gr/"><img class="cflag" src="https://flagcdn.com/gr.svg" alt="" width="20" height="15" loading="lazy">Grecia</a></li><li><a href="/il/"><img class="cflag" src="https://flagcdn.com/il.svg" alt="" width="20" height="15" loading="lazy">Israel</a></li><li><a href="/vn/"><img class="cflag" src="https://flagcdn.com/vn.svg" alt="" width="20" height="15" loading="lazy">Vietnam</a></li><li><a href="/sk/"><img class="cflag" src="https://flagcdn.com/sk.svg" alt="" width="20" height="15" loading="lazy">Eslovaquia</a></li><li><a href="/rs/"><img class="cflag" src="https://flagcdn.com/rs.svg" alt="" width="20" height="15" loading="lazy">Serbia</a></li><li><a href="/sa/"><img class="cflag" src="https://flagcdn.com/sa.svg" alt="" width="20" height="15" loading="lazy">Arabia Saudita</a></li><li><a href="/se/"><img class="cflag" src="https://flagcdn.com/se.svg" alt="" width="20" height="15" loading="lazy">Suecia</a></li><li><a href="/ie/"><img class="cflag" src="https://flagcdn.com/ie.svg" alt="" width="20" height="15" loading="lazy">Irlanda</a></li><li><a href="/is/"><img class="cflag" src="https://flagcdn.com/is.svg" alt="" width="20" height="15" loading="lazy">Islandia</a></li><li><a href="/tw/"><img class="cflag" src="https://flagcdn.com/tw.svg" alt="" width="20" height="15" loading="lazy">Taiwán</a></li><li><a href="/es/"><img class="cflag" src="https://flagcdn.com/es.svg" alt="" width="20" height="15" loading="lazy">España</a></li><li><a href="/ae/"><img class="cflag" src="https://flagcdn.com/ae.svg" alt="" width="20" height="15" loading="lazy">Emiratos Árabes Unidos</a></li><li><a href="/ph/"><img class="cflag" src="https://flagcdn.com/ph.svg" alt="" width="20" height="15" loading="lazy">Filipinas</a></li><li><a href="/nl/"><img class="cflag" src="https://flagcdn.com/nl.svg" alt="" width="20" height="15" loading="lazy">Países Bajos</a></li><li><a href="/ro/"><img class="cflag" src="https://flagcdn.com/ro.svg" alt="" width="20" height="15" loading="lazy">Rumanía</a></li><li><a href="/mx/"><img class="cflag" src="https://flagcdn.com/mx.svg" alt="" width="20" height="15" loading="lazy">México</a></li><li><a href="/cl/"><img class="cflag" src="https://flagcdn.com/cl.svg" alt="" width="20" height="15" loading="lazy">Chile</a></li><li><a href="/cz/"><img class="cflag" src="https://flagcdn.com/cz.svg" alt="" width="20" height="15" loading="lazy">Chequia</a></li><li><a href="/hu/"><img class="cflag" src="https://flagcdn.com/hu.svg" alt="" width="20" height="15" loading="lazy">Hungría</a></li><li><a href="/th/"><img class="cflag" src="https://flagcdn.com/th.svg" alt="" width="20" height="15" loading="lazy">Tailandia</a></li><li><a href="/kr/"><img class="cflag" src="https://flagcdn.com/kr.svg" alt="" width="20" height="15" loading="lazy">Corea del Sur</a></li><li><a href="/pl/"><img class="cflag" src="https://flagcdn.com/pl.svg" alt="" width="20" height="15" loading="lazy">Polonia</a></li>
+</ul></div>
+<div><h3>Calculadoras populares</h3><ul>
+<li><a href="/no/sykepenger-kalkulator/">Sykepenger kalkulator</a></li>
+<li><a href="/no/feriepenger-kalkulator/">Feriepenger kalkulator</a></li>
+<li><a href="/de/buergergeld-rechner/">Bürgergeld Rechner</a></li>
+<li><a href="/it/calcolo-tfr-netto/">Calcolo TFR netto</a></li>
+<li><a href="/sk/kalkulacka-na-vypocet-dochodku/">Kalkulačka na výpočet dôchodku</a></li>
+<li><a href="/fr/simulateur-conge-parental/">Simulateur congé parental</a></li>
+<li><a href="/vn/tinh-bao-hiem-xa-hoi-1-lan/">Tính bảo hiểm xã hội 1 lần</a></li>
+<li><a href="/rs/kalkulator-decijeg-dodatka/">Kalkulator dečijeg dodatka</a></li>
+</ul></div>
+<div><h3>Calcotia</h3><ul><li><a href="/about.html">Sobre nosotros</a></li><li><a href="/privacy.html">Política de privacidad</a></li><li><a href="/contact.html">Contacto</a></li><li><a href="https://www.linkedin.com/in/calcotia-online">LinkedIn</a></li></ul></div>
+<div><h3>Otros idiomas</h3><ul class="other-langs">
+<li><a href="/no/">Noruega</a></li><li><a href="/de/">Alemania</a></li><li><a href="/fr/">Francia</a></li><li><a href="/it/">Italia</a></li><li><a href="/jp/">Japón</a></li><li><a href="/gr/">Grecia</a></li><li><a href="/il/">Israel</a></li><li><a href="/vn/">Vietnam</a></li><li><a href="/sk/">Eslovaquia</a></li><li><a href="/rs/">Serbia</a></li><li><a href="/sa/">Arabia Saudita</a></li><li><a href="/se/">Suecia</a></li><li><a href="/ie/">Irlanda</a></li><li><a href="/is/">Islandia</a></li><li><a href="/tw/">Taiwán</a></li><li><a href="/ae/">Emiratos Árabes Unidos</a></li><li><a href="/ph/">Filipinas</a></li><li><a href="/nl/">Países Bajos</a></li><li><a href="/ro/">Rumanía</a></li><li><a href="/mx/">México</a></li><li><a href="/cl/">Chile</a></li><li><a href="/cz/">Chequia</a></li><li><a href="/hu/">Hungría</a></li><li><a href="/th/">Tailandia</a></li><li><a href="/kr/">Corea del Sur</a></li><li><a href="/pl/">Polonia</a></li>
+</ul></div>
+</div>
+<div class="foot-base"><span>© 2026 Calcotia. All rights reserved.</span><span>calcotia.online</span></div>
+</div></footer>
+<script src="/assets/js/calculadora-matriz-inversa.js?v=20261105" defer></script>
+<script src="/assets/js/lang-switcher.js?v=20261105" defer></script>
+<script src="/assets/js/nav.js?v=20261105" defer></script>
+</body>
+</html>
