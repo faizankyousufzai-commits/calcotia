@@ -19,6 +19,13 @@
   btn.addEventListener('click', function (e) {
     e.stopPropagation();
     setOpen(panel.hidden);
+    /* The switcher now lives in the header bar (outside .main-nav), so
+       opening it must close the mobile hamburger menu, or the two
+       dropdowns overlap. */
+    var nav = document.querySelector('.main-nav');
+    if (nav) { nav.classList.remove('open'); }
+    var toggle = document.querySelector('.nav-toggle');
+    if (toggle) { toggle.setAttribute('aria-expanded', 'false'); toggle.textContent = '☰'; }
   });
   panel.addEventListener('click', function (e) {
     if (e.target.closest('a')) { setOpen(false); }
