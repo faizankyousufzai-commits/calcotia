@@ -31,6 +31,7 @@
 - [Thailand calculators](https://calcotia.online/th/): severance pay (ค่าชดเชย) under Section 118 of the Labour Protection Act
 - [South Korea calculators](https://calcotia.online/kr/): severance pay under the Labour Standards Act, in English
 - [Poland calculators](https://calcotia.online/pl/): severance pay (odprawa pieniężna) under the Labour Code, plus 243 new calculators: health (52: liver enzymes ALT/AST, cholesterol, blood pressure, HbA1c, TDEE and BMR, calories, pregnancy weeks, steps, vitamins, body fat, heart rate zones, baby weight, sleep, VO2max, WHR, BSA, FFMI), finance (45: B2B net income, mortgage, PIT annual return, VAT, excise duty, stock market, bonds, BIK score, rent, property tax, leasing, donations, subsidies, gold price, exchange rates, notarial fees), maths (44: percentages, fractions, matrices, quadratic equations, powers, roots, trigonometry, averages, unit conversion, temperature, areas and volumes, Roman numerals, fuel consumption), work and law (23: overtime, leave, notice period, alimony, sick benefit, maternity leave, mileage allowance, employer costs, 13th salary, PFRON, teachers’ workload, severance pay), construction (33: paint, concrete, insulation thickness, photovoltaics, fencing, roofing, tiles, wallpaper, steel profiles, screed, coal, epoxy resin), dates and time (5: age, working days, months, minutes, years), physics (2: force and speed) and other (39: PESEL, Lotto and Keno odds, dog food (BARF), alcohol dilution, taxi fares, numerology, zodiac sign, beer for a wedding, pickling, subnet calculator, dog years)
+- [United States calculators](https://calcotia.online/us/): 5 calculators in English: dog pregnancy due date, puppy adult weight, what-if grade, baby eye color, and the 4 percent retirement rule
 
 ## Calculators
 
@@ -598,6 +599,11 @@
 - [Kalkulator znaku zodiaku](https://calcotia.online/pl/kalkulator-znaku-zodiaku/): Kalkulator znaku zodiaku: sprawdź swój znak słoneczny z daty urodzenia. Poznaj cechy charakteru, żywioł i planetę władającą Twoim znakiem.
 - [kalkulator pobierania — Ile potrwa pobieranie? Kalkulator](https://calcotia.online/pl/kalkulator-pobierania/): kalkulator pobierania — Podaj rozmiar pliku i prędkość internetu — sprawdź dokładnie, ile potrwa pobieranie gry, filmu czy programu.
 - [Spain Severance Pay Calculator 2026](https://calcotia.online/es/severance-pay-calculator/): Spain severance pay calculator in English, 20 and 33 days per year
+- [Dog Pregnancy Calculator](https://calcotia.online/us/dog-pregnancy-calculator/): United States dog pregnancy due date calculator, with the day 58-68 window and a week-by-week timeline
+- [Puppy Weight Estimator](https://calcotia.online/us/puppy-weight-estimator/): United States puppy adult weight estimator from age, current weight and size group
+- [What If Grade Calculator](https://calcotia.online/us/what-if-grade-calculator/): United States what-if grade calculator, showing the score needed on remaining work to reach a target grade
+- [Baby Eye Color Calculator](https://calcotia.online/us/baby-eye-color-calculator/): United States baby eye color calculator, predicting likely eye colors from both parents' eye colors
+- [4 Percent Rule Calculator](https://calcotia.online/us/4-percent-rule-calculator/): United States 4 percent rule calculator for retirement withdrawals and the nest egg needed
 
 ## Blog
 
