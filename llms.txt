@@ -1,6 +1,6 @@
 # Calcotia
 
-> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 27 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
+> Free online calculators for sick pay, holiday pay, severance, pensions and benefits in 28 countries, each in the local language with official formulas. Every calculator is free, with no account and no sign up, and every calculation runs in the visitor's own browser.
 
 ## Countries
 
@@ -31,7 +31,7 @@
 - [Thailand calculators](https://calcotia.online/th/): severance pay (ค่าชดเชย) under Section 118 of the Labour Protection Act
 - [South Korea calculators](https://calcotia.online/kr/): severance pay under the Labour Standards Act, in English
 - [Poland calculators](https://calcotia.online/pl/): severance pay (odprawa pieniężna) under the Labour Code, plus 243 new calculators: health (52: liver enzymes ALT/AST, cholesterol, blood pressure, HbA1c, TDEE and BMR, calories, pregnancy weeks, steps, vitamins, body fat, heart rate zones, baby weight, sleep, VO2max, WHR, BSA, FFMI), finance (45: B2B net income, mortgage, PIT annual return, VAT, excise duty, stock market, bonds, BIK score, rent, property tax, leasing, donations, subsidies, gold price, exchange rates, notarial fees), maths (44: percentages, fractions, matrices, quadratic equations, powers, roots, trigonometry, averages, unit conversion, temperature, areas and volumes, Roman numerals, fuel consumption), work and law (23: overtime, leave, notice period, alimony, sick benefit, maternity leave, mileage allowance, employer costs, 13th salary, PFRON, teachers’ workload, severance pay), construction (33: paint, concrete, insulation thickness, photovoltaics, fencing, roofing, tiles, wallpaper, steel profiles, screed, coal, epoxy resin), dates and time (5: age, working days, months, minutes, years), physics (2: force and speed) and other (39: PESEL, Lotto and Keno odds, dog food (BARF), alcohol dilution, taxi fares, numerology, zodiac sign, beer for a wedding, pickling, subnet calculator, dog years)
-- [United States calculators](https://calcotia.online/us/): 5 calculators in English: dog pregnancy due date, puppy adult weight, what-if grade, baby eye color, and the 4 percent retirement rule
+- [United States calculators](https://calcotia.online/us/): 25 calculators in English: cubic yard, gravel, topsoil, sod, brick, wallpaper, solar panel, AP, SAT, ACT, LSAT and GMAT scores, dog pregnancy due date, puppy adult weight, aquarium size, what-if grade, baby eye color, emergency fund, HSA, wedding budget, coffee ratios, jet lag, nap length, water intake, and the 4 percent retirement rule
 
 ## Calculators
 
@@ -604,6 +604,26 @@
 - [What If Grade Calculator](https://calcotia.online/us/what-if-grade-calculator/): United States what-if grade calculator, showing the score needed on remaining work to reach a target grade
 - [Baby Eye Color Calculator](https://calcotia.online/us/baby-eye-color-calculator/): United States baby eye color calculator, predicting likely eye colors from both parents' eye colors
 - [4 Percent Rule Calculator](https://calcotia.online/us/4-percent-rule-calculator/): United States 4 percent rule calculator for retirement withdrawals and the nest egg needed
+- [Cubic Yard Calculator](https://calcotia.online/us/cubic-yard-calculator/): Use our free cubic yard calculator to turn length, width and depth into cubic yards, cubic feet and tons. Works for soil, gravel, mulch and concrete.
+- [Gravel Calculator](https://calcotia.online/us/gravel-calculator/): Use our free gravel calculator to work out how much gravel you need in cubic yards, tons and 50 lb bags. Try it for driveways, paths and garden beds.
+- [Topsoil Calculator](https://calcotia.online/us/topsoil-calculator/): Use our free topsoil calculator to work out how much topsoil you need in cubic yards, tons and bags. Try it for garden beds, lawns and raised beds.
+- [Sod Calculator](https://calcotia.online/us/sod-calculator/): Use our free sod calculator to work out how much sod you need in square feet, pallets and rolls. Add a price per pallet to see the material cost.
+- [Brick Calculator](https://calcotia.online/us/brick-calculator/): Use our free brick calculator to work out how many bricks you need for a wall, plus mortar bags and cost. Standard modular brick, 3/8 in joints.
+- [AP Score Calculator](https://calcotia.online/us/ap-score-calculator/): Use our free AP score calculator to estimate your 1-5 AP score from multiple-choice and free-response practice results. Try AP Lang, Bio, Chem or Calc AB.
+- [SAT Score Calculator](https://calcotia.online/us/sat-score-calculator/): Use our free digital SAT score calculator to estimate your 400-1600 total from Reading and Writing and Math results. Enter correct answers and try it now.
+- [ACT Score Calculator](https://calcotia.online/us/act-score-calculator/): Use our free ACT score calculator to find your composite score from 1 to 36. Works for the enhanced ACT and the classic ACT, with STEM score included.
+- [Wallpaper Calculator](https://calcotia.online/us/wallpaper-calculator/): Use our free wallpaper calculator to find how many rolls you need. Enter wall size and pattern repeat, and get rolls, strips and wall area in seconds.
+- [Aquarium Calculator](https://calcotia.online/us/aquarium-calculator/): Use our free aquarium calculator to find your tank volume in gallons and litres. Enter length, width and height for rectangular or cylinder tanks.
+- [Emergency Fund Calculator](https://calcotia.online/us/emergency-fund-calculator/): Use our free emergency fund calculator to find your 3 to 6 month target and monthly saving plan. Enter expenses and start today.
+- [HSA Calculator](https://calcotia.online/us/hsa-calculator/): Use our free HSA calculator to project your health savings account growth, check the 2026 IRS limits and estimate your tax savings. Try it now.
+- [Wedding Budget Calculator](https://calcotia.online/us/wedding-budget-calculator/): Use our free wedding budget calculator to split your total budget by category and guest count. See per-guest costs and plan every dollar.
+- [Coffee Calculator](https://calcotia.online/us/coffee-calculator/): Use our free coffee calculator to find the right coffee to water ratio for drip, pour over or french press. Grams, cups and tablespoons.
+- [Jet Lag Calculator](https://calcotia.online/us/jet-lag-calculator/): Use our free jet lag calculator to estimate recovery days after crossing time zones and get a simple sleep-shift plan. Enter zones and direction.
+- [Nap Calculator](https://calcotia.online/us/nap-calculator/): Use our free nap calculator to find your wake-up time for a 20-minute power nap or a 90-minute full cycle. Enter your start time and try it now.
+- [Solar Panel Calculator](https://calcotia.online/us/solar-panel-calculator/): Use our free solar panel calculator to find how many panels you need, your system size in kW, and the estimated cost. Enter your monthly use and try it now.
+- [Water Intake Calculator](https://calcotia.online/us/water-intake-calculator/): Use our free water intake calculator to find how much water to drink each day from your weight, activity, and climate. Enter your weight and try it now.
+- [LSAT Score Calculator](https://calcotia.online/us/lsat-score-calculator/): Use our free LSAT score calculator to turn your correct answers into an estimated scaled score on the 120-180 scale. Enter your section scores and try it now.
+- [GMAT Score Calculator](https://calcotia.online/us/gmat-score-calculator/): Use our free GMAT score calculator to turn your Quant, Verbal, and Data Insights section scores into an estimated GMAT Focus total score. Try it now.
 
 ## Blog
 
